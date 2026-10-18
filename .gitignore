@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Edicoes geradas pelo robo chegam por push do pipeline; as de teste, nao.
+/data/edicao-*-teste.json

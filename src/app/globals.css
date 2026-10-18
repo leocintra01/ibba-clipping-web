@@ -1,26 +1,51 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* ===== Paleta Itau BBA =====
+   Laranja #FF5000 e' a cor principal, sobre fundo claro, com preto e cinzas.
+   Nao inventar cor nova: a identidade e' a do banco. */
+@theme {
+  --color-laranja: #ff5000;
+  /* O #FF5000 e' a marca e fica nos elementos GRAFICOS (fio, borda, numero
+     grande). Em TEXTO pequeno ele da 3,3:1 no branco — reprova no WCAG AA.
+     Este tom escurecido mantem o mesmo matiz e passa 5:1 nos tres fundos que
+     o app usa. Medido, nao escolhido no olho. */
+  --color-laranja-700: #c23d00;
+  --color-laranja-suave: #fff1ea;
+  --color-tinta: #1a1916;
+  --color-tinta-2: #4a4641;
+  --color-tinta-3: #736e69;   /* menor cinza que passa 4.5:1 no fundo claro */
+  --color-papel: #ffffff;
+  --color-papel-2: #faf8f5;
+  --color-borda: #e4e0d9;
+
+  --font-titulo: "IBM Plex Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-papel-2);
+  color: var(--color-tinta);
+  font-family: var(--font-titulo);
+  /* 16px de base: o analista le isso no celular as 6h30. */
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Foco de teclado visivel em tudo que e' interativo. */
+:where(a, button, [role="tab"]):focus-visible {
+  outline: 2px solid var(--color-laranja);
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+
+/* Area de toque de 44px sem inflar o espacamento da lista. */
+@media (pointer: coarse) {
+  .toque {
+    padding-block: 7px;
+    margin-block: -7px;
+  }
 }
