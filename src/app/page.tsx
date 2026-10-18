@@ -1,7 +1,9 @@
+import Link from "next/link";
 import { edicaoAtual } from "@/lib/edicoes";
 import { Alertas } from "@/components/Alertas";
 import { Destaque } from "@/components/Destaque";
 import { Edicao } from "@/components/Edicao";
+import { ProvedorSelecao } from "@/lib/selecao";
 
 function dataPorExtenso(iso: string): string {
   const [a, m, d] = iso.split("-").map(Number);
@@ -60,10 +62,18 @@ export default async function Home() {
           de <span className="tabular-nums">{edicao.totais.coletados}</span>{" "}
           lidas
         </p>
+        <Link
+          href="/historico"
+          className="mt-2 inline-block font-mono text-[12px] text-[#a9a39c] underline-offset-2 hover:text-white hover:underline"
+        >
+          ver edições anteriores →
+        </Link>
       </header>
 
       <Destaque itens={destaques} />
-      <Edicao edicao={edicao} />
+      <ProvedorSelecao edicaoId={edicao.gerado_em}>
+        <Edicao edicao={edicao} />
+      </ProvedorSelecao>
     </main>
   );
 }

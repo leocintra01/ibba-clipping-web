@@ -3,14 +3,18 @@
 import { useMemo, useState } from "react";
 import type { Edicao as TEdicao, Item } from "@/lib/tipos";
 import { ItemNoticia } from "./ItemNoticia";
+import { Envio } from "./Envio";
+import { useSelecao } from "@/lib/selecao";
 
-type Visao = "tudo" | "brasil" | "global" | "empresas";
+type Visao = "tudo" | "brasil" | "global" | "ultimas" | "empresas" | "envio";
 
 const ABAS: { id: Visao; rotulo: string }[] = [
   { id: "tudo", rotulo: "Tudo" },
   { id: "brasil", rotulo: "Brasil" },
   { id: "global", rotulo: "Global" },
+  { id: "ultimas", rotulo: "Últimas 24h" },
   { id: "empresas", rotulo: "Empresas" },
+  { id: "envio", rotulo: "Envio" },
 ];
 
 /**
@@ -23,6 +27,7 @@ const ABAS: { id: Visao; rotulo: string }[] = [
  */
 export function Edicao({ edicao }: { edicao: TEdicao }) {
   const [visao, setVisao] = useState<Visao>("tudo");
+  const { total } = useSelecao();
   const [soNovas, setSoNovas] = useState(false);
 
   const { brasil, global } = useMemo(() => {
@@ -57,11 +62,16 @@ export function Edicao({ edicao }: { edicao: TEdicao }) {
             }`}
           >
             {a.rotulo}
+            {a.id === "envio" && total > 0 ? (
+              <span className="ml-1 rounded-full bg-laranja px-1.5 text-[11px] text-white tabular-nums">
+                {total}
+              </span>
+            ) : null}
           </button>
         ))}
       </nav>
 
-      {repetidas > 0 && visao !== "empresas" ? (
+      {repetidas > 0 && visao !== "empresas" && visao !== "envio" ? (
         <div className="flex items-center justify-end px-4 pt-3 sm:px-5">
           <label className="flex cursor-pointer items-center gap-2 font-mono text-[12px] text-tinta-3">
             <input
@@ -76,7 +86,11 @@ export function Edicao({ edicao }: { edicao: TEdicao }) {
       ) : null}
 
       <div className="px-4 pb-12 sm:px-5">
-        {visao === "empresas" ? (
+        {visao === "envio" ? (
+          <Envio edicao={edicao} />
+        ) : visao === "ultimas" ? (
+          <Ultimas edicao={edicao} filtra={filtra} />
+        ) : visao === "empresas" ? (
           <PorEmpresa edicao={edicao} />
         ) : (
           <>
@@ -141,5 +155,29 @@ function PorEmpresa({ edicao }: { edicao: TEdicao }) {
         </section>
       ))}
     </div>
+  );
+}
+
+function Ultimas({
+  edicao,
+  filtra,
+}: {
+  edicao: TEdicao;
+  filtra: (i: Item[]) => Item[];
+}) {
+  const vazio =
+    !edicao.last_news.brazil.length && !edicao.last_news.global.length;
+  if (vazio) {
+    return (
+      <p className="mt-5 text-[14px] text-tinta-3">
+        Sem notícias nas últimas 24 horas nesta edição.
+      </p>
+    );
+  }
+  return (
+    <>
+      <Secao titulo="Brasil · 24h" itens={filtra(edicao.last_news.brazil)} />
+      <Secao titulo="Global · 24h" itens={filtra(edicao.last_news.global)} />
+    </>
   );
 }
