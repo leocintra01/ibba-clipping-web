@@ -1,15 +1,15 @@
 {
  "schema": 1,
  "data": "2026-10-19",
- "gerado_em": "2026-10-19T06:32:45.131771-03:00",
+ "gerado_em": "2026-10-19T14:02:33.469752-03:00",
  "arquivo_html": "clipping-2026-10-19.html",
  "janela": {
   "inicio": "2026-10-16T09:30:00-03:00",
-  "fim": "2026-10-19T06:31:31.454245-03:00"
+  "fim": "2026-10-19T14:01:27.112271-03:00"
  },
  "totais": {
-  "coletados": 855,
-  "na_edicao": 57
+  "coletados": 980,
+  "na_edicao": 70
  },
  "top3": [
   {
@@ -23,13 +23,20 @@
    "repetido": false,
    "origem": "TeleSintese (direto)",
    "data": "2026-10-16T14:26:17-03:00",
-   "tem_hora": true,
-   "variantes": [
-    {
-     "url": "https://valor.globo.com/brasil/noticia/2026/10/16/teles-questionam-obrigacao-de-investir-em-data-centers-no-leilao-para-expansao-da-telefonia-movel.ghtml",
-     "fonte": "valor.globo.com"
-    }
-   ]
+   "tem_hora": true
+  },
+  {
+   "titulo": "Vivo Ventures investe na Inner AI para ampliar acesso de PMEs à IA",
+   "url": "https://telesintese.com.br/vivo-ventures-investe-na-inner-ai-para-ampliar-acesso-de-pmes-a-ia/",
+   "dominio": "telesintese.com.br",
+   "fonte": "Tele.Sintese",
+   "tag": "must-read",
+   "bucket": "BR Off",
+   "score": 23,
+   "repetido": false,
+   "origem": "TMT-Cobertura",
+   "data": "2026-10-19T13:32:47-03:00",
+   "tem_hora": true
   },
   {
    "titulo": "Vivo pede leilão de 6 GHz após 2030 e três blocos nacionais",
@@ -43,25 +50,6 @@
    "origem": "TeleSintese (direto)",
    "data": "2026-10-16T14:38:40-03:00",
    "tem_hora": true
-  },
-  {
-   "titulo": "Unifique suspende OPA após questionamento de minoritários",
-   "url": "https://teletime.com.br/16/10/2026/unifique-suspende-opa/",
-   "dominio": "teletime.com.br",
-   "fonte": "teletime.com.br",
-   "tag": "must-read",
-   "bucket": "BR Off",
-   "score": 19,
-   "repetido": false,
-   "origem": "TELETIME (direto)",
-   "data": "2026-10-16T21:44:32-03:00",
-   "tem_hora": true,
-   "variantes": [
-    {
-     "url": "https://telesintese.com.br/unifique-tem-registro-de-opa-suspenso-apos-acionistas-contestarem-avaliacao/",
-     "fonte": "telesintese.com.br"
-    }
-   ]
   }
  ],
  "clipping": {
@@ -77,13 +65,20 @@
     "repetido": false,
     "origem": "TeleSintese (direto)",
     "data": "2026-10-16T14:26:17-03:00",
-    "tem_hora": true,
-    "variantes": [
-     {
-      "url": "https://valor.globo.com/brasil/noticia/2026/10/16/teles-questionam-obrigacao-de-investir-em-data-centers-no-leilao-para-expansao-da-telefonia-movel.ghtml",
-      "fonte": "valor.globo.com"
-     }
-    ]
+    "tem_hora": true
+   },
+   {
+    "titulo": "Vivo Ventures investe na Inner AI para ampliar acesso de PMEs à IA",
+    "url": "https://telesintese.com.br/vivo-ventures-investe-na-inner-ai-para-ampliar-acesso-de-pmes-a-ia/",
+    "dominio": "telesintese.com.br",
+    "fonte": "Tele.Sintese",
+    "tag": "must-read",
+    "bucket": "BR Off",
+    "score": 23,
+    "repetido": false,
+    "origem": "TMT-Cobertura",
+    "data": "2026-10-19T13:32:47-03:00",
+    "tem_hora": true
    },
    {
     "titulo": "Unifique suspende OPA após questionamento de minoritários",
@@ -118,6 +113,19 @@
     "tem_hora": true
    },
    {
+    "titulo": "Agenda de empresas: M. Dias Branco compra Grespan; questões na OPA da Unifique",
+    "url": "https://valor.globo.com/empresas/noticia/2026/10/19/agenda-de-empresas-m-dias-branco-compra-grespan-questoes-na-opa-da-unifique.ghtml",
+    "dominio": "valor.globo.com",
+    "fonte": "valor.globo.com",
+    "tag": "must-read",
+    "bucket": "BR Off",
+    "score": 17,
+    "repetido": false,
+    "origem": "TMT-Cobertura",
+    "data": "2026-10-19T08:11:13-03:00",
+    "tem_hora": true
+   },
+   {
     "titulo": "\"Com a parceria da Google, vamos expandir a maturidade cibernética\" diz Diretor de Cyber da TIM Brasil",
     "url": "https://tiinside.com.br/16/10/2026/com-a-parceria-da-google-vamos-expandir-a-maturidade-cibernetica-diz-diretor-de-cyber-da-tim-brasil/",
     "dominio": "tiinside.com.br",
@@ -146,6 +154,48 @@
   ],
   "br_oth": [
    {
+    "titulo": "European telecoms groups join forces to challenge Musk’s Starlink",
+    "url": "https://www.ft.com/content/555bbf91-4c38-43ce-94b6-90f7fc04e82c?syn-25a6b1a6=1",
+    "dominio": "ft.com",
+    "fonte": "FT Technology",
+    "tag": "must-read",
+    "bucket": "BR Oth",
+    "score": 13,
+    "repetido": false,
+    "origem": "TMT-Global",
+    "data": "2026-10-19T08:22:25-03:00",
+    "tem_hora": true,
+    "variantes": [
+     {
+      "url": "https://www.lightreading.com/satellite/europe-s-big-telcos-explore-joint-satellite-spectrum-bid-to-rival-starlink",
+      "fonte": "lightreading.com"
+     },
+     {
+      "url": "https://www.lightreading.com/satellite/virgin-media-o2-feels-highs-and-lows-of-starlink-in-wales",
+      "fonte": "lightreading.com"
+     }
+    ]
+   },
+   {
+    "titulo": "Unifique (FIQE3) suspende OPA após pedido de nova avaliação das ações",
+    "url": "https://www.infomoney.com.br/mercados/unifique-fiqe3-suspende-opa-apos-pedido-de-nova-avaliacao-das-acoes/",
+    "dominio": "infomoney.com.br",
+    "fonte": "infomoney.com.br",
+    "tag": "must-read",
+    "bucket": "BR Oth",
+    "score": 13,
+    "repetido": false,
+    "origem": "TMT-Cobertura",
+    "data": "2026-10-19T07:29:58-03:00",
+    "tem_hora": true,
+    "variantes": [
+     {
+      "url": "https://www.infomoney.com.br/mercados/braskem-m-dias-caixa-seguridade-unifique-e-mais-acoes-para-acompanhar-hoje/",
+      "fonte": "infomoney.com.br"
+     }
+    ]
+   },
+   {
     "titulo": "Unifique Telecomunicações tem processo de OPA suspenso após pedido de acionistas por nova avaliação",
     "url": "https://atlaspublico.com.br/cvm/noticias/unifique-telecomunicacoes-tem-processo-de-opa-suspenso-apos-92884",
     "dominio": "atlaspublico.com.br",
@@ -173,7 +223,7 @@
     "variantes": [
      {
       "url": "https://www.ft.com/content/d1e28d93-8574-4a46-946a-b261c401d6fa?syn-25a6b1a6=1",
-      "fonte": "FT Technology"
+      "fonte": "ft.com"
      },
      {
       "url": "https://www.cnnbrasil.com.br/internacional/analise-crise-eua-ucrania-se-aprofunda-em-disputa-sobre-starlink/",
@@ -212,19 +262,6 @@
     "tem_hora": true
    },
    {
-    "titulo": "Virgin Media O2 feels highs and lows of Starlink in Wales",
-    "url": "https://www.lightreading.com/satellite/virgin-media-o2-feels-highs-and-lows-of-starlink-in-wales",
-    "dominio": "lightreading.com",
-    "fonte": "lightreading.com",
-    "tag": "company-specific",
-    "bucket": "BR Oth",
-    "score": 10,
-    "repetido": false,
-    "origem": "Light Reading (direto)",
-    "data": "2026-10-19T06:00:00-03:00",
-    "tem_hora": true
-   },
-   {
     "titulo": "Globant (GLOB) Stock Could Be 36% Below Fair Value",
     "url": "https://finance.yahoo.com/markets/stocks/articles/globant-glob-stock-could-36-101057876.html",
     "dominio": "finance.yahoo.com",
@@ -235,19 +272,6 @@
     "repetido": false,
     "origem": "TMT-Cobertura",
     "data": "2026-10-18T07:10:57-03:00",
-    "tem_hora": true
-   },
-   {
-    "titulo": "6Ghz: Investimento obrigatório em data centers está fora da política pública de telecomunicações, dizem Vivo e Claro",
-    "url": "https://convergenciadigital.com.br/internet/6ghz-investimento-obrigatorio-em-data-centers-esta-fora-da-politica-publica-de-telecomunicacoes-dizem-vivo-e-claro/",
-    "dominio": "convergenciadigital.com.br",
-    "fonte": "convergenciadigital.com.br",
-    "tag": "company-specific",
-    "bucket": "BR Oth",
-    "score": 21,
-    "repetido": true,
-    "origem": "Convergencia Digital (direto)",
-    "data": "2026-10-16T15:17:53-03:00",
     "tem_hora": true
    },
    {
@@ -277,6 +301,19 @@
     "tem_hora": true
    },
    {
+    "titulo": "Zero rating das eleições teve falhas no primeiro turno, diz Anatel ao STF",
+    "url": "https://telesintese.com.br/zero-rating-das-eleicoes-teve-falhas-no-primeiro-turno-diz-anatel-ao-stf/",
+    "dominio": "telesintese.com.br",
+    "fonte": "Tele.Sintese",
+    "tag": "sector-regulatory",
+    "bucket": "BR Oth",
+    "score": 9,
+    "repetido": false,
+    "origem": "TMT-Cobertura",
+    "data": "2026-10-19T12:11:35-03:00",
+    "tem_hora": true
+   },
+   {
     "titulo": "Mendonça adota rito abreviado em ação contra atesto fiscal e trabalhista da Anatel",
     "url": "https://telesintese.com.br/mendonca-adota-rito-abreviado-em-acao-contra-atesto-fiscal-e-trabalhista-da-anatel/",
     "dominio": "telesintese.com.br",
@@ -296,6 +333,19 @@
     ]
    },
    {
+    "titulo": "ABDC pede corte de 90% no ICMS e cobra regulamentação do Redata",
+    "url": "https://telesintese.com.br/abdc-pede-corte-de-90-no-icms-e-cobra-regulamentacao-do-redata/",
+    "dominio": "telesintese.com.br",
+    "fonte": "Tele.Sintese",
+    "tag": "sector-regulatory",
+    "bucket": "BR Oth",
+    "score": 8,
+    "repetido": false,
+    "origem": "TMT-Cobertura",
+    "data": "2026-10-19T11:57:58-03:00",
+    "tem_hora": true
+   },
+   {
     "titulo": "Agenda do Legislativo avança na expectativa do final das eleições",
     "url": "https://teletime.com.br/16/10/2026/agenda-do-legislativo-avanca-na-expectativa-do-final-das-eleicoes/",
     "dominio": "teletime.com.br",
@@ -306,19 +356,6 @@
     "repetido": false,
     "origem": "TELETIME (direto)",
     "data": "2026-10-16T19:49:49-03:00",
-    "tem_hora": true
-   },
-   {
-    "titulo": "A reforma tributária traz três grandes ganhos, uma oportunidade que o Brasil não pode perder",
-    "url": "https://www.estadao.com.br/economia/jose-roberto-mendonca-de-barros/a-reforma-tributaria-traz-tres-grandes-ganhos-uma-oportunidade-que-o-brasil-nao-pode-perder/",
-    "dominio": "estadao.com.br",
-    "fonte": "estadao.com.br",
-    "tag": "sector-regulatory",
-    "bucket": "BR Oth",
-    "score": 7,
-    "repetido": false,
-    "origem": "Estadao Negocios (direto)",
-    "data": "2026-10-17T17:00:00-03:00",
     "tem_hora": true
    },
    {
@@ -333,6 +370,19 @@
     "origem": "TELETIME (direto)",
     "data": "2026-10-16T13:38:26-03:00",
     "tem_hora": true
+   },
+   {
+    "titulo": "Teles questionam obrigação de investir em data centers no leilão para expansão da telefonia móvel",
+    "url": "https://valor.globo.com/brasil/noticia/2026/10/16/teles-questionam-obrigacao-de-investir-em-data-centers-no-leilao-para-expansao-da-telefonia-movel.ghtml",
+    "dominio": "valor.globo.com",
+    "fonte": "valor.globo.com",
+    "tag": "sector-regulatory",
+    "bucket": "BR Oth",
+    "score": 13,
+    "repetido": true,
+    "origem": "Valor Telecom (Chrome)",
+    "data": "2026-10-16",
+    "tem_hora": false
    },
    {
     "titulo": "Radiodifusão defende desocupação do 6 GHz custeada por leilão",
@@ -358,19 +408,6 @@
     "repetido": true,
     "origem": "TELETIME (direto)",
     "data": "2026-10-16T16:44:13-03:00",
-    "tem_hora": true
-   },
-   {
-    "titulo": "ISPs e teles disputam faixa de 6GHz na audiência pública da Anatel",
-    "url": "https://convergenciadigital.com.br/governo/isps-e-teles-disputam-faixa-de-6ghz-na-audiencia-publica-da-anatel/",
-    "dominio": "convergenciadigital.com.br",
-    "fonte": "convergenciadigital.com.br",
-    "tag": "sector-regulatory",
-    "bucket": "BR Oth",
-    "score": 7,
-    "repetido": true,
-    "origem": "Convergencia Digital (direto)",
-    "data": "2026-10-16T13:34:08-03:00",
     "tem_hora": true
    },
    {
@@ -400,30 +437,69 @@
     "tem_hora": true
    },
    {
-    "titulo": "Sem regulação formal para IA e gasto crescente, ‘big techs’ caem na bolsa",
-    "url": "https://valor.globo.com/empresas/noticia/2026/10/19/sem-regulacao-formal-para-ia-e-gasto-crescente-big-techs-caem-na-bolsa.ghtml",
-    "dominio": "valor.globo.com",
-    "fonte": "valor.globo.com",
-    "tag": "broad-tech",
+    "titulo": "O que a nova IA da Amazon faz com as conversas que escuta?",
+    "url": "https://timesbrasil.com.br/empresas-e-negocios/tecnologia-e-inovacao/o-que-a-nova-ia-da-amazon-faz-com-as-conversas-que-escuta/",
+    "dominio": "timesbrasil.com.br",
+    "fonte": "timesbrasil.com.br",
+    "tag": "competitor-read-through",
     "bucket": "BR Oth",
-    "score": 13,
+    "score": 9,
     "repetido": false,
-    "origem": "Valor Tecnologia (Chrome)",
-    "data": "2026-10-19",
-    "tem_hora": false
+    "origem": "TMT-Cobertura",
+    "data": "2026-10-19T06:00:00-03:00",
+    "tem_hora": true
    },
    {
-    "titulo": "O jovem que pôs a Meta de volta à corrida da IA",
-    "url": "https://valor.globo.com/empresas/noticia/2026/10/19/o-jovem-que-pos-a-meta-de-volta-a-corrida-da-ia.ghtml",
-    "dominio": "valor.globo.com",
-    "fonte": "valor.globo.com",
+    "titulo": "38% das PMEs não adotam novos meios de pagamento por temer fraudes, mostra estudo",
+    "url": "https://www.ecommercebrasil.com.br/noticias/38-das-pmes-nao-adotam-novos-meios-de-pagamento-por-temer-fraudes-mostra-estudo",
+    "dominio": "ecommercebrasil.com.br",
+    "fonte": "ecommercebrasil.com.br",
     "tag": "broad-tech",
     "bucket": "BR Oth",
-    "score": 10,
+    "score": 20,
     "repetido": false,
-    "origem": "Valor Tecnologia (Chrome)",
-    "data": "2026-10-19",
-    "tem_hora": false
+    "origem": "TMT-Cobertura",
+    "data": "2026-10-19T12:37:58-03:00",
+    "tem_hora": true
+   },
+   {
+    "titulo": "Integração com marketplaces: quanto custa manter o varejo conectado a vários canais?",
+    "url": "https://www.ecommercebrasil.com.br/artigos/integracao-com-marketplaces-quanto-custa-manter-o-varejo-conectado-a-varios-canais",
+    "dominio": "ecommercebrasil.com.br",
+    "fonte": "ecommercebrasil.com.br",
+    "tag": "broad-tech",
+    "bucket": "BR Oth",
+    "score": 17,
+    "repetido": false,
+    "origem": "TMT-Cobertura",
+    "data": "2026-10-19T09:00:00-03:00",
+    "tem_hora": true
+   },
+   {
+    "titulo": "Reatores nucleares para data centers devem ser realidade no Brasil em 2040, estima ABDC",
+    "url": "https://telesintese.com.br/reatores-nucleares-para-data-centers-devem-ser-realidade-no-brasil-em-2040-estima-abdc/",
+    "dominio": "telesintese.com.br",
+    "fonte": "Tele.Sintese",
+    "tag": "broad-tech",
+    "bucket": "BR Oth",
+    "score": 11,
+    "repetido": false,
+    "origem": "TMT-Cobertura",
+    "data": "2026-10-19T12:22:55-03:00",
+    "tem_hora": true
+   },
+   {
+    "titulo": "Telesat aposta em satélites de baixa órbita para backhaul celular",
+    "url": "https://www.mobiletime.com.br/noticias/19/10/2026/telesat-backhaul-leo/",
+    "dominio": "mobiletime.com.br",
+    "fonte": "Mobile Time",
+    "tag": "broad-tech",
+    "bucket": "BR Oth",
+    "score": 11,
+    "repetido": false,
+    "origem": "TMT-Cobertura",
+    "data": "2026-10-19T09:14:51-03:00",
+    "tem_hora": true
    },
    {
     "titulo": "Mercado brasileiro de cibersegurança deve movimentar R$ 127 bi até 2029, aponta estudo da Brasscom",
@@ -449,6 +525,32 @@
     "repetido": false,
     "origem": "Mobile Time (direto)",
     "data": "2026-10-16T21:49:52-03:00",
+    "tem_hora": true
+   },
+   {
+    "titulo": "Netflix e Globo fecham acordo de licenciamento de conteúdo no Brasil",
+    "url": "https://convergenciadigital.com.br/mercado/netflix-e-globo-fecham-acordo-de-licenciamento-de-conteudo-no-brasil/",
+    "dominio": "convergenciadigital.com.br",
+    "fonte": "convergenciadigital.com.br",
+    "tag": "broad-tech",
+    "bucket": "BR Oth",
+    "score": 7,
+    "repetido": false,
+    "origem": "Convergencia Digital (direto)",
+    "data": "2026-10-19T12:42:06-03:00",
+    "tem_hora": true
+   },
+   {
+    "titulo": "Uber escapa de indenização de R$ 2,3 bilhões pedida por taxistas de Londres",
+    "url": "https://g1.globo.com/economia/noticia/2026/10/19/uber-escapa-de-indenizacao-de-r-23-bilhoes-pedida-por-taxistas-de-londres.ghtml",
+    "dominio": "g1.globo.com",
+    "fonte": "G1 Tecnologia",
+    "tag": "broad-tech",
+    "bucket": "BR Oth",
+    "score": 5,
+    "repetido": false,
+    "origem": "TMT-Cobertura",
+    "data": "2026-10-19T08:04:06-03:00",
     "tem_hora": true
    },
    {
@@ -496,12 +598,12 @@
     "titulo": "Will Meta’s earnings restore confidence in the AI boom?",
     "url": "https://www.ft.com/content/7c2e889e-2eb5-4c62-821b-1a7f88c13d05?syn-25a6b1a6=1",
     "dominio": "ft.com",
-    "fonte": "FT Technology",
+    "fonte": "ft.com",
     "tag": "sector-regulatory",
     "bucket": "GL Off",
     "score": 16,
     "repetido": false,
-    "origem": "TMT-Global",
+    "origem": "FT Technology (direto)",
     "data": "2026-10-18T08:00:09-03:00",
     "tem_hora": true
    },
@@ -519,23 +621,30 @@
     "tem_hora": true
    },
    {
-    "titulo": "Microsoft pulls out of UK data center deal with Nscale, Telegraph reports",
-    "url": "https://www.reuters.com/business/media-telecom/microsoft-pulls-out-uk-data-center-deal-with-nscale-telegraph-reports-2026-10-18/",
-    "dominio": "reuters.com",
-    "fonte": "reuters.com",
+    "titulo": "Amazon to fund 12 small nuclear reactors at former Indiana coal plant",
+    "url": "https://techcrunch.com/2026/10/19/amazon-to-fund-12-small-nuclear-reactors-at-former-indiana-coal-plant/",
+    "dominio": "techcrunch.com",
+    "fonte": "techcrunch.com",
+    "tag": "competitor-read-through",
+    "bucket": "GL Off",
+    "score": 12,
+    "repetido": false,
+    "origem": "TechCrunch (direto)",
+    "data": "2026-10-19T13:55:56-03:00",
+    "tem_hora": true
+   },
+   {
+    "titulo": "Submit a question: Could Anthropic’s IPO be a turning point for AI?",
+    "url": "https://www.ft.com/content/8cdf338e-d472-460c-8642-a8f033b99462?syn-25a6b1a6=1",
+    "dominio": "ft.com",
+    "fonte": "FT Technology",
     "tag": "broad-tech",
     "bucket": "GL Off",
-    "score": 19,
+    "score": 20,
     "repetido": false,
     "origem": "TMT-Global",
-    "data": "2026-10-18T14:19:48-03:00",
-    "tem_hora": true,
-    "variantes": [
-     {
-      "url": "https://www.ft.com/content/35cc5cc6-f9b6-49cc-8fc2-bd61e09c8c40?syn-25a6b1a6=1",
-      "fonte": "FT Technology"
-     }
-    ]
+    "data": "2026-10-19T11:10:33-03:00",
+    "tem_hora": true
    },
    {
     "titulo": "AI stocks plunge. Inflation heats up. Where we're still finding opportunities",
@@ -549,58 +658,35 @@
     "origem": "CNBC Tech (direto)",
     "data": "2026-10-17T12:42:34-03:00",
     "tem_hora": true
-   },
-   {
-    "titulo": "Anthropic to commit 5% stake to new 'public benefit fund'",
-    "url": "https://www.reuters.com/business/anthropic-commit-5-stake-new-public-benefit-fund-2026-10-18/",
-    "dominio": "reuters.com",
-    "fonte": "reuters.com",
-    "tag": "broad-tech",
-    "bucket": "GL Off",
-    "score": 13,
-    "repetido": false,
-    "origem": "TMT-Global",
-    "data": "2026-10-18T20:06:18-03:00",
-    "tem_hora": true,
-    "variantes": [
-     {
-      "url": "https://www.ft.com/content/3beab58d-4269-4722-b299-8fa5a93f5a52?syn-25a6b1a6=1",
-      "fonte": "FT Technology"
-     },
-     {
-      "url": "https://www.bloomberg.com/news/articles/2026-10-18/anthropic-plans-to-shift-some-shares-into-new-public-good-fund",
-      "fonte": "bloomberg.com"
-     }
-    ]
-   },
-   {
-    "titulo": "Anthropic taps nonprofits METR and SecureBio to help assess risks and safety practices",
-    "url": "https://www.cnbc.com/2026/10/15/anthropic-metr-securebio-ai-safety-evaluators.html",
-    "dominio": "cnbc.com",
-    "fonte": "cnbc.com",
-    "tag": "broad-tech",
-    "bucket": "GL Off",
-    "score": 8,
-    "repetido": false,
-    "origem": "CNBC Tech (direto)",
-    "data": "2026-10-16T19:26:38-03:00",
-    "tem_hora": true
-   },
-   {
-    "titulo": "SpaceX AI policy leader grilled by NYC Council on Grok safety, sexualized images",
-    "url": "https://www.cnbc.com/2026/10/16/spacex-policy-manger-to-testify-in-nyc-council-ai-safety-investigation.html",
-    "dominio": "cnbc.com",
-    "fonte": "cnbc.com",
-    "tag": "broad-tech",
-    "bucket": "GL Off",
-    "score": 8,
-    "repetido": true,
-    "origem": "CNBC Tech (direto)",
-    "data": "2026-10-16T16:30:51-03:00",
-    "tem_hora": true
    }
   ],
   "gl_oth": [
+   {
+    "titulo": "Why ‘eating your own dog food’ is the best way to tame stem buyer remorse about AI. Salesforce, SAP, and ServiceNow are wolfing down the chow",
+    "url": "https://diginomica.com/why-eating-your-own-dog-food-best-way-tame-stem-buyer-remorse-about-ai-salesforce-sap-and",
+    "dominio": "diginomica.com",
+    "fonte": "diginomica.com",
+    "tag": "competitor-read-through",
+    "bucket": "GL Oth",
+    "score": 30,
+    "repetido": false,
+    "origem": "TMT-Global",
+    "data": "2026-10-19T08:05:02-03:00",
+    "tem_hora": true
+   },
+   {
+    "titulo": "Accenture e Google fazem parceria para implementar IA em agências federais dos EUA",
+    "url": "https://valor.globo.com/empresas/noticia/2026/10/19/accenture-e-google-fazem-parceria-para-implementar-ia-em-agncias-federais-dos-eua.ghtml",
+    "dominio": "valor.globo.com",
+    "fonte": "valor.globo.com",
+    "tag": "competitor-read-through",
+    "bucket": "GL Oth",
+    "score": 24,
+    "repetido": false,
+    "origem": "Valor Tecnologia (Chrome)",
+    "data": "2026-10-19",
+    "tem_hora": false
+   },
    {
     "titulo": "Hikvision Logs Higher Q3 Profit; Revenue Up; Shares Down 3%",
     "url": "https://www.marketscreener.com/news/hikvision-logs-higher-q3-profit-revenue-up-shares-down-3-ce785cdad089f723",
@@ -615,6 +701,29 @@
     "tem_hora": true
    },
    {
+    "titulo": "Accenture and Google Launch Gemini AI Agent Programme for US Federal Agencies",
+    "url": "https://finance.yahoo.com/technology/ai/articles/accenture-google-launch-gemini-ai-134936837.html",
+    "dominio": "finance.yahoo.com",
+    "fonte": "finance.yahoo.com",
+    "tag": "competitor-read-through",
+    "bucket": "GL Oth",
+    "score": 19,
+    "repetido": false,
+    "origem": "TMT-Global",
+    "data": "2026-10-19T10:49:36-03:00",
+    "tem_hora": true,
+    "variantes": [
+     {
+      "url": "https://www.marketscreener.com/news/accenture-google-team-up-on-agentic-ai-capabilities-for-federal-agencies-ce785cdbda8af72c",
+      "fonte": "marketscreener.com"
+     },
+     {
+      "url": "https://www.marketscreener.com/news/alphabet-s-google-accenture-unveil-gemini-launchpads-to-help-agencies-build-scale-ai-agents-ce785cdbda88f624",
+      "fonte": "marketscreener.com"
+     }
+    ]
+   },
+   {
     "titulo": "This week's earnings calendar: CAC stocks, Meta, Tesla, SAP and Nestlé in the spotlight",
     "url": "https://www.marketscreener.com/news/week-s-earnings-calendar-cac-stocks-meta-tesla-sap-and-nestle-in-the-spotlight-ce785cdade80f623",
     "dominio": "marketscreener.com",
@@ -625,6 +734,19 @@
     "repetido": false,
     "origem": "TMT-Global",
     "data": "2026-10-19T04:26:09-03:00",
+    "tem_hora": true
+   },
+   {
+    "titulo": "Infosys, Truist Expand Partnership for AI Center in India",
+    "url": "https://www.marketscreener.com/news/infosys-truist-expand-partnership-for-ai-center-in-india-ce785cdbd881f225",
+    "dominio": "marketscreener.com",
+    "fonte": "marketscreener.com",
+    "tag": "competitor-read-through",
+    "bucket": "GL Oth",
+    "score": 17,
+    "repetido": false,
+    "origem": "TMT-Global",
+    "data": "2026-10-19T08:11:00-03:00",
     "tem_hora": true
    },
    {
@@ -641,6 +763,19 @@
     "tem_hora": true
    },
    {
+    "titulo": "Why Accenture argues that although the enterprise AI cake is rising, it's going to take time to bake through",
+    "url": "https://diginomica.com/why-accenture-argues-although-enterprise-ai-cake-rising-its-going-take-time-bake-through",
+    "dominio": "diginomica.com",
+    "fonte": "diginomica.com",
+    "tag": "competitor-read-through",
+    "bucket": "GL Oth",
+    "score": 14,
+    "repetido": false,
+    "origem": "TMT-Global",
+    "data": "2026-10-19T06:05:01-03:00",
+    "tem_hora": true
+   },
+   {
     "titulo": "Microsoft desiste de acordo para data center no Reino Unido em momento crucial para planos de IPO da Nscale",
     "url": "https://oglobo.globo.com/economia/tecnologia/noticia/2026/10/18/microsoft-desiste-de-acordo-para-data-center-no-reino-unido-em-momento-crucial-para-planos-de-ipo-da-nscale.ghtml",
     "dominio": "oglobo.globo.com",
@@ -652,6 +787,25 @@
     "origem": "TMT-Cobertura",
     "data": "2026-10-18T09:38:27-03:00",
     "tem_hora": true
+   },
+   {
+    "titulo": "Microsoft pulls out of UK data center deal with Nscale, Telegraph reports",
+    "url": "https://www.reuters.com/business/media-telecom/microsoft-pulls-out-uk-data-center-deal-with-nscale-telegraph-reports-2026-10-18/",
+    "dominio": "reuters.com",
+    "fonte": "reuters.com",
+    "tag": "broad-tech",
+    "bucket": "GL Oth",
+    "score": 19,
+    "repetido": false,
+    "origem": "TMT-Global",
+    "data": "2026-10-18T14:19:48-03:00",
+    "tem_hora": true,
+    "variantes": [
+     {
+      "url": "https://www.ft.com/content/35cc5cc6-f9b6-49cc-8fc2-bd61e09c8c40?syn-25a6b1a6=1",
+      "fonte": "ft.com"
+     }
+    ]
    },
    {
     "titulo": "Anthropic turns to lawyers to help AI agents strike deals",
@@ -667,56 +821,82 @@
     "tem_hora": true
    },
    {
-    "titulo": "What to Know About the Obscure Trust Looming Over Anthropic’s IPO",
-    "url": "https://www.wsj.com/tech/ai/anthropic-ipo-private-trust-188f41f7",
-    "dominio": "wsj.com",
-    "fonte": "wsj.com",
+    "titulo": "Korea Data Center IPO to Test AI Investor Resolve After Tumult",
+    "url": "https://www.bloomberg.com/news/articles/2026-10-19/korea-data-center-ipo-to-test-ai-investor-resolve-after-tumult",
+    "dominio": "bloomberg.com",
+    "fonte": "bloomberg.com",
     "tag": "broad-tech",
     "bucket": "GL Oth",
-    "score": 16,
+    "score": 14,
     "repetido": false,
     "origem": "TMT-Global",
-    "data": "2026-10-18T22:00:00-03:00",
+    "data": "2026-10-19T04:11:43-03:00",
+    "tem_hora": true
+   },
+   {
+    "titulo": "Google says it can build data centers the right way. Some experts and residents are skeptical",
+    "url": "https://www.cnbc.com/2026/10/19/how-data-centers-are-reshaping-americas-aging-grid-pine-island-minnesota-google.html",
+    "dominio": "cnbc.com",
+    "fonte": "CNBC Tech",
+    "tag": "broad-tech",
+    "bucket": "GL Oth",
+    "score": 13,
+    "repetido": false,
+    "origem": "TMT-Global",
+    "data": "2026-10-19T09:00:01-03:00",
+    "tem_hora": true
+   },
+   {
+    "titulo": "Gigantes móveis se unem na Europa pelo mercado D2D, de comunicação satélite e celular",
+    "url": "https://convergenciadigital.com.br/telecom/gigantes-moveis-se-unem-na-europa-pelo-mercado-d2d-de-comunicacao-satelite-e-celular/",
+    "dominio": "convergenciadigital.com.br",
+    "fonte": "convergenciadigital.com.br",
+    "tag": "broad-tech",
+    "bucket": "GL Oth",
+    "score": 12,
+    "repetido": false,
+    "origem": "Convergencia Digital (direto)",
+    "data": "2026-10-19T10:25:47-03:00",
     "tem_hora": true
    },
    {
     "titulo": "Always on, always listening: New AI devices are pushing legal limits and could put users in jeopardy",
     "url": "https://www.cnbc.com/2026/10/18/ai-wearables-privacy-wiretap-laws.html",
     "dominio": "cnbc.com",
-    "fonte": "CNBC Tech",
+    "fonte": "cnbc.com",
+    "tag": "broad-tech",
+    "bucket": "GL Oth",
+    "score": 12,
+    "repetido": false,
+    "origem": "CNBC Tech (direto)",
+    "data": "2026-10-18T09:00:01-03:00",
+    "tem_hora": true
+   },
+   {
+    "titulo": "AI Chip Startup Tenstorrent Raises Funds at $6.2 Billion Value",
+    "url": "https://www.bloomberg.com/news/articles/2026-10-19/ai-chip-startup-tenstorrent-raises-funds-at-6-2-billion-value",
+    "dominio": "bloomberg.com",
+    "fonte": "bloomberg.com",
     "tag": "broad-tech",
     "bucket": "GL Oth",
     "score": 12,
     "repetido": false,
     "origem": "TMT-Global",
-    "data": "2026-10-18T09:00:01-03:00",
+    "data": "2026-10-19T08:00:39-03:00",
     "tem_hora": true
    },
    {
-    "titulo": "SoftBank in talks to buy US security group Allied Universal",
-    "url": "https://www.ft.com/content/e44a17f9-5be0-4a78-89fb-41c4578838ca?syn-25a6b1a6=1",
-    "dominio": "ft.com",
-    "fonte": "ft.com",
+    "titulo": "Governo dos EUA proíbe agências federais de usarem tecnologia de IA da chinesa DeepSeek",
+    "url": "https://valor.globo.com/empresas/noticia/2026/10/19/governo-dos-eua-probe-agncias-federais-de-usarem-tecnologia-de-ia-da-chinesa-deepseek.ghtml",
+    "dominio": "valor.globo.com",
+    "fonte": "valor.globo.com",
     "tag": "broad-tech",
     "bucket": "GL Oth",
     "score": 11,
     "repetido": false,
-    "origem": "FT Technology (direto)",
-    "data": "2026-10-16T23:07:07-03:00",
-    "tem_hora": true
-   },
-   {
-    "titulo": "Samsung to use TSMC technology for Nvidia's next-generation memory chips, Seoul newspaper reports",
-    "url": "https://www.reuters.com/world/asia-pacific/samsung-use-tsmc-technology-nvidias-next-generation-memory-chips-seoul-newspaper-2026-10-18/",
-    "dominio": "reuters.com",
-    "fonte": "reuters.com",
-    "tag": "broad-tech",
-    "bucket": "GL Oth",
-    "score": 11,
-    "repetido": false,
-    "origem": "TMT-Global",
-    "data": "2026-10-18T09:09:43-03:00",
-    "tem_hora": true
+    "origem": "Valor Tecnologia (Chrome)",
+    "data": "2026-10-19",
+    "tem_hora": false
    },
    {
     "titulo": "\"Sem segurança, não haverá avanço na adoção da IA\", afirma CFO Global da Palo Alto Networks",
@@ -742,6 +922,58 @@
     "repetido": false,
     "origem": "TI Inside (direto)",
     "data": "2026-10-16T14:57:11-03:00",
+    "tem_hora": true
+   },
+   {
+    "titulo": "Anthropic pitches AI safety bill to lawmakers",
+    "url": "https://www.businesstimes.com.sg/companies-markets/anthropic-pitches-ai-safety-bill-lawmakers",
+    "dominio": "businesstimes.com.sg",
+    "fonte": "businesstimes.com.sg",
+    "tag": "broad-tech",
+    "bucket": "GL Oth",
+    "score": 10,
+    "repetido": false,
+    "origem": "Business Times SG (direto)",
+    "data": "2026-10-17T04:50:05-03:00",
+    "tem_hora": true
+   },
+   {
+    "titulo": "Ex-funcionário da OpenAI acusado de instalar dispositivo de gravação parece ter apoio saudita, dizem promotores dos EUA",
+    "url": "https://valor.globo.com/empresas/noticia/2026/10/19/ex-funcionrio-da-openai-acusado-de-instalar-dispositivo-de-gravao-parece-ter-apoio-saudita-dizem-promotores-dos-eua.ghtml",
+    "dominio": "valor.globo.com",
+    "fonte": "valor.globo.com",
+    "tag": "broad-tech",
+    "bucket": "GL Oth",
+    "score": 10,
+    "repetido": false,
+    "origem": "Valor Tecnologia (Chrome)",
+    "data": "2026-10-19",
+    "tem_hora": false
+   },
+   {
+    "titulo": "Richardson Electronics, Ltd. Expands Global Reach of LaserSlat SAVER® with New E-Commerce Capabilities and European Availability",
+    "url": "https://finance.yahoo.com/technology/articles/richardson-electronics-ltd-expands-global-150000691.html",
+    "dominio": "finance.yahoo.com",
+    "fonte": "finance.yahoo.com",
+    "tag": "broad-tech",
+    "bucket": "GL Oth",
+    "score": 10,
+    "repetido": false,
+    "origem": "TMT-Global",
+    "data": "2026-10-19T12:00:00-03:00",
+    "tem_hora": true
+   },
+   {
+    "titulo": "Data centres need protection from drone warfare",
+    "url": "https://www.ft.com/content/15a049f3-b62e-40ed-b304-8a2452713338",
+    "dominio": "ft.com",
+    "fonte": "FT Technology",
+    "tag": "broad-tech",
+    "bucket": "GL Oth",
+    "score": 9,
+    "repetido": false,
+    "origem": "TMT-Global",
+    "data": "2026-10-19T11:31:32-03:00",
     "tem_hora": true
    },
    {
@@ -784,158 +1016,249 @@
     "tem_hora": true
    },
    {
-    "titulo": "AI Agents Trading Stocks While You Sleep? Charles Schwab’s CEO Is Skeptical",
-    "url": "https://www.wsj.com/tech/ai/ai-agents-trading-stocks-while-you-sleep-charles-schwabs-ceo-is-skeptical-3ff1b5c3",
-    "dominio": "wsj.com",
-    "fonte": "wsj.com",
+    "titulo": "Microsoft signs 20-year power deal with Indiana utility NiSource for planned data center in the state",
+    "url": "https://www.datacenterdynamics.com/en/news/microsoft-signs-20-year-power-deal-with-indiana-utility-nisource-for-planned-data-center-in-the-state/",
+    "dominio": "datacenterdynamics.com",
+    "fonte": "datacenterdynamics.com",
     "tag": "broad-tech",
     "bucket": "GL Oth",
-    "score": 9,
+    "score": 17,
     "repetido": false,
     "origem": "TMT-Global",
-    "data": "2026-10-18T17:23:00-03:00",
+    "data": "2026-10-19T06:51:42-03:00",
     "tem_hora": true
-   },
-   {
-    "titulo": "IA contra o crime ajudou a resolver mais de 3 mil crimes em Goiás",
-    "url": "https://convergenciadigital.com.br/mercado/ia-contra-o-crime-ajudou-a-resolver-mais-de-3-mil-crimes-em-goias/",
-    "dominio": "convergenciadigital.com.br",
-    "fonte": "convergenciadigital.com.br",
-    "tag": "broad-tech",
-    "bucket": "GL Oth",
-    "score": 8,
-    "repetido": false,
-    "origem": "Convergencia Digital (direto)",
-    "data": "2026-10-16T16:27:52-03:00",
-    "tem_hora": true
-   },
-   {
-    "titulo": "How Zayo is trying to keep its cool in an overheating data center market",
-    "url": "https://www.lightreading.com/data-centers/how-zayo-is-trying-to-keep-its-cool-in-an-overheating-data-center-market",
-    "dominio": "lightreading.com",
-    "fonte": "lightreading.com",
-    "tag": "broad-tech",
-    "bucket": "GL Oth",
-    "score": 8,
-    "repetido": false,
-    "origem": "Light Reading (direto)",
-    "data": "2026-10-16T10:00:00-03:00",
-    "tem_hora": true
-   },
-   {
-    "titulo": "'Just another scare': Wall Street sees the AI trade strong despite tech's latest rout",
-    "url": "https://finance.yahoo.com/markets/article/just-another-scare-wall-street-sees-the-ai-trade-strong-despite-techs-latest-rout-155930040.html",
-    "dominio": "finance.yahoo.com",
-    "fonte": "finance.yahoo.com",
-    "tag": "broad-tech",
-    "bucket": "GL Oth",
-    "score": 8,
-    "repetido": false,
-    "origem": "TMT-Global",
-    "data": "2026-10-18T12:59:30-03:00",
-    "tem_hora": true
-   },
-   {
-    "titulo": "Anthropic pitches AI safety bill to lawmakers",
-    "url": "https://www.businesstimes.com.sg/companies-markets/anthropic-pitches-ai-safety-bill-lawmakers",
-    "dominio": "businesstimes.com.sg",
-    "fonte": "businesstimes.com.sg",
-    "tag": "broad-tech",
-    "bucket": "GL Oth",
-    "score": 10,
-    "repetido": false,
-    "origem": "Business Times SG (direto)",
-    "data": "2026-10-17T04:50:05-03:00",
-    "tem_hora": true
-   },
-   {
-    "titulo": "Anthropic planeja transferir parte de suas ações para um novo fundo voltado ao 'bem público'",
-    "url": "https://valor.globo.com/empresas/noticia/2026/10/18/anthropic-planeja-transferir-parte-de-suas-acoes-para-um-novo-fundo-voltado-ao-bem-publico.ghtml",
-    "dominio": "valor.globo.com",
-    "fonte": "valor.globo.com",
-    "tag": "broad-tech",
-    "bucket": "GL Oth",
-    "score": 10,
-    "repetido": false,
-    "origem": "Valor Tecnologia (Chrome)",
-    "data": "2026-10-18",
-    "tem_hora": false
    }
   ]
  },
  "last_news": {
   "brazil": [
    {
-    "titulo": "Sem regulação formal para IA e gasto crescente, ‘big techs’ caem na bolsa",
-    "url": "https://valor.globo.com/empresas/noticia/2026/10/19/sem-regulacao-formal-para-ia-e-gasto-crescente-big-techs-caem-na-bolsa.ghtml",
+    "titulo": "Vivo Ventures investe na Inner AI para ampliar acesso de PMEs à IA",
+    "url": "https://telesintese.com.br/vivo-ventures-investe-na-inner-ai-para-ampliar-acesso-de-pmes-a-ia/",
+    "dominio": "telesintese.com.br",
+    "fonte": "Tele.Sintese",
+    "tag": "must-read",
+    "bucket": "BR Off",
+    "score": 23,
+    "repetido": false,
+    "origem": "TMT-Cobertura",
+    "data": "2026-10-19T13:32:47-03:00",
+    "tem_hora": true,
+    "quando": "13:32"
+   },
+   {
+    "titulo": "38% das PMEs não adotam novos meios de pagamento por temer fraudes, mostra estudo",
+    "url": "https://www.ecommercebrasil.com.br/noticias/38-das-pmes-nao-adotam-novos-meios-de-pagamento-por-temer-fraudes-mostra-estudo",
+    "dominio": "ecommercebrasil.com.br",
+    "fonte": "ecommercebrasil.com.br",
+    "tag": "broad-tech",
+    "bucket": "BR Oth",
+    "score": 20,
+    "repetido": false,
+    "origem": "TMT-Cobertura",
+    "data": "2026-10-19T12:37:58-03:00",
+    "tem_hora": true,
+    "quando": "12:37"
+   },
+   {
+    "titulo": "Integração com marketplaces: quanto custa manter o varejo conectado a vários canais?",
+    "url": "https://www.ecommercebrasil.com.br/artigos/integracao-com-marketplaces-quanto-custa-manter-o-varejo-conectado-a-varios-canais",
+    "dominio": "ecommercebrasil.com.br",
+    "fonte": "ecommercebrasil.com.br",
+    "tag": "broad-tech",
+    "bucket": "BR Oth",
+    "score": 17,
+    "repetido": false,
+    "origem": "TMT-Cobertura",
+    "data": "2026-10-19T09:00:00-03:00",
+    "tem_hora": true,
+    "quando": "09:00"
+   },
+   {
+    "titulo": "Agenda de empresas: M. Dias Branco compra Grespan; questões na OPA da Unifique",
+    "url": "https://valor.globo.com/empresas/noticia/2026/10/19/agenda-de-empresas-m-dias-branco-compra-grespan-questoes-na-opa-da-unifique.ghtml",
     "dominio": "valor.globo.com",
     "fonte": "valor.globo.com",
-    "tag": "broad-tech",
+    "tag": "must-read",
+    "bucket": "BR Off",
+    "score": 17,
+    "repetido": false,
+    "origem": "TMT-Cobertura",
+    "data": "2026-10-19T08:11:13-03:00",
+    "tem_hora": true,
+    "quando": "08:11"
+   },
+   {
+    "titulo": "European telecoms groups join forces to challenge Musk’s Starlink",
+    "url": "https://www.ft.com/content/555bbf91-4c38-43ce-94b6-90f7fc04e82c?syn-25a6b1a6=1",
+    "dominio": "ft.com",
+    "fonte": "FT Technology",
+    "tag": "must-read",
     "bucket": "BR Oth",
     "score": 13,
     "repetido": false,
-    "origem": "Valor Tecnologia (Chrome)",
-    "data": "2026-10-19",
-    "tem_hora": false,
-    "quando": ""
+    "origem": "TMT-Global",
+    "data": "2026-10-19T08:22:25-03:00",
+    "tem_hora": true,
+    "variantes": [
+     {
+      "url": "https://www.lightreading.com/satellite/europe-s-big-telcos-explore-joint-satellite-spectrum-bid-to-rival-starlink",
+      "fonte": "lightreading.com"
+     },
+     {
+      "url": "https://www.lightreading.com/satellite/virgin-media-o2-feels-highs-and-lows-of-starlink-in-wales",
+      "fonte": "lightreading.com"
+     }
+    ],
+    "quando": "08:22"
    },
    {
-    "titulo": "O jovem que pôs a Meta de volta à corrida da IA",
-    "url": "https://valor.globo.com/empresas/noticia/2026/10/19/o-jovem-que-pos-a-meta-de-volta-a-corrida-da-ia.ghtml",
-    "dominio": "valor.globo.com",
-    "fonte": "valor.globo.com",
+    "titulo": "Unifique (FIQE3) suspende OPA após pedido de nova avaliação das ações",
+    "url": "https://www.infomoney.com.br/mercados/unifique-fiqe3-suspende-opa-apos-pedido-de-nova-avaliacao-das-acoes/",
+    "dominio": "infomoney.com.br",
+    "fonte": "infomoney.com.br",
+    "tag": "must-read",
+    "bucket": "BR Oth",
+    "score": 13,
+    "repetido": false,
+    "origem": "TMT-Cobertura",
+    "data": "2026-10-19T07:29:58-03:00",
+    "tem_hora": true,
+    "variantes": [
+     {
+      "url": "https://www.infomoney.com.br/mercados/braskem-m-dias-caixa-seguridade-unifique-e-mais-acoes-para-acompanhar-hoje/",
+      "fonte": "infomoney.com.br"
+     }
+    ],
+    "quando": "07:29"
+   },
+   {
+    "titulo": "Reatores nucleares para data centers devem ser realidade no Brasil em 2040, estima ABDC",
+    "url": "https://telesintese.com.br/reatores-nucleares-para-data-centers-devem-ser-realidade-no-brasil-em-2040-estima-abdc/",
+    "dominio": "telesintese.com.br",
+    "fonte": "Tele.Sintese",
     "tag": "broad-tech",
     "bucket": "BR Oth",
-    "score": 10,
+    "score": 11,
     "repetido": false,
-    "origem": "Valor Tecnologia (Chrome)",
-    "data": "2026-10-19",
-    "tem_hora": false,
-    "quando": ""
+    "origem": "TMT-Cobertura",
+    "data": "2026-10-19T12:22:55-03:00",
+    "tem_hora": true,
+    "quando": "12:22"
    },
    {
-    "titulo": "Virgin Media O2 feels highs and lows of Starlink in Wales",
-    "url": "https://www.lightreading.com/satellite/virgin-media-o2-feels-highs-and-lows-of-starlink-in-wales",
-    "dominio": "lightreading.com",
-    "fonte": "lightreading.com",
-    "tag": "company-specific",
+    "titulo": "Telesat aposta em satélites de baixa órbita para backhaul celular",
+    "url": "https://www.mobiletime.com.br/noticias/19/10/2026/telesat-backhaul-leo/",
+    "dominio": "mobiletime.com.br",
+    "fonte": "Mobile Time",
+    "tag": "broad-tech",
     "bucket": "BR Oth",
-    "score": 10,
+    "score": 11,
     "repetido": false,
-    "origem": "Light Reading (direto)",
+    "origem": "TMT-Cobertura",
+    "data": "2026-10-19T09:14:51-03:00",
+    "tem_hora": true,
+    "quando": "09:14"
+   },
+   {
+    "titulo": "Zero rating das eleições teve falhas no primeiro turno, diz Anatel ao STF",
+    "url": "https://telesintese.com.br/zero-rating-das-eleicoes-teve-falhas-no-primeiro-turno-diz-anatel-ao-stf/",
+    "dominio": "telesintese.com.br",
+    "fonte": "Tele.Sintese",
+    "tag": "sector-regulatory",
+    "bucket": "BR Oth",
+    "score": 9,
+    "repetido": false,
+    "origem": "TMT-Cobertura",
+    "data": "2026-10-19T12:11:35-03:00",
+    "tem_hora": true,
+    "quando": "12:11"
+   },
+   {
+    "titulo": "O que a nova IA da Amazon faz com as conversas que escuta?",
+    "url": "https://timesbrasil.com.br/empresas-e-negocios/tecnologia-e-inovacao/o-que-a-nova-ia-da-amazon-faz-com-as-conversas-que-escuta/",
+    "dominio": "timesbrasil.com.br",
+    "fonte": "timesbrasil.com.br",
+    "tag": "competitor-read-through",
+    "bucket": "BR Oth",
+    "score": 9,
+    "repetido": false,
+    "origem": "TMT-Cobertura",
     "data": "2026-10-19T06:00:00-03:00",
     "tem_hora": true,
     "quando": "06:00"
    },
    {
-    "titulo": "Globant (GLOB) Stock Could Be 36% Below Fair Value",
-    "url": "https://finance.yahoo.com/markets/stocks/articles/globant-glob-stock-could-36-101057876.html",
-    "dominio": "finance.yahoo.com",
-    "fonte": "finance.yahoo.com",
-    "tag": "company-specific",
+    "titulo": "ABDC pede corte de 90% no ICMS e cobra regulamentação do Redata",
+    "url": "https://telesintese.com.br/abdc-pede-corte-de-90-no-icms-e-cobra-regulamentacao-do-redata/",
+    "dominio": "telesintese.com.br",
+    "fonte": "Tele.Sintese",
+    "tag": "sector-regulatory",
     "bucket": "BR Oth",
-    "score": 10,
+    "score": 8,
     "repetido": false,
     "origem": "TMT-Cobertura",
-    "data": "2026-10-18T07:10:57-03:00",
+    "data": "2026-10-19T11:57:58-03:00",
     "tem_hora": true,
-    "quando": "ontem 07:10"
+    "quando": "11:57"
+   },
+   {
+    "titulo": "Netflix e Globo fecham acordo de licenciamento de conteúdo no Brasil",
+    "url": "https://convergenciadigital.com.br/mercado/netflix-e-globo-fecham-acordo-de-licenciamento-de-conteudo-no-brasil/",
+    "dominio": "convergenciadigital.com.br",
+    "fonte": "convergenciadigital.com.br",
+    "tag": "broad-tech",
+    "bucket": "BR Oth",
+    "score": 7,
+    "repetido": false,
+    "origem": "Convergencia Digital (direto)",
+    "data": "2026-10-19T12:42:06-03:00",
+    "tem_hora": true,
+    "quando": "12:42"
+   },
+   {
+    "titulo": "Uber escapa de indenização de R$ 2,3 bilhões pedida por taxistas de Londres",
+    "url": "https://g1.globo.com/economia/noticia/2026/10/19/uber-escapa-de-indenizacao-de-r-23-bilhoes-pedida-por-taxistas-de-londres.ghtml",
+    "dominio": "g1.globo.com",
+    "fonte": "G1 Tecnologia",
+    "tag": "broad-tech",
+    "bucket": "BR Oth",
+    "score": 5,
+    "repetido": false,
+    "origem": "TMT-Cobertura",
+    "data": "2026-10-19T08:04:06-03:00",
+    "tem_hora": true,
+    "quando": "08:04"
    }
   ],
   "global": [
    {
-    "titulo": "Microsoft desiste de acordo para data center no Reino Unido em momento crucial para planos de IPO da Nscale",
-    "url": "https://oglobo.globo.com/economia/tecnologia/noticia/2026/10/18/microsoft-desiste-de-acordo-para-data-center-no-reino-unido-em-momento-crucial-para-planos-de-ipo-da-nscale.ghtml",
-    "dominio": "oglobo.globo.com",
-    "fonte": "O Globo - Tecnologia",
-    "tag": "broad-tech",
+    "titulo": "Why ‘eating your own dog food’ is the best way to tame stem buyer remorse about AI. Salesforce, SAP, and ServiceNow are wolfing down the chow",
+    "url": "https://diginomica.com/why-eating-your-own-dog-food-best-way-tame-stem-buyer-remorse-about-ai-salesforce-sap-and",
+    "dominio": "diginomica.com",
+    "fonte": "diginomica.com",
+    "tag": "competitor-read-through",
     "bucket": "GL Oth",
-    "score": 25,
+    "score": 30,
     "repetido": false,
-    "origem": "TMT-Cobertura",
-    "data": "2026-10-18T09:38:27-03:00",
+    "origem": "TMT-Global",
+    "data": "2026-10-19T08:05:02-03:00",
     "tem_hora": true,
-    "quando": "ontem 09:38"
+    "quando": "08:05"
+   },
+   {
+    "titulo": "Accenture e Google fazem parceria para implementar IA em agências federais dos EUA",
+    "url": "https://valor.globo.com/empresas/noticia/2026/10/19/accenture-e-google-fazem-parceria-para-implementar-ia-em-agncias-federais-dos-eua.ghtml",
+    "dominio": "valor.globo.com",
+    "fonte": "valor.globo.com",
+    "tag": "competitor-read-through",
+    "bucket": "GL Oth",
+    "score": 24,
+    "repetido": false,
+    "origem": "Valor Tecnologia (Chrome)",
+    "data": "2026-10-19",
+    "tem_hora": false,
+    "quando": ""
    },
    {
     "titulo": "Hikvision Logs Higher Q3 Profit; Revenue Up; Shares Down 3%",
@@ -952,12 +1275,26 @@
     "quando": "00:48"
    },
    {
+    "titulo": "Submit a question: Could Anthropic’s IPO be a turning point for AI?",
+    "url": "https://www.ft.com/content/8cdf338e-d472-460c-8642-a8f033b99462?syn-25a6b1a6=1",
+    "dominio": "ft.com",
+    "fonte": "FT Technology",
+    "tag": "broad-tech",
+    "bucket": "GL Off",
+    "score": 20,
+    "repetido": false,
+    "origem": "TMT-Global",
+    "data": "2026-10-19T11:10:33-03:00",
+    "tem_hora": true,
+    "quando": "11:10"
+   },
+   {
     "titulo": "Microsoft pulls out of UK data center deal with Nscale, Telegraph reports",
     "url": "https://www.reuters.com/business/media-telecom/microsoft-pulls-out-uk-data-center-deal-with-nscale-telegraph-reports-2026-10-18/",
     "dominio": "reuters.com",
     "fonte": "reuters.com",
     "tag": "broad-tech",
-    "bucket": "GL Off",
+    "bucket": "GL Oth",
     "score": 19,
     "repetido": false,
     "origem": "TMT-Global",
@@ -966,10 +1303,34 @@
     "variantes": [
      {
       "url": "https://www.ft.com/content/35cc5cc6-f9b6-49cc-8fc2-bd61e09c8c40?syn-25a6b1a6=1",
-      "fonte": "FT Technology"
+      "fonte": "ft.com"
      }
     ],
     "quando": "ontem 14:19"
+   },
+   {
+    "titulo": "Accenture and Google Launch Gemini AI Agent Programme for US Federal Agencies",
+    "url": "https://finance.yahoo.com/technology/ai/articles/accenture-google-launch-gemini-ai-134936837.html",
+    "dominio": "finance.yahoo.com",
+    "fonte": "finance.yahoo.com",
+    "tag": "competitor-read-through",
+    "bucket": "GL Oth",
+    "score": 19,
+    "repetido": false,
+    "origem": "TMT-Global",
+    "data": "2026-10-19T10:49:36-03:00",
+    "tem_hora": true,
+    "variantes": [
+     {
+      "url": "https://www.marketscreener.com/news/accenture-google-team-up-on-agentic-ai-capabilities-for-federal-agencies-ce785cdbda8af72c",
+      "fonte": "marketscreener.com"
+     },
+     {
+      "url": "https://www.marketscreener.com/news/alphabet-s-google-accenture-unveil-gemini-launchpads-to-help-agencies-build-scale-ai-agents-ce785cdbda88f624",
+      "fonte": "marketscreener.com"
+     }
+    ],
+    "quando": "10:49"
    },
    {
     "titulo": "This week's earnings calendar: CAC stocks, Meta, Tesla, SAP and Nestlé in the spotlight",
@@ -986,18 +1347,46 @@
     "quando": "04:26"
    },
    {
-    "titulo": "Will Meta’s earnings restore confidence in the AI boom?",
-    "url": "https://www.ft.com/content/7c2e889e-2eb5-4c62-821b-1a7f88c13d05?syn-25a6b1a6=1",
-    "dominio": "ft.com",
-    "fonte": "FT Technology",
-    "tag": "sector-regulatory",
-    "bucket": "GL Off",
+    "titulo": "Microsoft signs 20-year power deal with Indiana utility NiSource for planned data center in the state",
+    "url": "https://www.datacenterdynamics.com/en/news/microsoft-signs-20-year-power-deal-with-indiana-utility-nisource-for-planned-data-center-in-the-state/",
+    "dominio": "datacenterdynamics.com",
+    "fonte": "datacenterdynamics.com",
+    "tag": "broad-tech",
+    "bucket": "GL Oth",
+    "score": 17,
+    "repetido": false,
+    "origem": "TMT-Global",
+    "data": "2026-10-19T06:51:42-03:00",
+    "tem_hora": true,
+    "quando": "06:51"
+   },
+   {
+    "titulo": "Infosys, Truist Expand Partnership for AI Center in India",
+    "url": "https://www.marketscreener.com/news/infosys-truist-expand-partnership-for-ai-center-in-india-ce785cdbd881f225",
+    "dominio": "marketscreener.com",
+    "fonte": "marketscreener.com",
+    "tag": "competitor-read-through",
+    "bucket": "GL Oth",
+    "score": 17,
+    "repetido": false,
+    "origem": "TMT-Global",
+    "data": "2026-10-19T08:11:00-03:00",
+    "tem_hora": true,
+    "quando": "08:11"
+   },
+   {
+    "titulo": "Microsoft Pulls out of Nscale U.K. Data-Center Deal Over Power-Supply Issues",
+    "url": "https://www.wsj.com/tech/microsoft-pulls-out-of-nscale-u-k-data-center-deal-over-power-supply-issues-f804c434",
+    "dominio": "wsj.com",
+    "fonte": "wsj.com",
+    "tag": "broad-tech",
+    "bucket": "GL Oth",
     "score": 16,
     "repetido": false,
     "origem": "TMT-Global",
-    "data": "2026-10-18T08:00:09-03:00",
+    "data": "2026-10-19T08:29:00-03:00",
     "tem_hora": true,
-    "quando": "ontem 08:00"
+    "quando": "08:29"
    },
    {
     "titulo": "Why Is Workday (WDAY) Becoming A Key Trust Layer For Enterprise AI?",
@@ -1019,7 +1408,7 @@
     "dominio": "wsj.com",
     "fonte": "wsj.com",
     "tag": "broad-tech",
-    "bucket": "GL Oth",
+    "bucket": "GL Off",
     "score": 16,
     "repetido": false,
     "origem": "TMT-Global",
@@ -1028,18 +1417,46 @@
     "quando": "ontem 22:00"
    },
    {
-    "titulo": "Accenture looks to sell Chinese operations for up to $1.5bn",
-    "url": "https://www.ft.com/content/2dfdd513-26a6-4a10-9cae-5242eb4ee3ed?syn-25a6b1a6=1",
-    "dominio": "ft.com",
-    "fonte": "ft.com",
-    "tag": "competitor-read-through",
-    "bucket": "GL Off",
+    "titulo": "Korea Data Center IPO to Test AI Investor Resolve After Tumult",
+    "url": "https://www.bloomberg.com/news/articles/2026-10-19/korea-data-center-ipo-to-test-ai-investor-resolve-after-tumult",
+    "dominio": "bloomberg.com",
+    "fonte": "bloomberg.com",
+    "tag": "broad-tech",
+    "bucket": "GL Oth",
     "score": 14,
     "repetido": false,
-    "origem": "FT Technology (direto)",
-    "data": "2026-10-18T07:00:09-03:00",
+    "origem": "TMT-Global",
+    "data": "2026-10-19T04:11:43-03:00",
     "tem_hora": true,
-    "quando": "ontem 07:00"
+    "quando": "04:11"
+   },
+   {
+    "titulo": "Why Accenture argues that although the enterprise AI cake is rising, it's going to take time to bake through",
+    "url": "https://diginomica.com/why-accenture-argues-although-enterprise-ai-cake-rising-its-going-take-time-bake-through",
+    "dominio": "diginomica.com",
+    "fonte": "diginomica.com",
+    "tag": "competitor-read-through",
+    "bucket": "GL Oth",
+    "score": 14,
+    "repetido": false,
+    "origem": "TMT-Global",
+    "data": "2026-10-19T06:05:01-03:00",
+    "tem_hora": true,
+    "quando": "06:05"
+   },
+   {
+    "titulo": "Google says it can build data centers the right way. Some experts and residents are skeptical",
+    "url": "https://www.cnbc.com/2026/10/19/how-data-centers-are-reshaping-americas-aging-grid-pine-island-minnesota-google.html",
+    "dominio": "cnbc.com",
+    "fonte": "CNBC Tech",
+    "tag": "broad-tech",
+    "bucket": "GL Oth",
+    "score": 13,
+    "repetido": false,
+    "origem": "TMT-Global",
+    "data": "2026-10-19T09:00:01-03:00",
+    "tem_hora": true,
+    "quando": "09:00"
    },
    {
     "titulo": "Anthropic to commit 5% stake to new 'public benefit fund'",
@@ -1066,36 +1483,78 @@
     "quando": "ontem 20:06"
    },
    {
-    "titulo": "Always on, always listening: New AI devices are pushing legal limits and could put users in jeopardy",
-    "url": "https://www.cnbc.com/2026/10/18/ai-wearables-privacy-wiretap-laws.html",
-    "dominio": "cnbc.com",
-    "fonte": "CNBC Tech",
+    "titulo": "Microsoft desiste de alugar data center da Nscale no Reino Unido por gargalos de energia",
+    "url": "https://valor.globo.com/empresas/noticia/2026/10/19/microsoft-desiste-de-alugar-data-center-da-nscale-no-reino-unido-por-gargalos-de-energia.ghtml",
+    "dominio": "valor.globo.com",
+    "fonte": "valor.globo.com",
+    "tag": "broad-tech",
+    "bucket": "GL Oth",
+    "score": 13,
+    "repetido": false,
+    "origem": "Valor Tecnologia (Chrome)",
+    "data": "2026-10-19",
+    "tem_hora": false,
+    "quando": ""
+   },
+   {
+    "titulo": "Gigantes móveis se unem na Europa pelo mercado D2D, de comunicação satélite e celular",
+    "url": "https://convergenciadigital.com.br/telecom/gigantes-moveis-se-unem-na-europa-pelo-mercado-d2d-de-comunicacao-satelite-e-celular/",
+    "dominio": "convergenciadigital.com.br",
+    "fonte": "convergenciadigital.com.br",
+    "tag": "broad-tech",
+    "bucket": "GL Oth",
+    "score": 12,
+    "repetido": false,
+    "origem": "Convergencia Digital (direto)",
+    "data": "2026-10-19T10:25:47-03:00",
+    "tem_hora": true,
+    "quando": "10:25"
+   },
+   {
+    "titulo": "Amazon to fund 12 small nuclear reactors at former Indiana coal plant",
+    "url": "https://techcrunch.com/2026/10/19/amazon-to-fund-12-small-nuclear-reactors-at-former-indiana-coal-plant/",
+    "dominio": "techcrunch.com",
+    "fonte": "techcrunch.com",
+    "tag": "competitor-read-through",
+    "bucket": "GL Off",
+    "score": 12,
+    "repetido": false,
+    "origem": "TechCrunch (direto)",
+    "data": "2026-10-19T13:55:56-03:00",
+    "tem_hora": true,
+    "quando": "13:55"
+   },
+   {
+    "titulo": "AI Chip Startup Tenstorrent Raises Funds at $6.2 Billion Value",
+    "url": "https://www.bloomberg.com/news/articles/2026-10-19/ai-chip-startup-tenstorrent-raises-funds-at-6-2-billion-value",
+    "dominio": "bloomberg.com",
+    "fonte": "bloomberg.com",
     "tag": "broad-tech",
     "bucket": "GL Oth",
     "score": 12,
     "repetido": false,
     "origem": "TMT-Global",
-    "data": "2026-10-18T09:00:01-03:00",
+    "data": "2026-10-19T08:00:39-03:00",
     "tem_hora": true,
-    "quando": "ontem 09:00"
+    "quando": "08:00"
    },
    {
-    "titulo": "Samsung to use TSMC technology for Nvidia's next-generation memory chips, Seoul newspaper reports",
-    "url": "https://www.reuters.com/world/asia-pacific/samsung-use-tsmc-technology-nvidias-next-generation-memory-chips-seoul-newspaper-2026-10-18/",
-    "dominio": "reuters.com",
-    "fonte": "reuters.com",
+    "titulo": "Governo dos EUA proíbe agências federais de usarem tecnologia de IA da chinesa DeepSeek",
+    "url": "https://valor.globo.com/empresas/noticia/2026/10/19/governo-dos-eua-probe-agncias-federais-de-usarem-tecnologia-de-ia-da-chinesa-deepseek.ghtml",
+    "dominio": "valor.globo.com",
+    "fonte": "valor.globo.com",
     "tag": "broad-tech",
     "bucket": "GL Oth",
     "score": 11,
     "repetido": false,
-    "origem": "TMT-Global",
-    "data": "2026-10-18T09:09:43-03:00",
-    "tem_hora": true,
-    "quando": "ontem 09:09"
+    "origem": "Valor Tecnologia (Chrome)",
+    "data": "2026-10-19",
+    "tem_hora": false,
+    "quando": ""
    },
    {
-    "titulo": "Anthropic planeja transferir parte de suas ações para um novo fundo voltado ao 'bem público'",
-    "url": "https://valor.globo.com/empresas/noticia/2026/10/18/anthropic-planeja-transferir-parte-de-suas-acoes-para-um-novo-fundo-voltado-ao-bem-publico.ghtml",
+    "titulo": "Ex-funcionário da OpenAI acusado de instalar dispositivo de gravação parece ter apoio saudita, dizem promotores dos EUA",
+    "url": "https://valor.globo.com/empresas/noticia/2026/10/19/ex-funcionrio-da-openai-acusado-de-instalar-dispositivo-de-gravao-parece-ter-apoio-saudita-dizem-promotores-dos-eua.ghtml",
     "dominio": "valor.globo.com",
     "fonte": "valor.globo.com",
     "tag": "broad-tech",
@@ -1103,9 +1562,65 @@
     "score": 10,
     "repetido": false,
     "origem": "Valor Tecnologia (Chrome)",
-    "data": "2026-10-18",
+    "data": "2026-10-19",
     "tem_hora": false,
     "quando": ""
+   },
+   {
+    "titulo": "Richardson Electronics, Ltd. Expands Global Reach of LaserSlat SAVER® with New E-Commerce Capabilities and European Availability",
+    "url": "https://finance.yahoo.com/technology/articles/richardson-electronics-ltd-expands-global-150000691.html",
+    "dominio": "finance.yahoo.com",
+    "fonte": "finance.yahoo.com",
+    "tag": "broad-tech",
+    "bucket": "GL Oth",
+    "score": 10,
+    "repetido": false,
+    "origem": "TMT-Global",
+    "data": "2026-10-19T12:00:00-03:00",
+    "tem_hora": true,
+    "quando": "12:00"
+   },
+   {
+    "titulo": "Data centres need protection from drone warfare",
+    "url": "https://www.ft.com/content/15a049f3-b62e-40ed-b304-8a2452713338",
+    "dominio": "ft.com",
+    "fonte": "FT Technology",
+    "tag": "broad-tech",
+    "bucket": "GL Oth",
+    "score": 9,
+    "repetido": false,
+    "origem": "TMT-Global",
+    "data": "2026-10-19T11:31:32-03:00",
+    "tem_hora": true,
+    "quando": "11:31"
+   },
+   {
+    "titulo": "Exclusive | U.A.E.-Based AI and Data Startup Expands Into Silicon Valley",
+    "url": "https://www.wsj.com/cio-journal/u-a-e-based-ai-and-data-startup-expands-into-silicon-valley-f6e54c1e",
+    "dominio": "wsj.com",
+    "fonte": "wsj.com",
+    "tag": "broad-tech",
+    "bucket": "GL Oth",
+    "score": 9,
+    "repetido": false,
+    "origem": "TMT-Global",
+    "data": "2026-10-19T11:00:00-03:00",
+    "tem_hora": true,
+    "quando": "11:00"
+   },
+   {
+    "titulo": "Exclusive | Nvidia-Backed Startup doubleAI Launches Model to Pare Cost of Compute",
+    "url": "https://www.wsj.com/cio-journal/nvidia-backed-startup-doubleai-launches-model-to-pare-cost-of-compute-b780f215",
+    "dominio": "wsj.com",
+    "fonte": "wsj.com",
+    "tag": "broad-tech",
+    "bucket": "GL Oth",
+    "score": 9,
+    "repetido": false,
+    "origem": "TMT-Global",
+    "data": "2026-10-19T09:00:00-03:00",
+    "tem_hora": true,
+    "quando": "09:00"
    },
    {
     "titulo": "AI Agents Trading Stocks While You Sleep? Charles Schwab’s CEO Is Skeptical",
@@ -1120,6 +1635,62 @@
     "data": "2026-10-18T17:23:00-03:00",
     "tem_hora": true,
     "quando": "ontem 17:23"
+   },
+   {
+    "titulo": "Investors are buying on Monday despite fear the AI trade nightmare scenario is far from over",
+    "url": "https://www.cnbc.com/2026/10/19/stocks-buying-opportunity-ai-selloff.html",
+    "dominio": "cnbc.com",
+    "fonte": "CNBC Tech",
+    "tag": "broad-tech",
+    "bucket": "GL Oth",
+    "score": 8,
+    "repetido": false,
+    "origem": "TMT-Global",
+    "data": "2026-10-19T09:00:15-03:00",
+    "tem_hora": true,
+    "quando": "09:00"
+   },
+   {
+    "titulo": "US prosecutors allege Saudi royal links in OpenAI bugging case",
+    "url": "https://www.ft.com/content/9e10eaa4-ed5e-417b-85c5-b5003b064017?syn-25a6b1a6=1",
+    "dominio": "ft.com",
+    "fonte": "ft.com",
+    "tag": "broad-tech",
+    "bucket": "GL Oth",
+    "score": 8,
+    "repetido": false,
+    "origem": "FT Technology (direto)",
+    "data": "2026-10-19T13:13:28-03:00",
+    "tem_hora": true,
+    "quando": "13:13"
+   },
+   {
+    "titulo": "US banning Chinese AI DeepSeek from government agency IT systems",
+    "url": "https://www.reuters.com/technology/us-banning-chinese-ai-deepseek-government-agency-it-systems-2026-10-19/",
+    "dominio": "reuters.com",
+    "fonte": "reuters.com",
+    "tag": "broad-tech",
+    "bucket": "GL Oth",
+    "score": 8,
+    "repetido": false,
+    "origem": "TMT-Global",
+    "data": "2026-10-19T10:29:48-03:00",
+    "tem_hora": true,
+    "quando": "10:29"
+   },
+   {
+    "titulo": "UK risks becoming 'AI customer' rather than creator, advisers warn",
+    "url": "https://www.reuters.com/legal/litigation/uk-risks-becoming-ai-customer-rather-than-creator-advisers-warn-2026-10-19/",
+    "dominio": "reuters.com",
+    "fonte": "reuters.com",
+    "tag": "broad-tech",
+    "bucket": "GL Oth",
+    "score": 8,
+    "repetido": false,
+    "origem": "TMT-Global",
+    "data": "2026-10-19T10:28:47-03:00",
+    "tem_hora": true,
+    "quando": "10:28"
    },
    {
     "titulo": "COMMENTARY: AI isn’t Asia’s only game in town",
@@ -1150,7 +1721,7 @@
     "quando": "ontem 20:59"
    },
    {
-    "titulo": "Taiwan Dollar Bulls Look Past AI-Led Selloff to Year-End Rally",
+    "titulo": "Taiwan Dollar Bulls Look Past AI-Led Drop to Year-End Rally",
     "url": "https://www.bloomberg.com/news/articles/2026-10-18/taiwan-dollar-bulls-look-past-ai-led-selloff-to-year-end-rally",
     "dominio": "bloomberg.com",
     "fonte": "bloomberg.com",
@@ -1159,30 +1730,150 @@
     "score": 8,
     "repetido": false,
     "origem": "TMT-Global",
-    "data": "2026-10-18T20:00:00-03:00",
+    "data": "2026-10-19T00:45:00-03:00",
     "tem_hora": true,
-    "quando": "ontem 20:00"
+    "quando": "00:45"
    },
    {
-    "titulo": "'Just another scare': Wall Street sees the AI trade strong despite tech's latest rout",
-    "url": "https://finance.yahoo.com/markets/article/just-another-scare-wall-street-sees-the-ai-trade-strong-despite-techs-latest-rout-155930040.html",
-    "dominio": "finance.yahoo.com",
-    "fonte": "finance.yahoo.com",
+    "titulo": "EUA mandam banir o uso da IA DeepSeek dos sistemas de TI governamentais",
+    "url": "https://convergenciadigital.com.br/governo/eua-mandam-banir-o-uso-da-ia-deepseek-dos-sistemas-de-ti-governamentais/",
+    "dominio": "convergenciadigital.com.br",
+    "fonte": "convergenciadigital.com.br",
     "tag": "broad-tech",
     "bucket": "GL Oth",
-    "score": 8,
+    "score": 7,
+    "repetido": false,
+    "origem": "Convergencia Digital (direto)",
+    "data": "2026-10-19T10:54:31-03:00",
+    "tem_hora": true,
+    "quando": "10:54"
+   },
+   {
+    "titulo": "AI agents targeted 1,200 websites and compromised more than 100: report",
+    "url": "https://www.businesstimes.com.sg/companies-markets/telcos-media-tech/ai-agents-targeted-1200-websites-and-compromised-more-100-report",
+    "dominio": "businesstimes.com.sg",
+    "fonte": "businesstimes.com.sg",
+    "tag": "broad-tech",
+    "bucket": "GL Oth",
+    "score": 7,
+    "repetido": false,
+    "origem": "Business Times SG (direto)",
+    "data": "2026-10-19T08:28:59-03:00",
+    "tem_hora": true,
+    "quando": "08:28"
+   },
+   {
+    "titulo": "Women may be at greater risk of AI job losses. Telephone switch operators and PCs show why.",
+    "url": "https://www.cnbc.com/2026/10/19/ai-job-losses-women-automation-risk.html",
+    "dominio": "cnbc.com",
+    "fonte": "CNBC Tech",
+    "tag": "broad-tech",
+    "bucket": "GL Oth",
+    "score": 3,
     "repetido": false,
     "origem": "TMT-Global",
-    "data": "2026-10-18T12:59:30-03:00",
+    "data": "2026-10-19T08:02:34-03:00",
     "tem_hora": true,
-    "quando": "ontem 12:59"
+    "quando": "08:02"
    }
   ]
  },
  "empresas": [
   {
+   "empresa": "Unifique",
+   "itens": [
+    {
+     "titulo": "Unifique suspende OPA após questionamento de minoritários",
+     "url": "https://teletime.com.br/16/10/2026/unifique-suspende-opa/",
+     "dominio": "teletime.com.br",
+     "fonte": "teletime.com.br",
+     "tag": "must-read",
+     "bucket": "BR Off",
+     "score": 19,
+     "repetido": false,
+     "origem": "TELETIME (direto)",
+     "data": "2026-10-16T21:44:32-03:00",
+     "tem_hora": true,
+     "variantes": [
+      {
+       "url": "https://telesintese.com.br/unifique-tem-registro-de-opa-suspenso-apos-acionistas-contestarem-avaliacao/",
+       "fonte": "telesintese.com.br"
+      }
+     ]
+    },
+    {
+     "titulo": "Agenda de empresas: M. Dias Branco compra Grespan; questões na OPA da Unifique",
+     "url": "https://valor.globo.com/empresas/noticia/2026/10/19/agenda-de-empresas-m-dias-branco-compra-grespan-questoes-na-opa-da-unifique.ghtml",
+     "dominio": "valor.globo.com",
+     "fonte": "valor.globo.com",
+     "tag": "must-read",
+     "bucket": "BR Off",
+     "score": 17,
+     "repetido": false,
+     "origem": "TMT-Cobertura",
+     "data": "2026-10-19T08:11:13-03:00",
+     "tem_hora": true
+    },
+    {
+     "titulo": "Unifique (FIQE3) suspende OPA após pedido de nova avaliação das ações",
+     "url": "https://www.infomoney.com.br/mercados/unifique-fiqe3-suspende-opa-apos-pedido-de-nova-avaliacao-das-acoes/",
+     "dominio": "infomoney.com.br",
+     "fonte": "infomoney.com.br",
+     "tag": "must-read",
+     "bucket": "BR Oth",
+     "score": 13,
+     "repetido": false,
+     "origem": "TMT-Cobertura",
+     "data": "2026-10-19T07:29:58-03:00",
+     "tem_hora": true,
+     "variantes": [
+      {
+       "url": "https://www.infomoney.com.br/mercados/braskem-m-dias-caixa-seguridade-unifique-e-mais-acoes-para-acompanhar-hoje/",
+       "fonte": "infomoney.com.br"
+      }
+     ]
+    },
+    {
+     "titulo": "Unifique Telecomunicações tem processo de OPA suspenso após pedido de acionistas por nova avaliação",
+     "url": "https://atlaspublico.com.br/cvm/noticias/unifique-telecomunicacoes-tem-processo-de-opa-suspenso-apos-92884",
+     "dominio": "atlaspublico.com.br",
+     "fonte": "atlaspublico.com.br",
+     "tag": "must-read",
+     "bucket": "BR Oth",
+     "score": 12,
+     "repetido": false,
+     "origem": "TMT-Cobertura",
+     "data": "2026-10-16T20:15:03-03:00",
+     "tem_hora": true
+    }
+   ]
+  },
+  {
    "empresa": "Starlink",
    "itens": [
+    {
+     "titulo": "European telecoms groups join forces to challenge Musk’s Starlink",
+     "url": "https://www.ft.com/content/555bbf91-4c38-43ce-94b6-90f7fc04e82c?syn-25a6b1a6=1",
+     "dominio": "ft.com",
+     "fonte": "FT Technology",
+     "tag": "must-read",
+     "bucket": "BR Oth",
+     "score": 13,
+     "repetido": false,
+     "origem": "TMT-Global",
+     "data": "2026-10-19T08:22:25-03:00",
+     "tem_hora": true,
+     "variantes": [
+      {
+       "url": "https://www.lightreading.com/satellite/europe-s-big-telcos-explore-joint-satellite-spectrum-bid-to-rival-starlink",
+       "fonte": "lightreading.com"
+      },
+      {
+       "url": "https://www.lightreading.com/satellite/virgin-media-o2-feels-highs-and-lows-of-starlink-in-wales",
+       "fonte": "lightreading.com"
+      }
+     ]
+    },
     {
      "titulo": "Elon Musk pode desligar a internet de uma guerra? Entenda o poder da Starlink",
      "url": "https://g1.globo.com/inovacao/noticia/2026/10/18/elon-musk-pode-desligar-a-internet-de-uma-guerra-entenda-o-poder-da-starlink.ghtml",
@@ -1198,7 +1889,7 @@
      "variantes": [
       {
        "url": "https://www.ft.com/content/d1e28d93-8574-4a46-946a-b261c401d6fa?syn-25a6b1a6=1",
-       "fonte": "FT Technology"
+       "fonte": "ft.com"
       },
       {
        "url": "https://www.cnnbrasil.com.br/internacional/analise-crise-eua-ucrania-se-aprofunda-em-disputa-sobre-starlink/",
@@ -1235,19 +1926,6 @@
      "origem": "FT Technology (direto)",
      "data": "2026-10-17T23:35:14-03:00",
      "tem_hora": true
-    },
-    {
-     "titulo": "Virgin Media O2 feels highs and lows of Starlink in Wales",
-     "url": "https://www.lightreading.com/satellite/virgin-media-o2-feels-highs-and-lows-of-starlink-in-wales",
-     "dominio": "lightreading.com",
-     "fonte": "lightreading.com",
-     "tag": "company-specific",
-     "bucket": "BR Oth",
-     "score": 10,
-     "repetido": false,
-     "origem": "Light Reading (direto)",
-     "data": "2026-10-19T06:00:00-03:00",
-     "tem_hora": true
     }
    ]
   },
@@ -1265,13 +1943,20 @@
      "repetido": false,
      "origem": "TeleSintese (direto)",
      "data": "2026-10-16T14:26:17-03:00",
-     "tem_hora": true,
-     "variantes": [
-      {
-       "url": "https://valor.globo.com/brasil/noticia/2026/10/16/teles-questionam-obrigacao-de-investir-em-data-centers-no-leilao-para-expansao-da-telefonia-movel.ghtml",
-       "fonte": "valor.globo.com"
-      }
-     ]
+     "tem_hora": true
+    },
+    {
+     "titulo": "Vivo Ventures investe na Inner AI para ampliar acesso de PMEs à IA",
+     "url": "https://telesintese.com.br/vivo-ventures-investe-na-inner-ai-para-ampliar-acesso-de-pmes-a-ia/",
+     "dominio": "telesintese.com.br",
+     "fonte": "Tele.Sintese",
+     "tag": "must-read",
+     "bucket": "BR Off",
+     "score": 23,
+     "repetido": false,
+     "origem": "TMT-Cobertura",
+     "data": "2026-10-19T13:32:47-03:00",
+     "tem_hora": true
     },
     {
      "titulo": "Vivo pede leilão de 6 GHz após 2030 e três blocos nacionais",
@@ -1284,19 +1969,6 @@
      "repetido": true,
      "origem": "TeleSintese (direto)",
      "data": "2026-10-16T14:38:40-03:00",
-     "tem_hora": true
-    },
-    {
-     "titulo": "6Ghz: Investimento obrigatório em data centers está fora da política pública de telecomunicações, dizem Vivo e Claro",
-     "url": "https://convergenciadigital.com.br/internet/6ghz-investimento-obrigatorio-em-data-centers-esta-fora-da-politica-publica-de-telecomunicacoes-dizem-vivo-e-claro/",
-     "dominio": "convergenciadigital.com.br",
-     "fonte": "convergenciadigital.com.br",
-     "tag": "company-specific",
-     "bucket": "BR Oth",
-     "score": 21,
-     "repetido": true,
-     "origem": "Convergencia Digital (direto)",
-     "data": "2026-10-16T15:17:53-03:00",
      "tem_hora": true
     }
    ]
@@ -1346,62 +2018,6 @@
      "repetido": false,
      "origem": "TeleSintese (direto)",
      "data": "2026-10-16T14:26:17-03:00",
-     "tem_hora": true,
-     "variantes": [
-      {
-       "url": "https://valor.globo.com/brasil/noticia/2026/10/16/teles-questionam-obrigacao-de-investir-em-data-centers-no-leilao-para-expansao-da-telefonia-movel.ghtml",
-       "fonte": "valor.globo.com"
-      }
-     ]
-    },
-    {
-     "titulo": "6Ghz: Investimento obrigatório em data centers está fora da política pública de telecomunicações, dizem Vivo e Claro",
-     "url": "https://convergenciadigital.com.br/internet/6ghz-investimento-obrigatorio-em-data-centers-esta-fora-da-politica-publica-de-telecomunicacoes-dizem-vivo-e-claro/",
-     "dominio": "convergenciadigital.com.br",
-     "fonte": "convergenciadigital.com.br",
-     "tag": "company-specific",
-     "bucket": "BR Oth",
-     "score": 21,
-     "repetido": true,
-     "origem": "Convergencia Digital (direto)",
-     "data": "2026-10-16T15:17:53-03:00",
-     "tem_hora": true
-    }
-   ]
-  },
-  {
-   "empresa": "Unifique",
-   "itens": [
-    {
-     "titulo": "Unifique suspende OPA após questionamento de minoritários",
-     "url": "https://teletime.com.br/16/10/2026/unifique-suspende-opa/",
-     "dominio": "teletime.com.br",
-     "fonte": "teletime.com.br",
-     "tag": "must-read",
-     "bucket": "BR Off",
-     "score": 19,
-     "repetido": false,
-     "origem": "TELETIME (direto)",
-     "data": "2026-10-16T21:44:32-03:00",
-     "tem_hora": true,
-     "variantes": [
-      {
-       "url": "https://telesintese.com.br/unifique-tem-registro-de-opa-suspenso-apos-acionistas-contestarem-avaliacao/",
-       "fonte": "telesintese.com.br"
-      }
-     ]
-    },
-    {
-     "titulo": "Unifique Telecomunicações tem processo de OPA suspenso após pedido de acionistas por nova avaliação",
-     "url": "https://atlaspublico.com.br/cvm/noticias/unifique-telecomunicacoes-tem-processo-de-opa-suspenso-apos-92884",
-     "dominio": "atlaspublico.com.br",
-     "fonte": "atlaspublico.com.br",
-     "tag": "must-read",
-     "bucket": "BR Oth",
-     "score": 12,
-     "repetido": false,
-     "origem": "TMT-Cobertura",
-     "data": "2026-10-16T20:15:03-03:00",
      "tem_hora": true
     }
    ]
