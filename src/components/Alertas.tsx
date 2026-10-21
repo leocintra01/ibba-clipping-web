@@ -9,7 +9,12 @@
  * defeito, e chamar isso de "pipeline com problema" seria mentir sobre o
  * estado do pipeline — o oposto do que esta faixa existe pra fazer.
  */
-const QUEBRA = ["FONTE MORTA", "DECODER", "GOOGLE NEWS:", "ZERADAS", "FONTES COM ERRO"];
+// "ZERADAS" ficou de fora: medido nos 19 health-*.json do pipeline, 19 de 19
+// edicoes tem ao menos uma fonte prioritaria zerada (Bloomberg Linea em 17).
+// Na faixa, isso acenderia "pipeline com problema" todo dia sem haver
+// problema — e alerta que acende sempre deixa de ser alerta. Ele continua
+// no rodape do HTML e no campo "alertas" do JSON.
+const QUEBRA = ["FONTE MORTA", "DECODER", "GOOGLE NEWS:", "FONTES COM ERRO"];
 const ENXUTA = "EDICAO ENXUTA";
 
 export function Alertas({ alertas }: { alertas: string[] }) {
