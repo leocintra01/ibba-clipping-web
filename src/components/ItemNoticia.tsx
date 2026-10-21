@@ -2,15 +2,15 @@
 
 import type { Item } from "@/lib/tipos";
 import { useSelecao } from "@/lib/selecao";
-import { Pilula } from "./Pilula";
 
 /**
  * Uma noticia na lista.
  *
  * O titulo e' o alvo de clique inteiro, com area de toque de 44px no celular.
  * Fonte e hora ficam abaixo, em cinza que passa 4.5:1 — sao contexto, nao
- * conteudo. Item repetido do dia anterior entra marcado e esmaecido: o analista
- * pediu pra ve-lo, mas pra poder pular.
+ * conteudo. Item repetido do dia anterior entra esmaecido: o analista pediu pra
+ * ve-lo, mas pra poder pular. O esmaecido e' a unica marca — etiqueta escrita
+ * em cada linha sujava a lista.
  *
  * A caixa de selecao alimenta o compositor de envio. Fica a esquerda, com alvo
  * grande, porque marcar dezenas de itens e' o que o analista mais faz aqui.
@@ -45,13 +45,10 @@ export function ItemNoticia({ item }: { item: Item }) {
         </a>
         <div className="mt-1 flex flex-wrap items-center gap-x-2 gap-y-1 font-mono text-[12px] text-tinta-3">
           <span>{item.fonte || item.dominio}</span>
-          {item.quando ? <span aria-hidden>·</span> : null}
-          {item.quando ? <span>{item.quando}</span> : null}
-          <Pilula tag={item.tag} />
-          {item.repetido ? (
-            <span className="rounded-sm border border-dashed border-borda px-1.5 py-px">
-              já publicado
-            </span>
+          {item.quando ? (
+            // Data e hora sao o detalhe menos decisivo da linha: ficam em corpo
+            // menor que a fonte, so' pra consultar quando interessa.
+            <span className="text-[10px] leading-none">{item.quando}</span>
           ) : null}
         </div>
       </div>
