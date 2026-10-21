@@ -17,7 +17,6 @@ import { Pilula } from "./Pilula";
  */
 export function ItemNoticia({ item }: { item: Item }) {
   const { marcado, alternar } = useSelecao();
-  const variantes = item.variantes?.length ?? 0;
   const escolhido = marcado(item.url);
 
   return (
@@ -52,11 +51,6 @@ export function ItemNoticia({ item }: { item: Item }) {
           {item.repetido ? (
             <span className="rounded-sm border border-dashed border-borda px-1.5 py-px">
               já publicado
-            </span>
-          ) : null}
-          {variantes > 0 ? (
-            <span title={item.variantes!.map((v) => v.fonte).join(", ")}>
-              + {variantes} {variantes === 1 ? "veículo" : "veículos"}
             </span>
           ) : null}
         </div>

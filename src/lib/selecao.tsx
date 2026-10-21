@@ -35,6 +35,8 @@ interface Ctx {
   alternar: (item: Item) => void;
   editarTitulo: (url: string, titulo: string) => void;
   definirPrioridade: (url: string, p: number | null) => void;
+  /** Grava a ordem manual do envio: a posicao na lista passa a ser a ordem. */
+  reordenar: (urlsEmOrdem: string[]) => void;
   limpar: () => void;
   total: number;
 }
@@ -50,7 +52,6 @@ export function ProvedorSelecao({
   children: React.ReactNode;
 }) {
   const [marcados, setMarcados] = useState<Record<string, Marcado>>({});
-  const [contador, setContador] = useState(0);
   const [carregou, setCarregou] = useState(false);
 
   // Restaura, mas so' da MESMA edicao: selecao de ontem em cima do clipping de
@@ -65,9 +66,6 @@ export function ProvedorSelecao({
         };
         if (salvo.edicaoId === edicaoId && salvo.marcados) {
           setMarcados(salvo.marcados);
-          setContador(
-            Math.max(0, ...Object.values(salvo.marcados).map((m) => m.ordem)) + 1,
-          );
         }
       }
     } catch {
@@ -85,26 +83,29 @@ export function ProvedorSelecao({
     }
   }, [marcados, edicaoId, carregou]);
 
-  const alternar = useCallback(
-    (item: Item) => {
-      setMarcados((atual) => {
+  // A ordem de quem entra sai do proprio mapa, e nao de um contador em paralelo:
+  // depois de um arrasto o contador ficaria atras das ordens ja' gravadas e a
+  // noticia nova cairia no meio da lista em vez de no fim.
+  const alternar = useCallback((item: Item) => {
+    setMarcados((atual) => {
+      if (atual[item.url]) {
         const copia = { ...atual };
-        if (copia[item.url]) {
-          delete copia[item.url];
-          return copia;
-        }
-        copia[item.url] = {
+        delete copia[item.url];
+        return copia;
+      }
+      const proxima =
+        Math.max(-1, ...Object.values(atual).map((m) => m.ordem)) + 1;
+      return {
+        ...atual,
+        [item.url]: {
           url: item.url,
           tituloEditado: item.titulo,
           prioridade: null,
-          ordem: contador,
-        };
-        return copia;
-      });
-      setContador((c) => c + 1);
-    },
-    [contador],
-  );
+          ordem: proxima,
+        },
+      };
+    });
+  }, []);
 
   const editarTitulo = useCallback((url: string, titulo: string) => {
     setMarcados((a) =>
@@ -116,6 +117,24 @@ export function ProvedorSelecao({
     setMarcados((a) => (a[url] ? { ...a, [url]: { ...a[url], prioridade: p } } : a));
   }, []);
 
+  // Arrastar e' a ordem definitiva: zera a prioridade de todo mundo pra que a
+  // posicao que o analista ve' na tela seja exatamente a que vai no envio.
+  const reordenar = useCallback((urlsEmOrdem: string[]) => {
+    setMarcados((atual) => {
+      const naLista = new Set(urlsEmOrdem);
+      const sequencia = [
+        ...urlsEmOrdem.filter((u) => atual[u]),
+        // quem nao veio na lista (desmarcado no meio do arrasto) vai pro fim
+        ...Object.keys(atual).filter((u) => !naLista.has(u)),
+      ];
+      const copia: Record<string, Marcado> = {};
+      sequencia.forEach((url, i) => {
+        copia[url] = { ...atual[url], ordem: i, prioridade: null };
+      });
+      return copia;
+    });
+  }, []);
+
   const limpar = useCallback(() => setMarcados({}), []);
 
   const valor = useMemo<Ctx>(
@@ -125,10 +144,11 @@ export function ProvedorSelecao({
       alternar,
       editarTitulo,
       definirPrioridade,
+      reordenar,
       limpar,
       total: Object.keys(marcados).length,
     }),
-    [marcados, alternar, editarTitulo, definirPrioridade, limpar],
+    [marcados, alternar, editarTitulo, definirPrioridade, reordenar, limpar],
   );
 
   return <SelecaoCtx.Provider value={valor}>{children}</SelecaoCtx.Provider>;
