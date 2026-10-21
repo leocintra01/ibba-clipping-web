@@ -22,7 +22,9 @@ const FORMATO = new Intl.DateTimeFormat("pt-BR", {
   hour12: false,
 });
 
-export function quandoDoItem(item: Pick<Item, "data" | "tem_hora">): string {
+type Campos = Pick<Item, "data" | "tem_hora" | "confidence">;
+
+export function quandoDoItem(item: Campos): string {
   const bruto = item.data?.trim();
   if (!bruto) return "";
 
@@ -39,4 +41,20 @@ export function quandoDoItem(item: Pick<Item, "data" | "tem_hora">): string {
   const p: Record<string, string> = {};
   for (const parte of FORMATO.formatToParts(d)) p[parte.type] = parte.value;
   return `${p.day}/${p.month} ${p.hour}:${p.minute}`;
+}
+
+/**
+ * A data foi confirmada na propria materia?
+ *
+ * Quando nao foi, o pipeline a deduziu do slug da URL ou de uma listagem, e o
+ * HTML antigo escreve "data nao confirmada" ao lado do item. O site mostrava a
+ * mesma data sem ressalva — e os itens de confianca media sao justamente os de
+ * resultado e M&A, onde a data decide se o numero e' novo.
+ *
+ * Edicao gravada antes de 21/10/2026 nao traz o campo: sem ele, nao afirmo
+ * duvida que nao posso provar.
+ */
+export function dataConfirmada(item: Campos): boolean {
+  if (item.confidence === undefined || item.confidence === "") return true;
+  return item.confidence === "alta";
 }

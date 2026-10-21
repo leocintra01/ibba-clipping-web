@@ -28,6 +28,10 @@ export interface Item {
   origem: string;
   data?: string;
   tem_hora?: boolean;
+  /** Confianca do pipeline na data: "alta" | "media" | "none". Fora de "alta",
+   *  o HTML antigo escreve "data nao confirmada" e o site precisa dizer o
+   *  mesmo — duas telas do mesmo produto nao podem discordar sobre o item. */
+  confidence?: string;
   variantes?: Variante[];
   /** So' no Last News: "HH:MM", "ontem HH:MM" ou "DD/MM HH:MM". */
   quando?: string;

@@ -2,7 +2,7 @@
 
 import type { Item } from "@/lib/tipos";
 import { useSelecao } from "@/lib/selecao";
-import { quandoDoItem } from "@/lib/quando";
+import { dataConfirmada, quandoDoItem } from "@/lib/quando";
 
 /**
  * Uma noticia na lista.
@@ -20,6 +20,7 @@ export function ItemNoticia({ item }: { item: Item }) {
   const { marcado, alternar } = useSelecao();
   const escolhido = marcado(item.url);
   const quando = quandoDoItem(item);
+  const firme = dataConfirmada(item);
 
   return (
     <li
@@ -50,7 +51,16 @@ export function ItemNoticia({ item }: { item: Item }) {
           {quando ? (
             // Data e hora sao o detalhe menos decisivo da linha: ficam em corpo
             // menor que a fonte, so' pra consultar quando interessa.
-            <span className="text-[10px] leading-none">{quando}</span>
+            // Sem confirmacao na materia, a data vem riscada de duvida: o HTML
+            // antigo diz "data nao confirmada" e as duas telas tem que
+            // concordar sobre o mesmo item.
+            <span
+              className={`text-[10px] leading-none ${firme ? "" : "border-b border-dotted border-tinta-3"}`}
+              title={firme ? undefined : "Data deduzida da URL ou de uma listagem, não confirmada na matéria"}
+            >
+              {quando}
+              {firme ? null : " ?"}
+            </span>
           ) : null}
         </div>
       </div>
