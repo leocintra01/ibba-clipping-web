@@ -1,15 +1,15 @@
 {
  "schema": 1,
  "data": "2026-10-21",
- "gerado_em": "2026-10-21T06:33:02.411467-03:00",
+ "gerado_em": "2026-10-21T14:03:57.275601-03:00",
  "arquivo_html": "clipping-2026-10-21.html",
  "janela": {
   "inicio": "2026-10-20T09:30:00-03:00",
-  "fim": "2026-10-21T06:31:35.984526-03:00"
+  "fim": "2026-10-21T14:02:24.124995-03:00"
  },
  "totais": {
-  "coletados": 1395,
-  "na_edicao": 66
+  "coletados": 1440,
+  "na_edicao": 70
  },
  "top3": [
   {
@@ -26,8 +26,31 @@
    "tem_hora": false,
    "variantes": [
     {
+     "url": "https://telesintese.com.br/america-movil-tem-alta-de-7-no-lucro-no-terceiro-trimestre/",
+     "fonte": "telesintese.com.br"
+    },
+    {
      "url": "https://timesbrasil.com.br/empresas-e-negocios/controladora-da-claro-america-movil-tem-lucro-de-us-132-bilhao-no-trimestre/",
      "fonte": "timesbrasil.com.br"
+    }
+   ]
+  },
+  {
+   "titulo": "TIM lança plataforma de nuvem e IA",
+   "url": "https://telesintese.com.br/tim-lanca-plataforma-de-nuvem-e-ia/",
+   "dominio": "telesintese.com.br",
+   "fonte": "telesintese.com.br",
+   "tag": "must-read",
+   "bucket": "BR Off",
+   "score": 19,
+   "repetido": false,
+   "origem": "TeleSintese (direto)",
+   "data": "2026-10-21T11:14:52-03:00",
+   "tem_hora": true,
+   "variantes": [
+    {
+     "url": "https://convergenciadigital.com.br/governo/tim-usa-oracle-para-entrar-na-briga-do-negocio-de-nuvem-e-ia-no-b2b/",
+     "fonte": "convergenciadigital.com.br"
     }
    ]
   },
@@ -40,44 +63,32 @@
    "bucket": "BR Oth",
    "score": 18,
    "repetido": false,
-   "origem": "Valor Tecnologia (Chrome)",
+   "origem": "Valor Telecom (Chrome)",
    "data": "2026-10-21",
    "tem_hora": false
-  },
-  {
-   "titulo": "Starlink avança 69% em receitas e alcança 13,6 milhões de assinantes",
-   "url": "https://teletime.com.br/20/10/2026/starlink-terceiro-trimestre-2926/",
-   "dominio": "teletime.com.br",
-   "fonte": "TELETIME",
-   "tag": "must-read",
-   "bucket": "BR Off",
-   "score": 17,
-   "repetido": false,
-   "origem": "TMT-Cobertura",
-   "data": "2026-10-20T21:56:46-03:00",
-   "tem_hora": true,
-   "variantes": [
-    {
-     "url": "https://www.bloomberg.com/news/articles/2026-10-20/musk-gave-the-order-to-slow-down-ukraine-s-starlink-wsj-reports",
-     "fonte": "bloomberg.com"
-    },
-    {
-     "url": "https://www.wsj.com/business/order-to-slow-down-starlink-for-ukraine-came-from-musk-af367811",
-     "fonte": "wsj.com"
-    },
-    {
-     "url": "https://timesbrasil.com.br/empresas-e-negocios/elon-musk-ordenou-reducao-da-velocidade-do-starlink-na-ucrania/",
-     "fonte": "timesbrasil.com.br"
-    },
-    {
-     "url": "https://convergenciadigital.com.br/telecom/amazon-ganha-musculatura-para-disputar-mercado-d2d-com-a-starlink/",
-     "fonte": "convergenciadigital.com.br"
-    }
-   ]
   }
  ],
  "clipping": {
   "br_off": [
+   {
+    "titulo": "TIM lança plataforma de nuvem e IA",
+    "url": "https://telesintese.com.br/tim-lanca-plataforma-de-nuvem-e-ia/",
+    "dominio": "telesintese.com.br",
+    "fonte": "telesintese.com.br",
+    "tag": "must-read",
+    "bucket": "BR Off",
+    "score": 19,
+    "repetido": false,
+    "origem": "TeleSintese (direto)",
+    "data": "2026-10-21T11:14:52-03:00",
+    "tem_hora": true,
+    "variantes": [
+     {
+      "url": "https://convergenciadigital.com.br/governo/tim-usa-oracle-para-entrar-na-briga-do-negocio-de-nuvem-e-ia-no-b2b/",
+      "fonte": "convergenciadigital.com.br"
+     }
+    ]
+   },
    {
     "titulo": "Starlink avança 69% em receitas e alcança 13,6 milhões de assinantes",
     "url": "https://teletime.com.br/20/10/2026/starlink-terceiro-trimestre-2926/",
@@ -102,10 +113,6 @@
      {
       "url": "https://timesbrasil.com.br/empresas-e-negocios/elon-musk-ordenou-reducao-da-velocidade-do-starlink-na-ucrania/",
       "fonte": "timesbrasil.com.br"
-     },
-     {
-      "url": "https://convergenciadigital.com.br/telecom/amazon-ganha-musculatura-para-disputar-mercado-d2d-com-a-starlink/",
-      "fonte": "convergenciadigital.com.br"
      }
     ]
    },
@@ -129,19 +136,6 @@
     ]
    },
    {
-    "titulo": "V.tal quer reorganizar holdings no exterior e fazer aportes em subsidiárias",
-    "url": "https://telesintese.com.br/v-tal-vai-reorganizar-holdings-no-exterior-e-fazer-aportes-em-subsidiarias/",
-    "dominio": "telesintese.com.br",
-    "fonte": "Tele.Sintese",
-    "tag": "must-read",
-    "bucket": "BR Off",
-    "score": 11,
-    "repetido": true,
-    "origem": "TMT-Cobertura",
-    "data": "2026-10-20T19:40:47-03:00",
-    "tem_hora": true
-   },
-   {
     "titulo": "Cofundador da TOTVS, Ernesto Haberkorn lança biografia sobre liderança, tecnologia e visão de negócios",
     "url": "https://tiinside.com.br/20/10/2026/cofundador-da-totvs-ernesto-haberkorn-lanca-biografia-sobre-lideranca-tecnologia-e-visao-de-negocios/",
     "dominio": "tiinside.com.br",
@@ -152,6 +146,19 @@
     "repetido": true,
     "origem": "TMT-Cobertura",
     "data": "2026-10-20T18:11:26-03:00",
+    "tem_hora": true
+   },
+   {
+    "titulo": "V.tal quer reorganizar holdings no exterior e fazer aportes em subsidiárias",
+    "url": "https://telesintese.com.br/v-tal-vai-reorganizar-holdings-no-exterior-e-fazer-aportes-em-subsidiarias/",
+    "dominio": "telesintese.com.br",
+    "fonte": "Tele.Sintese",
+    "tag": "must-read",
+    "bucket": "BR Off",
+    "score": 11,
+    "repetido": true,
+    "origem": "TMT-Cobertura",
+    "data": "2026-10-20T19:40:47-03:00",
     "tem_hora": true
    }
   ],
@@ -170,6 +177,10 @@
     "tem_hora": false,
     "variantes": [
      {
+      "url": "https://telesintese.com.br/america-movil-tem-alta-de-7-no-lucro-no-terceiro-trimestre/",
+      "fonte": "telesintese.com.br"
+     },
+     {
       "url": "https://timesbrasil.com.br/empresas-e-negocios/controladora-da-claro-america-movil-tem-lucro-de-us-132-bilhao-no-trimestre/",
       "fonte": "timesbrasil.com.br"
      }
@@ -184,7 +195,20 @@
     "bucket": "BR Oth",
     "score": 18,
     "repetido": false,
-    "origem": "Valor Tecnologia (Chrome)",
+    "origem": "Valor Telecom (Chrome)",
+    "data": "2026-10-21",
+    "tem_hora": false
+   },
+   {
+    "titulo": "Telecom Italia adia novamente conclusão da venda de unidade de cabos submarinos",
+    "url": "https://valor.globo.com/empresas/noticia/2026/10/21/telecom-italia-adia-novamente-conclusao-da-venda-de-unidade-de-cabos-submarinos.ghtml",
+    "dominio": "valor.globo.com",
+    "fonte": "valor.globo.com",
+    "tag": "must-read",
+    "bucket": "BR Oth",
+    "score": 15,
+    "repetido": false,
+    "origem": "Valor Telecom (Chrome)",
     "data": "2026-10-21",
     "tem_hora": false
    },
@@ -212,6 +236,29 @@
     "repetido": false,
     "origem": "TMT-Global",
     "data": "2026-10-21T01:00:23-03:00",
+    "tem_hora": true,
+    "variantes": [
+     {
+      "url": "https://www.telecoms.com/satellite/us-plays-farcical-game-of-hot-potato-over-ukraine-starlink-restrictions",
+      "fonte": "telecoms"
+     },
+     {
+      "url": "https://www.cnnbrasil.com.br/internacional/rubio-acesso-ao-starlink-na-ucrania-e-decisao-de-musk-nao-da-casa-branca/",
+      "fonte": "cnnbrasil.com.br"
+     }
+    ]
+   },
+   {
+    "titulo": "SpaceX eyes full Starship recovery as Starlink subs miss estimates",
+    "url": "https://www.lightreading.com/satellite/spacex-eyes-full-starship-recovery-as-starlink-subs-miss-estimates",
+    "dominio": "lightreading.com",
+    "fonte": "lightreading.com",
+    "tag": "company-specific",
+    "bucket": "BR Oth",
+    "score": 9,
+    "repetido": false,
+    "origem": "Light Reading (direto)",
+    "data": "2026-10-21T10:00:00-03:00",
     "tem_hora": true
    },
    {
@@ -345,6 +392,64 @@
     "tem_hora": true
    },
    {
+    "titulo": "AT&T eleva metas para o ano após resultados superarem expectativas no 3º trimestre",
+    "url": "https://valor.globo.com/empresas/noticia/2026/10/21/atandt-eleva-metas-para-o-ano-apos-resultados-superarem-expectativas-no-3o-trimestre.ghtml",
+    "dominio": "valor.globo.com",
+    "fonte": "valor.globo.com",
+    "tag": "broad-tech",
+    "bucket": "BR Oth",
+    "score": 15,
+    "repetido": false,
+    "origem": "Valor Tecnologia (Chrome)",
+    "data": "2026-10-21",
+    "tem_hora": false
+   },
+   {
+    "titulo": "Claro cresce 5,8% e soma R$ 13,8 bilhões em receitas no terceiro trimestre",
+    "url": "https://teletime.com.br/20/10/2026/claro-terceiro-trimestre-2026/",
+    "dominio": "teletime.com.br",
+    "fonte": "teletime.com.br",
+    "tag": "broad-tech",
+    "bucket": "BR Oth",
+    "score": 14,
+    "repetido": false,
+    "origem": "TELETIME (direto)",
+    "data": "2026-10-20T21:44:45-03:00",
+    "tem_hora": true,
+    "variantes": [
+     {
+      "url": "https://telesintese.com.br/claro-cresce-58-e-fatura-r-138-bilhoes-no-terceiro-trimestre/",
+      "fonte": "Tele.Sintese"
+     }
+    ]
+   },
+   {
+    "titulo": "Valenet amplia base de banda larga em 59% e chega à 18ª posição nacional",
+    "url": "https://telesintese.com.br/valenet-amplia-base-de-banda-larga-em-59-e-chega-a-18a-posicao-nacional/",
+    "dominio": "telesintese.com.br",
+    "fonte": "Tele.Sintese",
+    "tag": "broad-tech",
+    "bucket": "BR Oth",
+    "score": 10,
+    "repetido": false,
+    "origem": "TMT-Cobertura",
+    "data": "2026-10-21T12:35:22-03:00",
+    "tem_hora": true
+   },
+   {
+    "titulo": "ARC Capital compra data center em sua estreia na Europa",
+    "url": "https://pipelinevalor.globo.com/negocios/noticia/arc-capital-compra-data-center-em-sua-estreia-na-europa.ghtml",
+    "dominio": "pipelinevalor.globo.com",
+    "fonte": "pipelinevalor",
+    "tag": "broad-tech",
+    "bucket": "BR Oth",
+    "score": 10,
+    "repetido": false,
+    "origem": "TMT-Cobertura",
+    "data": "2026-10-21T06:05:00-03:00",
+    "tem_hora": true
+   },
+   {
     "titulo": "Globalstar obtém aprovação para operar constelação de D2D nos EUA",
     "url": "https://teletime.com.br/20/10/2026/globalstar-constelacao-d2d-eua/",
     "dominio": "teletime.com.br",
@@ -368,19 +473,6 @@
     "repetido": true,
     "origem": "E-commerce Brasil (Chrome)",
     "data": "2026-10-20T12:00:00-03:00",
-    "tem_hora": true
-   },
-   {
-    "titulo": "Claro cresce 5,8% e fatura R$ 13,8 bilhões no terceiro trimestre",
-    "url": "https://telesintese.com.br/claro-cresce-58-e-fatura-r-138-bilhoes-no-terceiro-trimestre/",
-    "dominio": "telesintese.com.br",
-    "fonte": "Tele.Sintese",
-    "tag": "broad-tech",
-    "bucket": "BR Oth",
-    "score": 13,
-    "repetido": true,
-    "origem": "TMT-Cobertura",
-    "data": "2026-10-20T19:34:18-03:00",
     "tem_hora": true
    },
    {
@@ -464,16 +556,48 @@
   ],
   "gl_off": [
    {
-    "titulo": "Australian data center operator NextDC's shares plunge 40% after it slashes earnings forecast",
-    "url": "https://www.cnbc.com/2026/10/21/australia-data-center-operator-nexdc-datacenter.html",
+    "titulo": "Tesla earnings loom after Musk calls SpaceX merger a 'good idea'",
+    "url": "https://www.cnbc.com/2026/10/21/tesla-tsla-q3-2026-earnings-report.html",
     "dominio": "cnbc.com",
     "fonte": "CNBC Tech",
     "tag": "sector-regulatory",
     "bucket": "GL Off",
-    "score": 11,
+    "score": 17,
     "repetido": false,
     "origem": "TMT-Global",
-    "data": "2026-10-20T22:44:42-03:00",
+    "data": "2026-10-21T13:01:25-03:00",
+    "tem_hora": true
+   },
+   {
+    "titulo": "Salesforce announces $5.66 billion deal for Braze, sending BRZE stock soaring 51%",
+    "url": "https://www.cnbc.com/2026/10/20/salesforce-braze-acquisition-deal.html",
+    "dominio": "cnbc.com",
+    "fonte": "cnbc.com",
+    "tag": "competitor-read-through",
+    "bucket": "GL Off",
+    "score": 22,
+    "repetido": false,
+    "origem": "CNBC Tech (direto)",
+    "data": "2026-10-20T17:10:30-03:00",
+    "tem_hora": true,
+    "variantes": [
+     {
+      "url": "https://finance.yahoo.com/media-advertising/articles/salesforce-bets-5-66-billion-174704354.html",
+      "fonte": "finance.yahoo.com"
+     }
+    ]
+   },
+   {
+    "titulo": "Salesforce goes back to the M&A well to fortify a weaker business. Why it's a smart move",
+    "url": "https://www.cnbc.com/investingclub/2026/10/21/salesforce-goes-back-to-the-ma-well-to-fortify-a-weaker-business-why-its-a-smart-move.html",
+    "dominio": "cnbc.com",
+    "fonte": "cnbc.com",
+    "tag": "competitor-read-through",
+    "bucket": "GL Off",
+    "score": 21,
+    "repetido": false,
+    "origem": "TMT-Global",
+    "data": "2026-10-21T12:27:03-03:00",
     "tem_hora": true
    },
    {
@@ -490,6 +614,19 @@
     "tem_hora": true
    },
    {
+    "titulo": "OpenAI to bring AI models to Google's cloud, in further expansion beyond Microsoft",
+    "url": "https://www.cnbc.com/2026/10/21/openai-bring-its-ai-models-to-googles-cloud-expands-beyond-microsoft.html",
+    "dominio": "cnbc.com",
+    "fonte": "CNBC Tech",
+    "tag": "broad-tech",
+    "bucket": "GL Off",
+    "score": 20,
+    "repetido": false,
+    "origem": "TMT-Global",
+    "data": "2026-10-21T09:00:02-03:00",
+    "tem_hora": true
+   },
+   {
     "titulo": "Oracle Data Center Fight Hands Activists Path to US-Wide Blitz",
     "url": "https://www.bloomberg.com/news/articles/2026-10-20/oracle-data-center-fight-hands-activists-path-to-us-wide-blitz",
     "dominio": "bloomberg.com",
@@ -501,113 +638,22 @@
     "origem": "TMT-Global",
     "data": "2026-10-20T12:00:00-03:00",
     "tem_hora": true
-   },
-   {
-    "titulo": "Submit a question: Could Anthropic’s IPO be a turning point for AI?",
-    "url": "https://www.ft.com/content/8cdf338e-d472-460c-8642-a8f033b99462?syn-25a6b1a6=1",
-    "dominio": "ft.com",
-    "fonte": "ft.com",
-    "tag": "broad-tech",
-    "bucket": "GL Off",
-    "score": 20,
-    "repetido": false,
-    "origem": "FT Technology (direto)",
-    "data": "2026-10-20T17:57:44-03:00",
-    "tem_hora": true
-   },
-   {
-    "titulo": "Nvidia-Backed Pigment Raises $250 Million to Take on Microsoft",
-    "url": "https://www.bloomberg.com/news/articles/2026-10-20/nvidia-backed-pigment-nabs-250-million-to-challenge-microsoft",
-    "dominio": "bloomberg.com",
-    "fonte": "bloomberg.com",
-    "tag": "broad-tech",
-    "bucket": "GL Off",
-    "score": 11,
-    "repetido": false,
-    "origem": "TMT-Global",
-    "data": "2026-10-20T17:00:01-03:00",
-    "tem_hora": true
-   },
-   {
-    "titulo": "OpenAI ‘agents’ disabled their own monitoring systems",
-    "url": "https://www.ft.com/content/45fbf130-f82c-465d-bc97-5b18c20fbe27?syn-25a6b1a6=1",
-    "dominio": "ft.com",
-    "fonte": "FT Technology",
-    "tag": "broad-tech",
-    "bucket": "GL Off",
-    "score": 9,
-    "repetido": false,
-    "origem": "TMT-Global",
-    "data": "2026-10-20T22:56:00-03:00",
-    "tem_hora": true
-   },
-   {
-    "titulo": "Anthropic logged net loss of over $80 billion in first half of 2026",
-    "url": "https://www.reuters.com/business/anthropic-recorded-net-loss-over-80-billion-first-half-this-year-wsj-reports-2026-10-20/",
-    "dominio": "reuters.com",
-    "fonte": "reuters.com",
-    "tag": "broad-tech",
-    "bucket": "GL Off",
-    "score": 8,
-    "repetido": false,
-    "origem": "TMT-Global",
-    "data": "2026-10-20T16:41:00-03:00",
-    "tem_hora": true
-   },
-   {
-    "titulo": "Anthropic May Spend $750 Billion on Computing Costs, Report Says",
-    "url": "https://www.bloomberg.com/news/articles/2026-10-20/anthropic-could-spend-750-billion-on-computing-costs-wsj-says",
-    "dominio": "bloomberg.com",
-    "fonte": "bloomberg.com",
-    "tag": "broad-tech",
-    "bucket": "GL Off",
-    "score": 8,
-    "repetido": false,
-    "origem": "TMT-Global",
-    "data": "2026-10-20T17:04:21-03:00",
-    "tem_hora": true
-   },
-   {
-    "titulo": "Anthropic's public benefit fund and how it compares with other big philanthropic efforts",
-    "url": "https://www.reuters.com/business/anthropics-public-benefit-fund-how-it-compares-with-other-big-philanthropic-2026-10-20/",
-    "dominio": "reuters.com",
-    "fonte": "reuters.com",
-    "tag": "broad-tech",
-    "bucket": "GL Off",
-    "score": 8,
-    "repetido": false,
-    "origem": "TMT-Global",
-    "data": "2026-10-20T17:21:46-03:00",
-    "tem_hora": true
-   },
-   {
-    "titulo": "Exclusive | Anthropic S-1 Shows Red-Hot Growth, Risks and Massive Computing Costs",
-    "url": "https://www.wsj.com/tech/ai/anthropic-revenue-growth-ipo-accaf0f1",
-    "dominio": "wsj.com",
-    "fonte": "wsj.com",
-    "tag": "broad-tech",
-    "bucket": "GL Off",
-    "score": 8,
-    "repetido": false,
-    "origem": "TMT-Global",
-    "data": "2026-10-20T16:30:00-03:00",
-    "tem_hora": true
-   },
-   {
-    "titulo": "Why Nvidia Needs CoreWeave",
-    "url": "https://www.wsj.com/tech/ai/why-nvidia-needs-coreweave-2c26136e",
-    "dominio": "wsj.com",
-    "fonte": "wsj.com",
-    "tag": "broad-tech",
-    "bucket": "GL Off",
-    "score": 8,
-    "repetido": false,
-    "origem": "TMT-Global",
-    "data": "2026-10-20T13:00:00-03:00",
-    "tem_hora": true
    }
   ],
   "gl_oth": [
+   {
+    "titulo": "Australian data center operator NextDC's shares plunge 40% after it slashes earnings forecast",
+    "url": "https://www.cnbc.com/2026/10/21/australia-data-center-operator-nexdc-datacenter.html",
+    "dominio": "cnbc.com",
+    "fonte": "CNBC Tech",
+    "tag": "sector-regulatory",
+    "bucket": "GL Oth",
+    "score": 11,
+    "repetido": false,
+    "origem": "TMT-Global",
+    "data": "2026-10-20T22:44:42-03:00",
+    "tem_hora": true
+   },
    {
     "titulo": "Why VMO2 isn't afraid of VodafoneThree's monster 5G footprint",
     "url": "https://www.lightreading.com/5g/why-vmo2-isn-t-afraid-of-vodafonethree-s-monster-5g-footprint",
@@ -648,35 +694,36 @@
     "tem_hora": true
    },
    {
-    "titulo": "Top Midday Stories: Salesforce to Acquire Braze for $5.66 Billion; GM Q3 EPS, Revenue Top Estimates But Stock Falls",
-    "url": "https://finance.yahoo.com/markets/stocks/articles/top-midday-stories-salesforce-acquire-155120065.html",
-    "dominio": "finance.yahoo.com",
-    "fonte": "finance.yahoo.com",
+    "titulo": "Salesforce's Braze Acquisition Leads Revenue Tech M&A Rush",
+    "url": "https://cxtoday.com/m-a-deals-bring-more-agentic-ai-to-revenue-workflows",
+    "dominio": "cxtoday.com",
+    "fonte": "cxtoday.com",
     "tag": "competitor-read-through",
     "bucket": "GL Oth",
-    "score": 27,
+    "score": 25,
     "repetido": false,
     "origem": "TMT-Global",
-    "data": "2026-10-20T12:51:20-03:00",
+    "data": "2026-10-21T05:03:47-03:00",
     "tem_hora": true,
     "variantes": [
      {
-      "url": "https://cxtoday.com/m-a-deals-bring-more-agentic-ai-to-revenue-workflows",
-      "fonte": "cxtoday.com"
-     },
-     {
       "url": "https://seekingalpha.com/news/4654763-midday-need-to-know-salesforce-to-acquire-braze-spacex-earnings-preview-and-more",
       "fonte": "seekingalpha.com"
-     },
-     {
-      "url": "https://www.cnbc.com/2026/10/20/salesforce-braze-acquisition-deal.html",
-      "fonte": "CNBC Tech"
-     },
-     {
-      "url": "https://finance.yahoo.com/technology/ai/articles/salesforce-agrees-buy-braze-5-153323448.html",
-      "fonte": "finance.yahoo.com"
      }
     ]
+   },
+   {
+    "titulo": "Will Workday's C1.ai Acquisition Boost Its Enterprise AI Position?",
+    "url": "https://www.theglobeandmail.com/investing/markets/stocks/ORCL/pressreleases/8280886/will-workdays-c1ai-acquisition-boost-its-enterprise-ai-position/",
+    "dominio": "theglobeandmail.com",
+    "fonte": "theglobeandmail.com",
+    "tag": "competitor-read-through",
+    "bucket": "GL Oth",
+    "score": 22,
+    "repetido": false,
+    "origem": "TMT-Global",
+    "data": "2026-10-21T12:21:15-03:00",
+    "tem_hora": true
    },
    {
     "titulo": "Navatar Connects Claude and Salesforce Through Bidirectional MCP for Private Equity and M&A",
@@ -692,6 +739,37 @@
     "tem_hora": true
    },
    {
+    "titulo": "Salesforce to acquire Braze for $5.66bn in customer experience push",
+    "url": "https://finance.yahoo.com/news/salesforce-acquire-braze-5-66bn-095002082.html",
+    "dominio": "finance.yahoo.com",
+    "fonte": "finance.yahoo.com",
+    "tag": "competitor-read-through",
+    "bucket": "GL Oth",
+    "score": 21,
+    "repetido": false,
+    "origem": "TMT-Global",
+    "data": "2026-10-21T06:50:02-03:00",
+    "tem_hora": true,
+    "variantes": [
+     {
+      "url": "https://www.wsj.com/business/deals/salesforce-to-buy-customer-engagement-platform-for-nearly-5-7-billion-aba17cfe",
+      "fonte": "wsj.com"
+     },
+     {
+      "url": "https://www.theglobeandmail.com/investing/markets/markets-news/Motley%20Fool/8248569/stock-market-today-oct-20-salesforce-agrees-to-acquire-braze-for-5-66-billion-brze-stock-soars-52/",
+      "fonte": "theglobeandmail.com"
+     },
+     {
+      "url": "https://www.baguete.com.br/noticias/salesforce-compra-braze-por-us-5-66-bi",
+      "fonte": "Baguete"
+     },
+     {
+      "url": "https://seekingalpha.com/article/4955802-salesforce-acquires-braze-upside-case-is-becoming-clearer",
+      "fonte": "seekingalpha.com"
+     }
+    ]
+   },
+   {
     "titulo": "Cognizant launches dedicated Gemini group to scale agentic AI",
     "url": "https://www.verdict.co.uk/cognizant-gemini-frontier-capability-group/",
     "dominio": "verdict.co.uk",
@@ -702,6 +780,19 @@
     "repetido": false,
     "origem": "TMT-Global",
     "data": "2026-10-21T05:21:53-03:00",
+    "tem_hora": true
+   },
+   {
+    "titulo": "HCLTech launches NVIDIA-powered HCLTech Verification and Validation for Auto to transform software-defined vehicle validation",
+    "url": "https://cxotoday.com/media-coverage/hcltech-launches-nvidia-powered-hcltech-verification-and-validation-for-auto-to-transform-software-defined-vehicle-validation/",
+    "dominio": "cxotoday.com",
+    "fonte": "cxotoday.com",
+    "tag": "competitor-read-through",
+    "bucket": "GL Oth",
+    "score": 14,
+    "repetido": false,
+    "origem": "TMT-Global",
+    "data": "2026-10-21T07:39:29-03:00",
     "tem_hora": true
    },
    {
@@ -767,16 +858,16 @@
     "tem_hora": true
    },
    {
-    "titulo": "Salesforce will buy Braze for $5.7 billion to feed its AI agents customer data",
-    "url": "https://startupfortune.com/salesforce-will-buy-braze-for-57-billion-to-feed-its-ai-agents-customer-data/",
-    "dominio": "startupfortune.com",
-    "fonte": "startupfortune.com",
-    "tag": "competitor-read-through",
+    "titulo": "Submit a question: Could Anthropic’s IPO be a turning point for AI?",
+    "url": "https://www.ft.com/content/8cdf338e-d472-460c-8642-a8f033b99462?syn-25a6b1a6=1",
+    "dominio": "ft.com",
+    "fonte": "ft.com",
+    "tag": "broad-tech",
     "bucket": "GL Oth",
-    "score": 14,
-    "repetido": true,
-    "origem": "TMT-Global",
-    "data": "2026-10-20T10:31:04-03:00",
+    "score": 20,
+    "repetido": false,
+    "origem": "FT Technology (direto)",
+    "data": "2026-10-20T17:57:44-03:00",
     "tem_hora": true
    },
    {
@@ -795,12 +886,21 @@
      {
       "url": "https://www.cnbc.com/2026/10/21/spacex-spcx-stock-musk-merger-tesla.html",
       "fonte": "CNBC Tech"
-     },
-     {
-      "url": "https://valor.globo.com/empresas/noticia/2026/10/21/spacex-reverte-prejuizo-e-lucra-us-44-bilhoes-no-terceiro-trimestre.ghtml",
-      "fonte": "valor.globo.com"
      }
     ]
+   },
+   {
+    "titulo": "OpenAI diz que agentes de IA enfraqueceram sistemas criados para monitorá-los",
+    "url": "https://g1.globo.com/tecnologia/noticia/2026/10/21/openai-agentes-sistemas-de-monitoramento.ghtml",
+    "dominio": "g1.globo.com",
+    "fonte": "G1 Tecnologia",
+    "tag": "broad-tech",
+    "bucket": "GL Oth",
+    "score": 16,
+    "repetido": false,
+    "origem": "TMT-Cobertura",
+    "data": "2026-10-21T11:09:41-03:00",
+    "tem_hora": true
    },
    {
     "titulo": "Nvidia in Talks to Back Firmus After IPO Flop, Report Says",
@@ -813,6 +913,19 @@
     "repetido": false,
     "origem": "TMT-Global",
     "data": "2026-10-20T20:59:52-03:00",
+    "tem_hora": true
+   },
+   {
+    "titulo": "OpenAI expands ChatGPT ads to 26 more countries in bid to boost revenue",
+    "url": "https://www.businesstimes.com.sg/companies-markets/telcos-media-tech/openai-expands-chatgpt-ads-26-more-countries-bid-boost-revenue",
+    "dominio": "businesstimes.com.sg",
+    "fonte": "businesstimes.com.sg",
+    "tag": "broad-tech",
+    "bucket": "GL Oth",
+    "score": 15,
+    "repetido": false,
+    "origem": "Business Times SG (direto)",
+    "data": "2026-10-21T10:28:26-03:00",
     "tem_hora": true
    },
    {
@@ -829,17 +942,87 @@
     "tem_hora": true
    },
    {
-    "titulo": "Dow Jones Futuro sobe após resultados da SpaceX aliviarem temores sobre IA",
-    "url": "https://www.infomoney.com.br/mercados/dow-jones-futuro-sobe-apos-resultados-da-spacex-aliviarem-temores-sobre-ia/",
-    "dominio": "infomoney.com.br",
-    "fonte": "infomoney.com.br",
+    "titulo": "Netflix slides as weak outlook deepens worries on viewership, revenue growth",
+    "url": "https://www.businesstimes.com.sg/companies-markets/telcos-media-tech/netflix-slides-weak-outlook-deepens-worries-viewership-revenue-growth",
+    "dominio": "businesstimes.com.sg",
+    "fonte": "businesstimes.com.sg",
     "tag": "broad-tech",
     "bucket": "GL Oth",
-    "score": 11,
+    "score": 13,
     "repetido": false,
-    "origem": "InfoMoney (direto)",
-    "data": "2026-10-21T05:45:50-03:00",
+    "origem": "Business Times SG (direto)",
+    "data": "2026-10-21T11:13:44-03:00",
     "tem_hora": true
+   },
+   {
+    "titulo": "Tesla e SpaceX discutem possível fusão; ‘seria uma boa ideia’, diz Musk",
+    "url": "https://g1.globo.com/economia/noticia/2026/10/21/tesla-e-spacex-discutem-possivel-fusao.ghtml",
+    "dominio": "g1.globo.com",
+    "fonte": "G1 Tecnologia",
+    "tag": "broad-tech",
+    "bucket": "GL Oth",
+    "score": 13,
+    "repetido": false,
+    "origem": "TMT-Cobertura",
+    "data": "2026-10-21T10:30:23-03:00",
+    "tem_hora": true
+   },
+   {
+    "titulo": "AT&T Beats on Profit Expectations, Raises Annual Guidance",
+    "url": "https://www.bloomberg.com/news/articles/2026-10-21/at-t-beats-on-profit-expectations-raises-annual-guidance",
+    "dominio": "bloomberg.com",
+    "fonte": "bloomberg.com",
+    "tag": "broad-tech",
+    "bucket": "GL Oth",
+    "score": 13,
+    "repetido": false,
+    "origem": "TMT-Global",
+    "data": "2026-10-21T07:30:21-03:00",
+    "tem_hora": true
+   },
+   {
+    "titulo": "Micron, Taiwan union sign deal, withdraw from mediation",
+    "url": "https://www.reuters.com/business/world-at-work/micron-says-it-has-reached-agreement-with-taiwan-union-2026-10-21/",
+    "dominio": "reuters.com",
+    "fonte": "reuters.com",
+    "tag": "broad-tech",
+    "bucket": "GL Oth",
+    "score": 13,
+    "repetido": false,
+    "origem": "TMT-Global",
+    "data": "2026-10-21T03:23:00-03:00",
+    "tem_hora": true
+   },
+   {
+    "titulo": "Futures orbit around SpaceX as Tesla merger talk cheers investors",
+    "url": "https://www.cnbc.com/2026/10/21/futures-orbit-around-spacex-as-tesla-merger-talk-cheers-investors.html",
+    "dominio": "cnbc.com",
+    "fonte": "CNBC Tech",
+    "tag": "broad-tech",
+    "bucket": "GL Oth",
+    "score": 13,
+    "repetido": false,
+    "origem": "TMT-Global",
+    "data": "2026-10-21T09:44:19-03:00",
+    "tem_hora": true,
+    "variantes": [
+     {
+      "url": "https://www.nytimes.com/2026/10/21/business/elon-musk-spacex-tesla-merger.html",
+      "fonte": "NYT Tech"
+     },
+     {
+      "url": "https://neofeed.com.br/negocios/foguete-eletrico-musk-propoe-fusao-entre-spacex-e-tesla-para-criar-gigante-de-us-36-trilhoes/",
+      "fonte": "NeoFeed"
+     },
+     {
+      "url": "https://techcrunch.com/2026/10/20/spacex-and-tesla-boards-form-special-committees-to-review-merger/",
+      "fonte": "TechCrunch"
+     },
+     {
+      "url": "https://www.ft.com/content/f2a2a578-5a2e-42ff-b4c9-8bafff271b37?syn-25a6b1a6=1",
+      "fonte": "FT Technology"
+     }
+    ]
    },
    {
     "titulo": "easyJet’s new AI-powered customer service platform takes flight",
@@ -852,19 +1035,6 @@
     "repetido": false,
     "origem": "TMT-Global",
     "data": "2026-10-21T02:41:00-03:00",
-    "tem_hora": true
-   },
-   {
-    "titulo": "OpenAI's most powerful AI models disabled their own safety monitoring — and one lied about it.",
-    "url": "https://www.cnbc.com/2026/10/21/openai-ai-models-safety-monitoring.html",
-    "dominio": "cnbc.com",
-    "fonte": "CNBC Tech",
-    "tag": "broad-tech",
-    "bucket": "GL Oth",
-    "score": 11,
-    "repetido": false,
-    "origem": "TMT-Global",
-    "data": "2026-10-21T04:03:48-03:00",
     "tem_hora": true
    },
    {
@@ -881,23 +1051,17 @@
     "tem_hora": true
    },
    {
-    "titulo": "SpaceX and Tesla boards form special committees to review merger",
-    "url": "https://techcrunch.com/2026/10/20/spacex-and-tesla-boards-form-special-committees-to-review-merger/",
-    "dominio": "techcrunch.com",
-    "fonte": "TechCrunch",
+    "titulo": "Who’s paying for the AI build-out? Probably you",
+    "url": "https://www.ft.com/content/09f56730-4702-446d-9986-f7c93ffe6bf0?syn-25a6b1a6=1",
+    "dominio": "ft.com",
+    "fonte": "FT Technology",
     "tag": "broad-tech",
     "bucket": "GL Oth",
-    "score": 11,
+    "score": 10,
     "repetido": false,
     "origem": "TMT-Global",
-    "data": "2026-10-20T19:57:57-03:00",
-    "tem_hora": true,
-    "variantes": [
-     {
-      "url": "https://www.ft.com/content/f2a2a578-5a2e-42ff-b4c9-8bafff271b37?syn-25a6b1a6=1",
-      "fonte": "FT Technology"
-     }
-    ]
+    "data": "2026-10-21T12:00:25-03:00",
+    "tem_hora": true
    },
    {
     "titulo": "Nscale boss seeks to reassure staff amid AI market jitters",
@@ -926,32 +1090,6 @@
     "tem_hora": true
    },
    {
-    "titulo": "Netflix gives downbeat outlook as streaming hits dry up",
-    "url": "https://www.ft.com/content/1b5d97dc-535a-42d9-ac0e-2c00e91c0aed?syn-25a6b1a6=1",
-    "dominio": "ft.com",
-    "fonte": "FT Technology",
-    "tag": "broad-tech",
-    "bucket": "GL Oth",
-    "score": 10,
-    "repetido": false,
-    "origem": "TMT-Global",
-    "data": "2026-10-20T17:32:24-03:00",
-    "tem_hora": true
-   },
-   {
-    "titulo": "Google Reports Cloud Disruptions in Europe",
-    "url": "https://www.nytimes.com/2026/10/20/technology/google-cloud-down-outage-europe.html",
-    "dominio": "nytimes.com",
-    "fonte": "NYT Tech",
-    "tag": "broad-tech",
-    "bucket": "GL Oth",
-    "score": 10,
-    "repetido": false,
-    "origem": "TMT-Global",
-    "data": "2026-10-20T10:04:12-03:00",
-    "tem_hora": true
-   },
-   {
     "titulo": "AI startup ASI valued at $3 billion in latest funding round",
     "url": "https://www.reuters.com/business/ai-startup-asi-valued-3-billion-latest-funding-round-2026-10-20/",
     "dominio": "reuters.com",
@@ -963,77 +1101,11 @@
     "origem": "TMT-Global",
     "data": "2026-10-20T12:54:09-03:00",
     "tem_hora": true
-   },
-   {
-    "titulo": "'MAKE DEALS': Trump says data centers should pay communities a 'dividend' to win support",
-    "url": "https://www.cnbc.com/2026/10/21/trump-data-centers-community-dividend.html",
-    "dominio": "cnbc.com",
-    "fonte": "CNBC Tech",
-    "tag": "broad-tech",
-    "bucket": "GL Oth",
-    "score": 9,
-    "repetido": false,
-    "origem": "TMT-Global",
-    "data": "2026-10-21T03:52:28-03:00",
-    "tem_hora": true
-   },
-   {
-    "titulo": "Nvidia Spent About $2.2 Million on Federal Lobbying in the Third Quarter",
-    "url": "https://www.bloomberg.com/news/articles/2026-10-20/nvidia-boosts-federal-lobbying-cash-in-q3-while-ai-debates-surge",
-    "dominio": "bloomberg.com",
-    "fonte": "bloomberg.com",
-    "tag": "broad-tech",
-    "bucket": "GL Oth",
-    "score": 16,
-    "repetido": true,
-    "origem": "TMT-Global",
-    "data": "2026-10-20T12:19:50-03:00",
-    "tem_hora": true
-   },
-   {
-    "titulo": "Snowflake's AI monetization efforts advance as Salesforce says adoption still early: BNP",
-    "url": "https://seekingalpha.com/news/4654751-snowflakes-ai-monetization-efforts-advance-as-salesforce-says-adoption-still-early-bnp",
-    "dominio": "seekingalpha.com",
-    "fonte": "seekingalpha.com",
-    "tag": "competitor-read-through",
-    "bucket": "GL Oth",
-    "score": 13,
-    "repetido": true,
-    "origem": "TMT-Global",
-    "data": "2026-10-20T13:04:26-03:00",
-    "tem_hora": true
-   },
-   {
-    "titulo": "Google libera TorchTPU como código aberto para executar PyTorch em aceleradores próprios",
-    "url": "https://tiinside.com.br/20/10/2026/google-libera-torchtpu-como-codigo-aberto-para-executar-pytorch-em-aceleradores-proprios/",
-    "dominio": "tiinside.com.br",
-    "fonte": "TI Inside",
-    "tag": "broad-tech",
-    "bucket": "GL Oth",
-    "score": 7,
-    "repetido": false,
-    "origem": "TMT-Cobertura",
-    "data": "2026-10-20T19:09:58-03:00",
-    "tem_hora": true
    }
   ]
  },
  "last_news": {
   "brazil": [
-   {
-    "titulo": "Dona da Shopee lança divisão de computação em nuvem e avalia IPO de sua fintech",
-    "url": "https://neofeed.com.br/negocios/dona-da-shopee-lanca-divisao-de-computacao-em-nuvem-e-avalia-ipo-de-sua-fintech/",
-    "dominio": "neofeed.com.br",
-    "fonte": "NeoFeed",
-    "tag": "competitor-read-through",
-    "bucket": "BR Oth",
-    "score": 21,
-    "repetido": true,
-    "origem": "TMT-Cobertura",
-    "data": "2026-10-20T10:39:44-03:00",
-    "tem_hora": true,
-    "quando": "ontem 10:39"
-   },
    {
     "titulo": "Claro Brasil tem Ebitda de R$ 6,2 bi e receitas de R$ 13,8 bi no 3º trimestre",
     "url": "https://valor.globo.com/empresas/noticia/2026/10/20/claro-brasil-tem-ebitda-de-r-62-bi-e-receitas-de-r-138-bi-no-3-trimestre.ghtml",
@@ -1047,6 +1119,10 @@
     "data": "2026-10-20",
     "tem_hora": false,
     "variantes": [
+     {
+      "url": "https://telesintese.com.br/america-movil-tem-alta-de-7-no-lucro-no-terceiro-trimestre/",
+      "fonte": "telesintese.com.br"
+     },
      {
       "url": "https://timesbrasil.com.br/empresas-e-negocios/controladora-da-claro-america-movil-tem-lucro-de-us-132-bilhao-no-trimestre/",
       "fonte": "timesbrasil.com.br"
@@ -1069,6 +1145,26 @@
     "quando": "ontem 15:21"
    },
    {
+    "titulo": "TIM lança plataforma de nuvem e IA",
+    "url": "https://telesintese.com.br/tim-lanca-plataforma-de-nuvem-e-ia/",
+    "dominio": "telesintese.com.br",
+    "fonte": "telesintese.com.br",
+    "tag": "must-read",
+    "bucket": "BR Off",
+    "score": 19,
+    "repetido": false,
+    "origem": "TeleSintese (direto)",
+    "data": "2026-10-21T11:14:52-03:00",
+    "tem_hora": true,
+    "variantes": [
+     {
+      "url": "https://convergenciadigital.com.br/governo/tim-usa-oracle-para-entrar-na-briga-do-negocio-de-nuvem-e-ia-no-b2b/",
+      "fonte": "convergenciadigital.com.br"
+     }
+    ],
+    "quando": "11:14"
+   },
+   {
     "titulo": "TIM reforça aposta no corporativo em parceria com a Oracle",
     "url": "https://valor.globo.com/empresas/noticia/2026/10/21/tim-reforca-aposta-no-corporativo-em-parceria-com-a-oracle.ghtml",
     "dominio": "valor.globo.com",
@@ -1077,7 +1173,7 @@
     "bucket": "BR Oth",
     "score": 18,
     "repetido": false,
-    "origem": "Valor Tecnologia (Chrome)",
+    "origem": "Valor Telecom (Chrome)",
     "data": "2026-10-21",
     "tem_hora": false,
     "quando": ""
@@ -1106,10 +1202,6 @@
      {
       "url": "https://timesbrasil.com.br/empresas-e-negocios/elon-musk-ordenou-reducao-da-velocidade-do-starlink-na-ucrania/",
       "fonte": "timesbrasil.com.br"
-     },
-     {
-      "url": "https://convergenciadigital.com.br/telecom/amazon-ganha-musculatura-para-disputar-mercado-d2d-com-a-starlink/",
-      "fonte": "convergenciadigital.com.br"
      }
     ],
     "quando": "ontem 21:56"
@@ -1135,60 +1227,52 @@
     "quando": "ontem 14:48"
    },
    {
-    "titulo": "Regional RS 2026: IA, expansão nacional e eficiência pautam novo ciclo do e-commerce",
-    "url": "https://www.ecommercebrasil.com.br/noticias/regional-rs-2026-tendencias-ecommerce-rio-grande-do-sul",
-    "dominio": "ecommercebrasil.com.br",
-    "fonte": "ecommercebrasil.com.br",
+    "titulo": "AT&T eleva metas para o ano após resultados superarem expectativas no 3º trimestre",
+    "url": "https://valor.globo.com/empresas/noticia/2026/10/21/atandt-eleva-metas-para-o-ano-apos-resultados-superarem-expectativas-no-3o-trimestre.ghtml",
+    "dominio": "valor.globo.com",
+    "fonte": "valor.globo.com",
     "tag": "broad-tech",
     "bucket": "BR Oth",
     "score": 15,
-    "repetido": true,
-    "origem": "E-commerce Brasil (Chrome)",
-    "data": "2026-10-20T12:00:00-03:00",
-    "tem_hora": true,
-    "quando": "ontem 12:00"
+    "repetido": false,
+    "origem": "Valor Tecnologia (Chrome)",
+    "data": "2026-10-21",
+    "tem_hora": false,
+    "quando": ""
    },
    {
-    "titulo": "FCC autoriza 54 satélites da Globalstar, alvo de compra pela Amazon",
-    "url": "https://telesintese.com.br/fcc-autoriza-54-satelites-da-globalstar-alvo-de-compra-pela-amazon/",
-    "dominio": "telesintese.com.br",
-    "fonte": "Tele.Sintese",
-    "tag": "competitor-read-through",
+    "titulo": "Telecom Italia adia novamente conclusão da venda de unidade de cabos submarinos",
+    "url": "https://valor.globo.com/empresas/noticia/2026/10/21/telecom-italia-adia-novamente-conclusao-da-venda-de-unidade-de-cabos-submarinos.ghtml",
+    "dominio": "valor.globo.com",
+    "fonte": "valor.globo.com",
+    "tag": "must-read",
     "bucket": "BR Oth",
     "score": 15,
-    "repetido": true,
-    "origem": "TMT-Cobertura",
-    "data": "2026-10-20T11:43:26-03:00",
-    "tem_hora": true,
-    "quando": "ontem 11:43"
+    "repetido": false,
+    "origem": "Valor Telecom (Chrome)",
+    "data": "2026-10-21",
+    "tem_hora": false,
+    "quando": ""
    },
    {
-    "titulo": "Claro cresce 5,8% e fatura R$ 13,8 bilhões no terceiro trimestre",
-    "url": "https://telesintese.com.br/claro-cresce-58-e-fatura-r-138-bilhoes-no-terceiro-trimestre/",
-    "dominio": "telesintese.com.br",
-    "fonte": "Tele.Sintese",
+    "titulo": "Claro cresce 5,8% e soma R$ 13,8 bilhões em receitas no terceiro trimestre",
+    "url": "https://teletime.com.br/20/10/2026/claro-terceiro-trimestre-2026/",
+    "dominio": "teletime.com.br",
+    "fonte": "teletime.com.br",
     "tag": "broad-tech",
     "bucket": "BR Oth",
-    "score": 13,
-    "repetido": true,
-    "origem": "TMT-Cobertura",
-    "data": "2026-10-20T19:34:18-03:00",
+    "score": 14,
+    "repetido": false,
+    "origem": "TELETIME (direto)",
+    "data": "2026-10-20T21:44:45-03:00",
     "tem_hora": true,
-    "quando": "ontem 19:34"
-   },
-   {
-    "titulo": "Nokia e SoftBank testarão AI-RAN em rede comercial em 2027",
-    "url": "https://telesintese.com.br/nokia-e-softbank-testarao-ai-ran-em-rede-comercial-em-2027/",
-    "dominio": "telesintese.com.br",
-    "fonte": "Tele.Sintese",
-    "tag": "broad-tech",
-    "bucket": "BR Oth",
-    "score": 13,
-    "repetido": true,
-    "origem": "TMT-Cobertura",
-    "data": "2026-10-20T11:42:46-03:00",
-    "tem_hora": true,
-    "quando": "ontem 11:42"
+    "variantes": [
+     {
+      "url": "https://telesintese.com.br/claro-cresce-58-e-fatura-r-138-bilhoes-no-terceiro-trimestre/",
+      "fonte": "Tele.Sintese"
+     }
+    ],
+    "quando": "ontem 21:44"
    },
    {
     "titulo": "Anatel: Agentes IA abrem lacuna regulatória nas telecomunicações",
@@ -1275,20 +1359,6 @@
     "quando": "ontem 19:03"
    },
    {
-    "titulo": "CoreWeave opera em prejuízo e revela desconfiança na IA; veja no Prompt CNN",
-    "url": "https://www.cnnbrasil.com.br/economia/money/inteligencia-artificial/coreweave-opera-em-prejuizo-e-revela-desconfianca-na-ia-veja-no-prompt-cnn/",
-    "dominio": "cnnbrasil.com.br",
-    "fonte": "cnnbrasil.com.br",
-    "tag": "broad-tech",
-    "bucket": "BR Oth",
-    "score": 11,
-    "repetido": true,
-    "origem": "TMT-Cobertura",
-    "data": "2026-10-20T11:58:21-03:00",
-    "tem_hora": true,
-    "quando": "ontem 11:58"
-   },
-   {
     "titulo": "V.tal quer reorganizar holdings no exterior e fazer aportes em subsidiárias",
     "url": "https://telesintese.com.br/v-tal-vai-reorganizar-holdings-no-exterior-e-fazer-aportes-em-subsidiarias/",
     "dominio": "telesintese.com.br",
@@ -1303,6 +1373,34 @@
     "quando": "ontem 19:40"
    },
    {
+    "titulo": "Valenet amplia base de banda larga em 59% e chega à 18ª posição nacional",
+    "url": "https://telesintese.com.br/valenet-amplia-base-de-banda-larga-em-59-e-chega-a-18a-posicao-nacional/",
+    "dominio": "telesintese.com.br",
+    "fonte": "Tele.Sintese",
+    "tag": "broad-tech",
+    "bucket": "BR Oth",
+    "score": 10,
+    "repetido": false,
+    "origem": "TMT-Cobertura",
+    "data": "2026-10-21T12:35:22-03:00",
+    "tem_hora": true,
+    "quando": "12:35"
+   },
+   {
+    "titulo": "ARC Capital compra data center em sua estreia na Europa",
+    "url": "https://pipelinevalor.globo.com/negocios/noticia/arc-capital-compra-data-center-em-sua-estreia-na-europa.ghtml",
+    "dominio": "pipelinevalor.globo.com",
+    "fonte": "pipelinevalor",
+    "tag": "broad-tech",
+    "bucket": "BR Oth",
+    "score": 10,
+    "repetido": false,
+    "origem": "TMT-Cobertura",
+    "data": "2026-10-21T06:05:00-03:00",
+    "tem_hora": true,
+    "quando": "06:05"
+   },
+   {
     "titulo": "Conselho Consultivo da Anatel pode cair de oito para quatro membros em 2027",
     "url": "https://teletime.com.br/20/10/2026/conselho-consultivo-anatel-membros/",
     "dominio": "teletime.com.br",
@@ -1315,20 +1413,6 @@
     "data": "2026-10-20T19:46:34-03:00",
     "tem_hora": true,
     "quando": "ontem 19:46"
-   },
-   {
-    "titulo": "Sem o ser humano na conta, IA se resume a investimento vazio",
-    "url": "https://tiinside.com.br/20/10/2026/sem-o-ser-humano-na-conta-ia-se-resume-a-investimento-vazio/",
-    "dominio": "tiinside.com.br",
-    "fonte": "TI Inside",
-    "tag": "broad-tech",
-    "bucket": "BR Oth",
-    "score": 10,
-    "repetido": true,
-    "origem": "TMT-Cobertura",
-    "data": "2026-10-20T12:04:49-03:00",
-    "tem_hora": true,
-    "quando": "ontem 12:04"
    },
    {
     "titulo": "Cofundador da TOTVS, Ernesto Haberkorn lança biografia sobre liderança, tecnologia e visão de negócios",
@@ -1356,6 +1440,16 @@
     "origem": "TMT-Global",
     "data": "2026-10-21T01:00:23-03:00",
     "tem_hora": true,
+    "variantes": [
+     {
+      "url": "https://www.telecoms.com/satellite/us-plays-farcical-game-of-hot-potato-over-ukraine-starlink-restrictions",
+      "fonte": "telecoms"
+     },
+     {
+      "url": "https://www.cnnbrasil.com.br/internacional/rubio-acesso-ao-starlink-na-ucrania-e-decisao-de-musk-nao-da-casa-branca/",
+      "fonte": "cnnbrasil.com.br"
+     }
+    ],
     "quando": "01:00"
    },
    {
@@ -1371,6 +1465,20 @@
     "data": "2026-10-20T19:41:22-03:00",
     "tem_hora": true,
     "quando": "ontem 19:41"
+   },
+   {
+    "titulo": "SpaceX eyes full Starship recovery as Starlink subs miss estimates",
+    "url": "https://www.lightreading.com/satellite/spacex-eyes-full-starship-recovery-as-starlink-subs-miss-estimates",
+    "dominio": "lightreading.com",
+    "fonte": "lightreading.com",
+    "tag": "company-specific",
+    "bucket": "BR Oth",
+    "score": 9,
+    "repetido": false,
+    "origem": "Light Reading (direto)",
+    "data": "2026-10-21T10:00:00-03:00",
+    "tem_hora": true,
+    "quando": "10:00"
    },
    {
     "titulo": "Quase 50 ementas são apresentadas à MP das chamadas abusivas",
@@ -1399,20 +1507,6 @@
     "data": "2026-10-20T18:02:58-03:00",
     "tem_hora": true,
     "quando": "ontem 18:02"
-   },
-   {
-    "titulo": "Cofre digital da fé pública: a nova régua de cibersegurança dos cartórios",
-    "url": "https://tiinside.com.br/20/10/2026/cofre-digital-da-fe-publica-a-nova-regua-de-ciberseguranca-dos-cartorios/",
-    "dominio": "tiinside.com.br",
-    "fonte": "TI Inside",
-    "tag": "broad-tech",
-    "bucket": "BR Oth",
-    "score": 8,
-    "repetido": true,
-    "origem": "TMT-Cobertura",
-    "data": "2026-10-20T10:36:54-03:00",
-    "tem_hora": true,
-    "quando": "ontem 10:36"
    },
    {
     "titulo": "Intelbras apresenta soluções de segurança para condomínios no SegSummit 2026",
@@ -1445,36 +1539,72 @@
   ],
   "global": [
    {
-    "titulo": "Top Midday Stories: Salesforce to Acquire Braze for $5.66 Billion; GM Q3 EPS, Revenue Top Estimates But Stock Falls",
-    "url": "https://finance.yahoo.com/markets/stocks/articles/top-midday-stories-salesforce-acquire-155120065.html",
-    "dominio": "finance.yahoo.com",
-    "fonte": "finance.yahoo.com",
+    "titulo": "Salesforce's Braze Acquisition Leads Revenue Tech M&A Rush",
+    "url": "https://cxtoday.com/m-a-deals-bring-more-agentic-ai-to-revenue-workflows",
+    "dominio": "cxtoday.com",
+    "fonte": "cxtoday.com",
     "tag": "competitor-read-through",
     "bucket": "GL Oth",
-    "score": 27,
+    "score": 25,
     "repetido": false,
     "origem": "TMT-Global",
-    "data": "2026-10-20T12:51:20-03:00",
+    "data": "2026-10-21T05:03:47-03:00",
     "tem_hora": true,
     "variantes": [
      {
-      "url": "https://cxtoday.com/m-a-deals-bring-more-agentic-ai-to-revenue-workflows",
-      "fonte": "cxtoday.com"
-     },
-     {
       "url": "https://seekingalpha.com/news/4654763-midday-need-to-know-salesforce-to-acquire-braze-spacex-earnings-preview-and-more",
       "fonte": "seekingalpha.com"
-     },
+     }
+    ],
+    "quando": "05:03"
+   },
+   {
+    "titulo": "Will Workday's C1.ai Acquisition Boost Its Enterprise AI Position?",
+    "url": "https://www.theglobeandmail.com/investing/markets/stocks/ORCL/pressreleases/8280886/will-workdays-c1ai-acquisition-boost-its-enterprise-ai-position/",
+    "dominio": "theglobeandmail.com",
+    "fonte": "theglobeandmail.com",
+    "tag": "competitor-read-through",
+    "bucket": "GL Oth",
+    "score": 22,
+    "repetido": false,
+    "origem": "TMT-Global",
+    "data": "2026-10-21T12:21:15-03:00",
+    "tem_hora": true,
+    "quando": "12:21"
+   },
+   {
+    "titulo": "Salesforce announces $5.66 billion deal for Braze, sending BRZE stock soaring 51%",
+    "url": "https://www.cnbc.com/2026/10/20/salesforce-braze-acquisition-deal.html",
+    "dominio": "cnbc.com",
+    "fonte": "cnbc.com",
+    "tag": "competitor-read-through",
+    "bucket": "GL Off",
+    "score": 22,
+    "repetido": false,
+    "origem": "CNBC Tech (direto)",
+    "data": "2026-10-20T17:10:30-03:00",
+    "tem_hora": true,
+    "variantes": [
      {
-      "url": "https://www.cnbc.com/2026/10/20/salesforce-braze-acquisition-deal.html",
-      "fonte": "CNBC Tech"
-     },
-     {
-      "url": "https://finance.yahoo.com/technology/ai/articles/salesforce-agrees-buy-braze-5-153323448.html",
+      "url": "https://finance.yahoo.com/media-advertising/articles/salesforce-bets-5-66-billion-174704354.html",
       "fonte": "finance.yahoo.com"
      }
     ],
-    "quando": "ontem 12:51"
+    "quando": "ontem 17:10"
+   },
+   {
+    "titulo": "Salesforce goes back to the M&A well to fortify a weaker business. Why it's a smart move",
+    "url": "https://www.cnbc.com/investingclub/2026/10/21/salesforce-goes-back-to-the-ma-well-to-fortify-a-weaker-business-why-its-a-smart-move.html",
+    "dominio": "cnbc.com",
+    "fonte": "cnbc.com",
+    "tag": "competitor-read-through",
+    "bucket": "GL Off",
+    "score": 21,
+    "repetido": false,
+    "origem": "TMT-Global",
+    "data": "2026-10-21T12:27:03-03:00",
+    "tem_hora": true,
+    "quando": "12:27"
    },
    {
     "titulo": "Navatar Connects Claude and Salesforce Through Bidirectional MCP for Private Equity and M&A",
@@ -1489,6 +1619,52 @@
     "data": "2026-10-21T02:00:00-03:00",
     "tem_hora": true,
     "quando": "02:00"
+   },
+   {
+    "titulo": "Salesforce to acquire Braze for $5.66bn in customer experience push",
+    "url": "https://finance.yahoo.com/news/salesforce-acquire-braze-5-66bn-095002082.html",
+    "dominio": "finance.yahoo.com",
+    "fonte": "finance.yahoo.com",
+    "tag": "competitor-read-through",
+    "bucket": "GL Oth",
+    "score": 21,
+    "repetido": false,
+    "origem": "TMT-Global",
+    "data": "2026-10-21T06:50:02-03:00",
+    "tem_hora": true,
+    "variantes": [
+     {
+      "url": "https://www.wsj.com/business/deals/salesforce-to-buy-customer-engagement-platform-for-nearly-5-7-billion-aba17cfe",
+      "fonte": "wsj.com"
+     },
+     {
+      "url": "https://www.theglobeandmail.com/investing/markets/markets-news/Motley%20Fool/8248569/stock-market-today-oct-20-salesforce-agrees-to-acquire-braze-for-5-66-billion-brze-stock-soars-52/",
+      "fonte": "theglobeandmail.com"
+     },
+     {
+      "url": "https://www.baguete.com.br/noticias/salesforce-compra-braze-por-us-5-66-bi",
+      "fonte": "Baguete"
+     },
+     {
+      "url": "https://seekingalpha.com/article/4955802-salesforce-acquires-braze-upside-case-is-becoming-clearer",
+      "fonte": "seekingalpha.com"
+     }
+    ],
+    "quando": "06:50"
+   },
+   {
+    "titulo": "OpenAI to bring AI models to Google's cloud, in further expansion beyond Microsoft",
+    "url": "https://www.cnbc.com/2026/10/21/openai-bring-its-ai-models-to-googles-cloud-expands-beyond-microsoft.html",
+    "dominio": "cnbc.com",
+    "fonte": "CNBC Tech",
+    "tag": "broad-tech",
+    "bucket": "GL Off",
+    "score": 20,
+    "repetido": false,
+    "origem": "TMT-Global",
+    "data": "2026-10-21T09:00:02-03:00",
+    "tem_hora": true,
+    "quando": "09:00"
    },
    {
     "titulo": "Google has joined Amazon in attacking Nvidia’s stronghold with AI app developers",
@@ -1510,7 +1686,7 @@
     "dominio": "ft.com",
     "fonte": "ft.com",
     "tag": "broad-tech",
-    "bucket": "GL Off",
+    "bucket": "GL Oth",
     "score": 20,
     "repetido": false,
     "origem": "FT Technology (direto)",
@@ -1548,27 +1724,37 @@
      {
       "url": "https://www.cnbc.com/2026/10/21/spacex-spcx-stock-musk-merger-tesla.html",
       "fonte": "CNBC Tech"
-     },
-     {
-      "url": "https://valor.globo.com/empresas/noticia/2026/10/21/spacex-reverte-prejuizo-e-lucra-us-44-bilhoes-no-terceiro-trimestre.ghtml",
-      "fonte": "valor.globo.com"
      }
     ],
     "quando": "ontem 21:44"
    },
    {
-    "titulo": "Anthropic in talks with neocloud Nscale over second multibillion-dollar deal, source tells CNBC",
-    "url": "https://www.cnbc.com/2026/10/20/anthropic-nscale-data-center-deal.html",
+    "titulo": "Tesla earnings loom after Musk calls SpaceX merger a 'good idea'",
+    "url": "https://www.cnbc.com/2026/10/21/tesla-tsla-q3-2026-earnings-report.html",
     "dominio": "cnbc.com",
     "fonte": "CNBC Tech",
+    "tag": "sector-regulatory",
+    "bucket": "GL Off",
+    "score": 17,
+    "repetido": false,
+    "origem": "TMT-Global",
+    "data": "2026-10-21T13:01:25-03:00",
+    "tem_hora": true,
+    "quando": "13:01"
+   },
+   {
+    "titulo": "OpenAI diz que agentes de IA enfraqueceram sistemas criados para monitorá-los",
+    "url": "https://g1.globo.com/tecnologia/noticia/2026/10/21/openai-agentes-sistemas-de-monitoramento.ghtml",
+    "dominio": "g1.globo.com",
+    "fonte": "G1 Tecnologia",
     "tag": "broad-tech",
     "bucket": "GL Oth",
-    "score": 17,
-    "repetido": true,
-    "origem": "TMT-Global",
-    "data": "2026-10-20T11:12:38-03:00",
+    "score": 16,
+    "repetido": false,
+    "origem": "TMT-Cobertura",
+    "data": "2026-10-21T11:09:41-03:00",
     "tem_hora": true,
-    "quando": "ontem 11:12"
+    "quando": "11:09"
    },
    {
     "titulo": "IA física exige preparação operacional e qualificação de profissionais, aponta Capgemini",
@@ -1599,20 +1785,6 @@
     "quando": "05:21"
    },
    {
-    "titulo": "Oracle Data Center Fight Hands Activists Path to US-Wide Blitz",
-    "url": "https://www.bloomberg.com/news/articles/2026-10-20/oracle-data-center-fight-hands-activists-path-to-us-wide-blitz",
-    "dominio": "bloomberg.com",
-    "fonte": "bloomberg.com",
-    "tag": "competitor-read-through",
-    "bucket": "GL Off",
-    "score": 16,
-    "repetido": true,
-    "origem": "TMT-Global",
-    "data": "2026-10-20T12:00:00-03:00",
-    "tem_hora": true,
-    "quando": "ontem 12:00"
-   },
-   {
     "titulo": "Nvidia in Talks to Back Firmus After IPO Flop, Report Says",
     "url": "https://www.bloomberg.com/news/articles/2026-10-20/nvidia-in-talks-to-back-firmus-after-ipo-flop-information-says",
     "dominio": "bloomberg.com",
@@ -1627,18 +1799,32 @@
     "quando": "ontem 20:59"
    },
    {
-    "titulo": "Nvidia Spent About $2.2 Million on Federal Lobbying in the Third Quarter",
-    "url": "https://www.bloomberg.com/news/articles/2026-10-20/nvidia-boosts-federal-lobbying-cash-in-q3-while-ai-debates-surge",
-    "dominio": "bloomberg.com",
-    "fonte": "bloomberg.com",
+    "titulo": "OpenAI expands ChatGPT ads to 26 more countries in bid to boost revenue",
+    "url": "https://www.businesstimes.com.sg/companies-markets/telcos-media-tech/openai-expands-chatgpt-ads-26-more-countries-bid-boost-revenue",
+    "dominio": "businesstimes.com.sg",
+    "fonte": "businesstimes.com.sg",
     "tag": "broad-tech",
     "bucket": "GL Oth",
-    "score": 16,
-    "repetido": true,
-    "origem": "TMT-Global",
-    "data": "2026-10-20T12:19:50-03:00",
+    "score": 15,
+    "repetido": false,
+    "origem": "Business Times SG (direto)",
+    "data": "2026-10-21T10:28:26-03:00",
     "tem_hora": true,
-    "quando": "ontem 12:19"
+    "quando": "10:28"
+   },
+   {
+    "titulo": "Anthropic tem prejuízo de R$ 404,6 bilhões no 1º semestre de 2026",
+    "url": "https://g1.globo.com/tecnologia/noticia/2026/10/21/anthropic-prejuizo.ghtml",
+    "dominio": "g1.globo.com",
+    "fonte": "G1 Tecnologia",
+    "tag": "broad-tech",
+    "bucket": "GL Oth",
+    "score": 15,
+    "repetido": false,
+    "origem": "TMT-Cobertura",
+    "data": "2026-10-21T08:22:45-03:00",
+    "tem_hora": true,
+    "quando": "08:22"
    },
    {
     "titulo": "Super Micro sees quarterly revenue soaring on AI server boom",
@@ -1669,6 +1855,20 @@
     "quando": "ontem 17:15"
    },
    {
+    "titulo": "HCLTech launches NVIDIA-powered HCLTech Verification and Validation for Auto to transform software-defined vehicle validation",
+    "url": "https://cxotoday.com/media-coverage/hcltech-launches-nvidia-powered-hcltech-verification-and-validation-for-auto-to-transform-software-defined-vehicle-validation/",
+    "dominio": "cxotoday.com",
+    "fonte": "cxotoday.com",
+    "tag": "competitor-read-through",
+    "bucket": "GL Oth",
+    "score": 14,
+    "repetido": false,
+    "origem": "TMT-Global",
+    "data": "2026-10-21T07:39:29-03:00",
+    "tem_hora": true,
+    "quando": "07:39"
+   },
+   {
     "titulo": "Accenture plc acquired Avicado Construction Technology Services LLC.",
     "url": "https://www.marketscreener.com/news/accenture-plc-acquired-avicado-construction-technology-services-llc-ce785cd8dd8af124",
     "dominio": "marketscreener.com",
@@ -1693,20 +1893,6 @@
     "quando": "ontem 14:50"
    },
    {
-    "titulo": "Salesforce will buy Braze for $5.7 billion to feed its AI agents customer data",
-    "url": "https://startupfortune.com/salesforce-will-buy-braze-for-57-billion-to-feed-its-ai-agents-customer-data/",
-    "dominio": "startupfortune.com",
-    "fonte": "startupfortune.com",
-    "tag": "competitor-read-through",
-    "bucket": "GL Oth",
-    "score": 14,
-    "repetido": true,
-    "origem": "TMT-Global",
-    "data": "2026-10-20T10:31:04-03:00",
-    "tem_hora": true,
-    "quando": "ontem 10:31"
-   },
-   {
     "titulo": "SpaceX Swings to a Profit, as A.I. Business Grows",
     "url": "https://www.nytimes.com/2026/10/20/technology/spacex-earnings-elon-musk.html",
     "dominio": "nytimes.com",
@@ -1719,6 +1905,62 @@
     "data": "2026-10-20T19:37:38-03:00",
     "tem_hora": true,
     "quando": "ontem 19:37"
+   },
+   {
+    "titulo": "Netflix slides as weak outlook deepens worries on viewership, revenue growth",
+    "url": "https://www.businesstimes.com.sg/companies-markets/telcos-media-tech/netflix-slides-weak-outlook-deepens-worries-viewership-revenue-growth",
+    "dominio": "businesstimes.com.sg",
+    "fonte": "businesstimes.com.sg",
+    "tag": "broad-tech",
+    "bucket": "GL Oth",
+    "score": 13,
+    "repetido": false,
+    "origem": "Business Times SG (direto)",
+    "data": "2026-10-21T11:13:44-03:00",
+    "tem_hora": true,
+    "quando": "11:13"
+   },
+   {
+    "titulo": "Nvidia quer acelerar implantação de fábricas de IA",
+    "url": "https://valor.globo.com/empresas/noticia/2026/10/21/nvidia-quer-acelerar-implantao-de-fbricas-de-ia.ghtml",
+    "dominio": "valor.globo.com",
+    "fonte": "valor.globo.com",
+    "tag": "broad-tech",
+    "bucket": "GL Oth",
+    "score": 13,
+    "repetido": false,
+    "origem": "Valor Tecnologia (Chrome)",
+    "data": "2026-10-21",
+    "tem_hora": false,
+    "quando": ""
+   },
+   {
+    "titulo": "AT&T Beats on Profit Expectations, Raises Annual Guidance",
+    "url": "https://www.bloomberg.com/news/articles/2026-10-21/at-t-beats-on-profit-expectations-raises-annual-guidance",
+    "dominio": "bloomberg.com",
+    "fonte": "bloomberg.com",
+    "tag": "broad-tech",
+    "bucket": "GL Oth",
+    "score": 13,
+    "repetido": false,
+    "origem": "TMT-Global",
+    "data": "2026-10-21T07:30:21-03:00",
+    "tem_hora": true,
+    "quando": "07:30"
+   },
+   {
+    "titulo": "Micron, Taiwan union sign deal, withdraw from mediation",
+    "url": "https://www.reuters.com/business/world-at-work/micron-says-it-has-reached-agreement-with-taiwan-union-2026-10-21/",
+    "dominio": "reuters.com",
+    "fonte": "reuters.com",
+    "tag": "broad-tech",
+    "bucket": "GL Oth",
+    "score": 13,
+    "repetido": false,
+    "origem": "TMT-Global",
+    "data": "2026-10-21T03:23:00-03:00",
+    "tem_hora": true,
+    "quando": "03:23"
    },
    {
     "titulo": "Netflix Revenue Growth Slows as It Overhauls Programming Units",
@@ -1735,32 +1977,50 @@
     "quando": "ontem 17:13"
    },
    {
-    "titulo": "Snowflake's AI monetization efforts advance as Salesforce says adoption still early: BNP",
-    "url": "https://seekingalpha.com/news/4654751-snowflakes-ai-monetization-efforts-advance-as-salesforce-says-adoption-still-early-bnp",
-    "dominio": "seekingalpha.com",
-    "fonte": "seekingalpha.com",
-    "tag": "competitor-read-through",
+    "titulo": "Tesla e SpaceX discutem possível fusão; ‘seria uma boa ideia’, diz Musk",
+    "url": "https://g1.globo.com/economia/noticia/2026/10/21/tesla-e-spacex-discutem-possivel-fusao.ghtml",
+    "dominio": "g1.globo.com",
+    "fonte": "G1 Tecnologia",
+    "tag": "broad-tech",
     "bucket": "GL Oth",
     "score": 13,
-    "repetido": true,
-    "origem": "TMT-Global",
-    "data": "2026-10-20T13:04:26-03:00",
+    "repetido": false,
+    "origem": "TMT-Cobertura",
+    "data": "2026-10-21T10:30:23-03:00",
     "tem_hora": true,
-    "quando": "ontem 13:04"
+    "quando": "10:30"
    },
    {
-    "titulo": "Former OpenAI exec has quietly built $1.5 billion startup, betting AI can revive U.S. manufacturing",
-    "url": "https://www.cnbc.com/2026/10/20/ex-openai-executive-builds-1point5-billion-ai-manufacturing-startup-arda.html",
+    "titulo": "Futures orbit around SpaceX as Tesla merger talk cheers investors",
+    "url": "https://www.cnbc.com/2026/10/21/futures-orbit-around-spacex-as-tesla-merger-talk-cheers-investors.html",
     "dominio": "cnbc.com",
     "fonte": "CNBC Tech",
     "tag": "broad-tech",
     "bucket": "GL Oth",
-    "score": 12,
-    "repetido": true,
+    "score": 13,
+    "repetido": false,
     "origem": "TMT-Global",
-    "data": "2026-10-20T10:03:31-03:00",
+    "data": "2026-10-21T09:44:19-03:00",
     "tem_hora": true,
-    "quando": "ontem 10:03"
+    "variantes": [
+     {
+      "url": "https://www.nytimes.com/2026/10/21/business/elon-musk-spacex-tesla-merger.html",
+      "fonte": "NYT Tech"
+     },
+     {
+      "url": "https://neofeed.com.br/negocios/foguete-eletrico-musk-propoe-fusao-entre-spacex-e-tesla-para-criar-gigante-de-us-36-trilhoes/",
+      "fonte": "NeoFeed"
+     },
+     {
+      "url": "https://techcrunch.com/2026/10/20/spacex-and-tesla-boards-form-special-committees-to-review-merger/",
+      "fonte": "TechCrunch"
+     },
+     {
+      "url": "https://www.ft.com/content/f2a2a578-5a2e-42ff-b4c9-8bafff271b37?syn-25a6b1a6=1",
+      "fonte": "FT Technology"
+     }
+    ],
+    "quando": "09:44"
    },
    {
     "titulo": "Google lança recursos para PMEs no Gemini",
@@ -1796,7 +2056,7 @@
     "dominio": "cnbc.com",
     "fonte": "CNBC Tech",
     "tag": "broad-tech",
-    "bucket": "GL Oth",
+    "bucket": "GL Off",
     "score": 11,
     "repetido": false,
     "origem": "TMT-Global",
@@ -1810,7 +2070,7 @@
     "dominio": "cnbc.com",
     "fonte": "CNBC Tech",
     "tag": "sector-regulatory",
-    "bucket": "GL Off",
+    "bucket": "GL Oth",
     "score": 11,
     "repetido": false,
     "origem": "TMT-Global",
@@ -1819,46 +2079,18 @@
     "quando": "ontem 22:44"
    },
    {
-    "titulo": "Dow Jones Futuro sobe após resultados da SpaceX aliviarem temores sobre IA",
-    "url": "https://www.infomoney.com.br/mercados/dow-jones-futuro-sobe-apos-resultados-da-spacex-aliviarem-temores-sobre-ia/",
-    "dominio": "infomoney.com.br",
-    "fonte": "infomoney.com.br",
+    "titulo": "Nvidia CEO Huang pitches Europe to adopt AI in all industries",
+    "url": "https://www.businesstimes.com.sg/companies-markets/telcos-media-tech/nvidia-ceo-huang-pitches-europe-adopt-ai-all-industries",
+    "dominio": "businesstimes.com.sg",
+    "fonte": "businesstimes.com.sg",
     "tag": "broad-tech",
     "bucket": "GL Oth",
     "score": 11,
     "repetido": false,
-    "origem": "InfoMoney (direto)",
-    "data": "2026-10-21T05:45:50-03:00",
+    "origem": "Business Times SG (direto)",
+    "data": "2026-10-21T09:16:29-03:00",
     "tem_hora": true,
-    "quando": "05:45"
-   },
-   {
-    "titulo": "Singtel and Ericsson renew ties, expand 5G for AI growth",
-    "url": "https://www.lightreading.com/5g/singtel-and-ericsson-renew-ties-expand-5g-for-ai-growth",
-    "dominio": "lightreading.com",
-    "fonte": "lightreading.com",
-    "tag": "sector-regulatory",
-    "bucket": "GL Oth",
-    "score": 11,
-    "repetido": true,
-    "origem": "Light Reading (direto)",
-    "data": "2026-10-20T11:16:46-03:00",
-    "tem_hora": true,
-    "quando": "ontem 11:16"
-   },
-   {
-    "titulo": "Another data center IPO fizzles as investor appetite wanes",
-    "url": "https://www.lightreading.com/finance/another-data-center-ipo-fizzes-as-investor-appetite-wanes",
-    "dominio": "lightreading.com",
-    "fonte": "lightreading.com",
-    "tag": "broad-tech",
-    "bucket": "GL Oth",
-    "score": 11,
-    "repetido": true,
-    "origem": "Light Reading (direto)",
-    "data": "2026-10-20T10:59:41-03:00",
-    "tem_hora": true,
-    "quando": "ontem 10:59"
+    "quando": "09:16"
    },
    {
     "titulo": "easyJet’s new AI-powered customer service platform takes flight",
@@ -1889,26 +2121,6 @@
     "quando": "ontem 22:44"
    },
    {
-    "titulo": "SpaceX and Tesla boards form special committees to review merger",
-    "url": "https://techcrunch.com/2026/10/20/spacex-and-tesla-boards-form-special-committees-to-review-merger/",
-    "dominio": "techcrunch.com",
-    "fonte": "TechCrunch",
-    "tag": "broad-tech",
-    "bucket": "GL Oth",
-    "score": 11,
-    "repetido": false,
-    "origem": "TMT-Global",
-    "data": "2026-10-20T19:57:57-03:00",
-    "tem_hora": true,
-    "variantes": [
-     {
-      "url": "https://www.ft.com/content/f2a2a578-5a2e-42ff-b4c9-8bafff271b37?syn-25a6b1a6=1",
-      "fonte": "FT Technology"
-     }
-    ],
-    "quando": "ontem 19:57"
-   },
-   {
     "titulo": "Nvidia-Backed Pigment Raises $250 Million to Take on Microsoft",
     "url": "https://www.bloomberg.com/news/articles/2026-10-20/nvidia-backed-pigment-nabs-250-million-to-challenge-microsoft",
     "dominio": "bloomberg.com",
@@ -1921,6 +2133,20 @@
     "data": "2026-10-20T17:00:01-03:00",
     "tem_hora": true,
     "quando": "ontem 17:00"
+   },
+   {
+    "titulo": "Who’s paying for the AI build-out? Probably you",
+    "url": "https://www.ft.com/content/09f56730-4702-446d-9986-f7c93ffe6bf0?syn-25a6b1a6=1",
+    "dominio": "ft.com",
+    "fonte": "FT Technology",
+    "tag": "broad-tech",
+    "bucket": "GL Oth",
+    "score": 10,
+    "repetido": false,
+    "origem": "TMT-Global",
+    "data": "2026-10-21T12:00:25-03:00",
+    "tem_hora": true,
+    "quando": "12:00"
    },
    {
     "titulo": "Nscale boss seeks to reassure staff amid AI market jitters",
@@ -1965,46 +2191,32 @@
     "quando": "ontem 17:32"
    },
    {
-    "titulo": "Google Reports Cloud Disruptions in Europe",
-    "url": "https://www.nytimes.com/2026/10/20/technology/google-cloud-down-outage-europe.html",
-    "dominio": "nytimes.com",
-    "fonte": "NYT Tech",
-    "tag": "broad-tech",
-    "bucket": "GL Oth",
-    "score": 10,
-    "repetido": false,
-    "origem": "TMT-Global",
-    "data": "2026-10-20T10:04:12-03:00",
-    "tem_hora": true,
-    "quando": "ontem 10:04"
-   },
-   {
-    "titulo": "Singtel and Ericsson partner to scale 5G innovation and build AI-native networks in Singapore",
-    "url": "https://www.lightreading.com/ai-machine-learning/singtel-and-ericsson-partner-to-scale-5g-innovation-and-build-ai-native-networks-in-singapore",
+    "titulo": "T-Mobile makes first AI-RAN call with Nokia and Nvidia",
+    "url": "https://www.lightreading.com/ai-machine-learning/t-mobile-makes-first-ai-ran-call-with-nokia-and-nvidia",
     "dominio": "lightreading.com",
     "fonte": "lightreading.com",
-    "tag": "sector-regulatory",
-    "bucket": "GL Oth",
-    "score": 10,
-    "repetido": true,
-    "origem": "Light Reading (direto)",
-    "data": "2026-10-20T12:13:09-03:00",
-    "tem_hora": true,
-    "quando": "ontem 12:13"
-   },
-   {
-    "titulo": "AI startup ASI valued at $3 billion in latest funding round",
-    "url": "https://www.reuters.com/business/ai-startup-asi-valued-3-billion-latest-funding-round-2026-10-20/",
-    "dominio": "reuters.com",
-    "fonte": "reuters.com",
     "tag": "broad-tech",
     "bucket": "GL Oth",
     "score": 10,
     "repetido": false,
-    "origem": "TMT-Global",
-    "data": "2026-10-20T12:54:09-03:00",
+    "origem": "Light Reading (direto)",
+    "data": "2026-10-21T13:13:58-03:00",
     "tem_hora": true,
-    "quando": "ontem 12:54"
+    "quando": "13:13"
+   },
+   {
+    "titulo": "Nvidia announces plug and play Vera Rubin racks that can be shipped on a truck",
+    "url": "https://www.cnbc.com/2026/10/21/nvidia-announces-vera-rubin-racks-that-can-be-shipped-on-a-truck-.html",
+    "dominio": "cnbc.com",
+    "fonte": "CNBC Tech",
+    "tag": "broad-tech",
+    "bucket": "GL Off",
+    "score": 9,
+    "repetido": false,
+    "origem": "TMT-Global",
+    "data": "2026-10-21T08:30:01-03:00",
+    "tem_hora": true,
+    "quando": "08:30"
    },
    {
     "titulo": "'MAKE DEALS': Trump says data centers should pay communities a 'dividend' to win support",
@@ -2049,6 +2261,34 @@
     "quando": "ontem 22:20"
    },
    {
+    "titulo": "Intel hits construction milestone at Ohio chip fab that’s at least 5 years behind schedule",
+    "url": "https://www.cnbc.com/2026/10/21/intel-hits-construction-milestone-at-delayed-ohio-chip-fab-.html",
+    "dominio": "cnbc.com",
+    "fonte": "CNBC Tech",
+    "tag": "broad-tech",
+    "bucket": "GL Oth",
+    "score": 8,
+    "repetido": false,
+    "origem": "TMT-Global",
+    "data": "2026-10-21T12:00:01-03:00",
+    "tem_hora": true,
+    "quando": "12:00"
+   },
+   {
+    "titulo": "Investors are questioning neoclouds' business model but Nebius says AI computing prices are rising",
+    "url": "https://www.cnbc.com/2026/10/21/nebius-ai-computing-nvidia-gpu-prices.html",
+    "dominio": "cnbc.com",
+    "fonte": "CNBC Tech",
+    "tag": "broad-tech",
+    "bucket": "GL Oth",
+    "score": 8,
+    "repetido": false,
+    "origem": "TMT-Global",
+    "data": "2026-10-21T09:21:07-03:00",
+    "tem_hora": true,
+    "quando": "09:21"
+   },
+   {
     "titulo": "The $15bn ‘viral’ AI start-up changing how American doctors treat patients",
     "url": "https://www.ft.com/content/0ed17b79-47dd-4ad8-8dca-44eb35617edc?syn-25a6b1a6=1",
     "dominio": "ft.com",
@@ -2063,6 +2303,132 @@
     "quando": "01:00"
    },
    {
+    "titulo": "Trump Says Data Centers Must Provide Their Own Electricity",
+    "url": "https://www.wsj.com/politics/policy/trump-says-data-centers-must-provide-their-own-electricity-c843ed56",
+    "dominio": "wsj.com",
+    "fonte": "wsj.com",
+    "tag": "broad-tech",
+    "bucket": "GL Oth",
+    "score": 8,
+    "repetido": false,
+    "origem": "TMT-Global",
+    "data": "2026-10-21T11:47:00-03:00",
+    "tem_hora": true,
+    "quando": "11:47"
+   },
+   {
+    "titulo": "Government websites go dark after AI-discovered flaw sparks security scramble",
+    "url": "https://www.reuters.com/world/asia-pacific/eu-agency-warns-websites-may-need-be-taken-offline-php-prepares-patches-2026-10-21/",
+    "dominio": "reuters.com",
+    "fonte": "reuters.com",
+    "tag": "broad-tech",
+    "bucket": "GL Oth",
+    "score": 8,
+    "repetido": false,
+    "origem": "TMT-Global",
+    "data": "2026-10-21T13:46:06-03:00",
+    "tem_hora": true,
+    "quando": "13:46"
+   },
+   {
+    "titulo": "Exclusive | AI Just Found a Bug That Puts Up to 70% of the World’s Websites at Risk",
+    "url": "https://www.wsj.com/tech/cybersecurity/ai-just-found-a-bug-that-puts-up-to-70-of-the-worlds-websites-at-risk-fd0902ea",
+    "dominio": "wsj.com",
+    "fonte": "wsj.com",
+    "tag": "broad-tech",
+    "bucket": "GL Oth",
+    "score": 8,
+    "repetido": false,
+    "origem": "TMT-Global",
+    "data": "2026-10-21T10:51:00-03:00",
+    "tem_hora": true,
+    "quando": "10:51"
+   },
+   {
+    "titulo": "AI Drives Record Growth in Information Technology",
+    "url": "https://www.wsj.com/cio-journal/ai-drives-record-growth-in-information-technology-afd1c03c",
+    "dominio": "wsj.com",
+    "fonte": "wsj.com",
+    "tag": "broad-tech",
+    "bucket": "GL Oth",
+    "score": 8,
+    "repetido": false,
+    "origem": "TMT-Global",
+    "data": "2026-10-21T10:12:00-03:00",
+    "tem_hora": true,
+    "quando": "10:12"
+   },
+   {
+    "titulo": "Chinese AI Tool Linked to Hacks in Japan",
+    "url": "https://www.wsj.com/world/asia/chinese-ai-tool-linked-to-hacks-in-japan-4813d13b",
+    "dominio": "wsj.com",
+    "fonte": "wsj.com",
+    "tag": "broad-tech",
+    "bucket": "GL Oth",
+    "score": 8,
+    "repetido": false,
+    "origem": "TMT-Global",
+    "data": "2026-10-21T07:30:00-03:00",
+    "tem_hora": true,
+    "quando": "07:30"
+   },
+   {
+    "titulo": "Hackers Are Hijacking AI Models, and Using AI to Do It",
+    "url": "https://www.wsj.com/pro/cybersecurity/hackers-are-hijacking-ai-models-and-using-ai-to-do-it-be3d0389",
+    "dominio": "wsj.com",
+    "fonte": "wsj.com",
+    "tag": "broad-tech",
+    "bucket": "GL Oth",
+    "score": 8,
+    "repetido": false,
+    "origem": "TMT-Global",
+    "data": "2026-10-21T07:00:00-03:00",
+    "tem_hora": true,
+    "quando": "07:00"
+   },
+   {
+    "titulo": "TSMC Pauses Some Taiwan Construction After Mishap Kills Four",
+    "url": "https://www.bloomberg.com/news/articles/2026-10-21/tsmc-suspends-some-construction-after-deadly-accident-kills-four",
+    "dominio": "bloomberg.com",
+    "fonte": "bloomberg.com",
+    "tag": "broad-tech",
+    "bucket": "GL Oth",
+    "score": 8,
+    "repetido": false,
+    "origem": "TMT-Global",
+    "data": "2026-10-21T04:44:07-03:00",
+    "tem_hora": true,
+    "quando": "04:44"
+   },
+   {
+    "titulo": "Why AI’s Deepest Mind Believes the World Is About to Change Radically",
+    "url": "https://www.wsj.com/tech/ai/demis-hassabis-ai-deepmind-google-isomorphic-2b4e3153",
+    "dominio": "wsj.com",
+    "fonte": "wsj.com",
+    "tag": "broad-tech",
+    "bucket": "GL Oth",
+    "score": 8,
+    "repetido": false,
+    "origem": "TMT-Global",
+    "data": "2026-10-21T06:30:00-03:00",
+    "tem_hora": true,
+    "quando": "06:30"
+   },
+   {
+    "titulo": "Shares in Ray-Ban Maker EssilorLuxottica Gain as AI Glasses Continue to Shine",
+    "url": "https://www.wsj.com/business/earnings/shares-in-ray-ban-maker-essilorluxottica-gain-as-ai-glasses-continue-to-shine-59c13a0e",
+    "dominio": "wsj.com",
+    "fonte": "wsj.com",
+    "tag": "broad-tech",
+    "bucket": "GL Oth",
+    "score": 8,
+    "repetido": false,
+    "origem": "TMT-Global",
+    "data": "2026-10-21T05:19:00-03:00",
+    "tem_hora": true,
+    "quando": "05:19"
+   },
+   {
     "titulo": "Anthropic logged net loss of over $80 billion in first half of 2026",
     "url": "https://www.reuters.com/business/anthropic-recorded-net-loss-over-80-billion-first-half-this-year-wsj-reports-2026-10-20/",
     "dominio": "reuters.com",
@@ -2075,220 +2441,128 @@
     "data": "2026-10-20T16:41:00-03:00",
     "tem_hora": true,
     "quando": "ontem 16:41"
-   },
-   {
-    "titulo": "Nextdc Shares Plunge 44% After Public Backlash Hits Data Center",
-    "url": "https://www.bloomberg.com/news/articles/2026-10-20/nextdc-cuts-outlook-as-public-backlash-delays-data-center-power",
-    "dominio": "bloomberg.com",
-    "fonte": "bloomberg.com",
-    "tag": "broad-tech",
-    "bucket": "GL Oth",
-    "score": 8,
-    "repetido": false,
-    "origem": "TMT-Global",
-    "data": "2026-10-20T19:14:33-03:00",
-    "tem_hora": true,
-    "quando": "ontem 19:14"
-   },
-   {
-    "titulo": "Ken Griffin Says AI ‘Almost Certainly’ in a Bubble Right Now",
-    "url": "https://www.bloomberg.com/news/articles/2026-10-20/ken-griffin-says-ai-almost-certainly-in-a-bubble-right-now",
-    "dominio": "bloomberg.com",
-    "fonte": "bloomberg.com",
-    "tag": "broad-tech",
-    "bucket": "GL Oth",
-    "score": 8,
-    "repetido": false,
-    "origem": "TMT-Global",
-    "data": "2026-10-20T18:52:12-03:00",
-    "tem_hora": true,
-    "quando": "ontem 18:52"
-   },
-   {
-    "titulo": "Anthropic May Spend $750 Billion on Computing Costs, Report Says",
-    "url": "https://www.bloomberg.com/news/articles/2026-10-20/anthropic-could-spend-750-billion-on-computing-costs-wsj-says",
-    "dominio": "bloomberg.com",
-    "fonte": "bloomberg.com",
-    "tag": "broad-tech",
-    "bucket": "GL Off",
-    "score": 8,
-    "repetido": false,
-    "origem": "TMT-Global",
-    "data": "2026-10-20T17:04:21-03:00",
-    "tem_hora": true,
-    "quando": "ontem 17:04"
-   },
-   {
-    "titulo": "Anthropic's public benefit fund and how it compares with other big philanthropic efforts",
-    "url": "https://www.reuters.com/business/anthropics-public-benefit-fund-how-it-compares-with-other-big-philanthropic-2026-10-20/",
-    "dominio": "reuters.com",
-    "fonte": "reuters.com",
-    "tag": "broad-tech",
-    "bucket": "GL Off",
-    "score": 8,
-    "repetido": false,
-    "origem": "TMT-Global",
-    "data": "2026-10-20T17:21:46-03:00",
-    "tem_hora": true,
-    "quando": "ontem 17:21"
-   },
-   {
-    "titulo": "Exclusive | Anthropic S-1 Shows Red-Hot Growth, Risks and Massive Computing Costs",
-    "url": "https://www.wsj.com/tech/ai/anthropic-revenue-growth-ipo-accaf0f1",
-    "dominio": "wsj.com",
-    "fonte": "wsj.com",
-    "tag": "broad-tech",
-    "bucket": "GL Off",
-    "score": 8,
-    "repetido": false,
-    "origem": "TMT-Global",
-    "data": "2026-10-20T16:30:00-03:00",
-    "tem_hora": true,
-    "quando": "ontem 16:30"
-   },
-   {
-    "titulo": "Britain seeks to break Apple's grip on contactless payments",
-    "url": "https://www.reuters.com/world/britain-seeks-break-apples-grip-contactless-payments-2026-10-20/",
-    "dominio": "reuters.com",
-    "fonte": "reuters.com",
-    "tag": "broad-tech",
-    "bucket": "GL Oth",
-    "score": 8,
-    "repetido": false,
-    "origem": "TMT-Global",
-    "data": "2026-10-20T10:10:00-03:00",
-    "tem_hora": true,
-    "quando": "ontem 10:10"
-   },
-   {
-    "titulo": "AI’s Transformational Value Remains Elusive for Most Companies",
-    "url": "https://www.wsj.com/cio-journal/ais-transformational-value-remains-elusive-for-most-companies-2fc0e3d3",
-    "dominio": "wsj.com",
-    "fonte": "wsj.com",
-    "tag": "broad-tech",
-    "bucket": "GL Oth",
-    "score": 8,
-    "repetido": false,
-    "origem": "TMT-Global",
-    "data": "2026-10-20T10:23:00-03:00",
-    "tem_hora": true,
-    "quando": "ontem 10:23"
-   },
-   {
-    "titulo": "Why Nvidia Needs CoreWeave",
-    "url": "https://www.wsj.com/tech/ai/why-nvidia-needs-coreweave-2c26136e",
-    "dominio": "wsj.com",
-    "fonte": "wsj.com",
-    "tag": "broad-tech",
-    "bucket": "GL Off",
-    "score": 8,
-    "repetido": false,
-    "origem": "TMT-Global",
-    "data": "2026-10-20T13:00:00-03:00",
-    "tem_hora": true,
-    "quando": "ontem 13:00"
-   },
-   {
-    "titulo": "Google libera TorchTPU como código aberto para executar PyTorch em aceleradores próprios",
-    "url": "https://tiinside.com.br/20/10/2026/google-libera-torchtpu-como-codigo-aberto-para-executar-pytorch-em-aceleradores-proprios/",
-    "dominio": "tiinside.com.br",
-    "fonte": "TI Inside",
-    "tag": "broad-tech",
-    "bucket": "GL Oth",
-    "score": 7,
-    "repetido": false,
-    "origem": "TMT-Cobertura",
-    "data": "2026-10-20T19:09:58-03:00",
-    "tem_hora": true,
-    "quando": "ontem 19:09"
-   },
-   {
-    "titulo": "China exige que EUA revoguem veto ao DeepSeek após proibição em órgãos federais americanos",
-    "url": "https://g1.globo.com/tecnologia/noticia/2026/10/20/china-exige-que-eua-revoguem-veto-ao-deepseek-apos-proibicao-em-orgaos-federais-americanos.ghtml",
-    "dominio": "g1.globo.com",
-    "fonte": "G1 Tecnologia",
-    "tag": "broad-tech",
-    "bucket": "GL Oth",
-    "score": 7,
-    "repetido": false,
-    "origem": "TMT-Cobertura",
-    "data": "2026-10-20T13:50:03-03:00",
-    "tem_hora": true,
-    "quando": "ontem 13:50"
-   },
-   {
-    "titulo": "Empresas de IA já traçam planos para compartilhar lucros em antecipação a grandes IPOs",
-    "url": "https://www.estadao.com.br/economia/negocios/empresas-de-ia-ja-tracam-planos-para-compartilhar-lucros-em-antecipacao-a-grandes-ipos/",
-    "dominio": "estadao.com.br",
-    "fonte": "estadao.com.br",
-    "tag": "broad-tech",
-    "bucket": "GL Oth",
-    "score": 7,
-    "repetido": false,
-    "origem": "Estadao Negocios (direto)",
-    "data": "2026-10-20T19:26:41-03:00",
-    "tem_hora": true,
-    "quando": "ontem 19:26"
-   },
-   {
-    "titulo": "O silêncio antes da resposta: o que a IA está fazendo enquanto você espera?",
-    "url": "https://www.estadao.com.br/economia/alexandre-chiavegatto-filho/silencio-antes-resposta-ia-enquanto-voce-espera/",
-    "dominio": "estadao.com.br",
-    "fonte": "estadao.com.br",
-    "tag": "broad-tech",
-    "bucket": "GL Oth",
-    "score": 7,
-    "repetido": false,
-    "origem": "Estadao Negocios (direto)",
-    "data": "2026-10-20T18:02:32-03:00",
-    "tem_hora": true,
-    "quando": "ontem 18:02"
-   },
-   {
-    "titulo": "Why VMO2 isn't afraid of VodafoneThree's monster 5G footprint",
-    "url": "https://www.lightreading.com/5g/why-vmo2-isn-t-afraid-of-vodafonethree-s-monster-5g-footprint",
-    "dominio": "lightreading.com",
-    "fonte": "lightreading.com",
-    "tag": "sector-regulatory",
-    "bucket": "GL Oth",
-    "score": 7,
-    "repetido": false,
-    "origem": "Light Reading (direto)",
-    "data": "2026-10-21T04:30:00-03:00",
-    "tem_hora": true,
-    "quando": "04:30"
-   },
-   {
-    "titulo": "Lumen takes network resilience beyond the backup plan with AI and built-in diversity",
-    "url": "https://www.lightreading.com/ai-machine-learning/lumen-takes-network-resilience-beyond-the-backup-plan-with-ai-and-built-in-diversity",
-    "dominio": "lightreading.com",
-    "fonte": "lightreading.com",
-    "tag": "broad-tech",
-    "bucket": "GL Oth",
-    "score": 7,
-    "repetido": false,
-    "origem": "Light Reading (direto)",
-    "data": "2026-10-20T12:17:49-03:00",
-    "tem_hora": true,
-    "quando": "ontem 12:17"
-   },
-   {
-    "titulo": "How Two Colorado House Candidates Are Thinking About AI",
-    "url": "https://www.nytimes.com/2026/10/20/us/politics/colorado-elections-ai.html",
-    "dominio": "nytimes.com",
-    "fonte": "nytimes.com",
-    "tag": "broad-tech",
-    "bucket": "GL Oth",
-    "score": 7,
-    "repetido": false,
-    "origem": "TMT-Global",
-    "data": "2026-10-20T19:47:19-03:00",
-    "tem_hora": true,
-    "quando": "ontem 19:47"
    }
   ]
  },
  "empresas": [
+  {
+   "empresa": "TIM",
+   "itens": [
+    {
+     "titulo": "TIM lança plataforma de nuvem e IA",
+     "url": "https://telesintese.com.br/tim-lanca-plataforma-de-nuvem-e-ia/",
+     "dominio": "telesintese.com.br",
+     "fonte": "telesintese.com.br",
+     "tag": "must-read",
+     "bucket": "BR Off",
+     "score": 19,
+     "repetido": false,
+     "origem": "TeleSintese (direto)",
+     "data": "2026-10-21T11:14:52-03:00",
+     "tem_hora": true,
+     "variantes": [
+      {
+       "url": "https://convergenciadigital.com.br/governo/tim-usa-oracle-para-entrar-na-briga-do-negocio-de-nuvem-e-ia-no-b2b/",
+       "fonte": "convergenciadigital.com.br"
+      }
+     ]
+    },
+    {
+     "titulo": "TIM reforça aposta no corporativo em parceria com a Oracle",
+     "url": "https://valor.globo.com/empresas/noticia/2026/10/21/tim-reforca-aposta-no-corporativo-em-parceria-com-a-oracle.ghtml",
+     "dominio": "valor.globo.com",
+     "fonte": "valor.globo.com",
+     "tag": "must-read",
+     "bucket": "BR Oth",
+     "score": 18,
+     "repetido": false,
+     "origem": "Valor Telecom (Chrome)",
+     "data": "2026-10-21",
+     "tem_hora": false
+    },
+    {
+     "titulo": "Telecom Italia adia novamente conclusão da venda de unidade de cabos submarinos",
+     "url": "https://valor.globo.com/empresas/noticia/2026/10/21/telecom-italia-adia-novamente-conclusao-da-venda-de-unidade-de-cabos-submarinos.ghtml",
+     "dominio": "valor.globo.com",
+     "fonte": "valor.globo.com",
+     "tag": "must-read",
+     "bucket": "BR Oth",
+     "score": 15,
+     "repetido": false,
+     "origem": "Valor Telecom (Chrome)",
+     "data": "2026-10-21",
+     "tem_hora": false
+    }
+   ]
+  },
+  {
+   "empresa": "Starlink",
+   "itens": [
+    {
+     "titulo": "Starlink avança 69% em receitas e alcança 13,6 milhões de assinantes",
+     "url": "https://teletime.com.br/20/10/2026/starlink-terceiro-trimestre-2926/",
+     "dominio": "teletime.com.br",
+     "fonte": "TELETIME",
+     "tag": "must-read",
+     "bucket": "BR Off",
+     "score": 17,
+     "repetido": false,
+     "origem": "TMT-Cobertura",
+     "data": "2026-10-20T21:56:46-03:00",
+     "tem_hora": true,
+     "variantes": [
+      {
+       "url": "https://www.bloomberg.com/news/articles/2026-10-20/musk-gave-the-order-to-slow-down-ukraine-s-starlink-wsj-reports",
+       "fonte": "bloomberg.com"
+      },
+      {
+       "url": "https://www.wsj.com/business/order-to-slow-down-starlink-for-ukraine-came-from-musk-af367811",
+       "fonte": "wsj.com"
+      },
+      {
+       "url": "https://timesbrasil.com.br/empresas-e-negocios/elon-musk-ordenou-reducao-da-velocidade-do-starlink-na-ucrania/",
+       "fonte": "timesbrasil.com.br"
+      }
+     ]
+    },
+    {
+     "titulo": "To replace Starlink, Europe will have to reawaken its animal spirits",
+     "url": "https://www.ft.com/content/dcf3d157-de7d-4b3a-ab6a-115558d6a47b?syn-25a6b1a6=1",
+     "dominio": "ft.com",
+     "fonte": "FT Technology",
+     "tag": "company-specific",
+     "bucket": "BR Oth",
+     "score": 10,
+     "repetido": false,
+     "origem": "TMT-Global",
+     "data": "2026-10-21T01:00:23-03:00",
+     "tem_hora": true,
+     "variantes": [
+      {
+       "url": "https://www.telecoms.com/satellite/us-plays-farcical-game-of-hot-potato-over-ukraine-starlink-restrictions",
+       "fonte": "telecoms"
+      },
+      {
+       "url": "https://www.cnnbrasil.com.br/internacional/rubio-acesso-ao-starlink-na-ucrania-e-decisao-de-musk-nao-da-casa-branca/",
+       "fonte": "cnnbrasil.com.br"
+      }
+     ]
+    },
+    {
+     "titulo": "SpaceX eyes full Starship recovery as Starlink subs miss estimates",
+     "url": "https://www.lightreading.com/satellite/spacex-eyes-full-starship-recovery-as-starlink-subs-miss-estimates",
+     "dominio": "lightreading.com",
+     "fonte": "lightreading.com",
+     "tag": "company-specific",
+     "bucket": "BR Oth",
+     "score": 9,
+     "repetido": false,
+     "origem": "Light Reading (direto)",
+     "data": "2026-10-21T10:00:00-03:00",
+     "tem_hora": true
+    }
+   ]
+  },
   {
    "empresa": "TOTVS",
    "itens": [
@@ -2321,55 +2595,6 @@
    ]
   },
   {
-   "empresa": "Starlink",
-   "itens": [
-    {
-     "titulo": "Starlink avança 69% em receitas e alcança 13,6 milhões de assinantes",
-     "url": "https://teletime.com.br/20/10/2026/starlink-terceiro-trimestre-2926/",
-     "dominio": "teletime.com.br",
-     "fonte": "TELETIME",
-     "tag": "must-read",
-     "bucket": "BR Off",
-     "score": 17,
-     "repetido": false,
-     "origem": "TMT-Cobertura",
-     "data": "2026-10-20T21:56:46-03:00",
-     "tem_hora": true,
-     "variantes": [
-      {
-       "url": "https://www.bloomberg.com/news/articles/2026-10-20/musk-gave-the-order-to-slow-down-ukraine-s-starlink-wsj-reports",
-       "fonte": "bloomberg.com"
-      },
-      {
-       "url": "https://www.wsj.com/business/order-to-slow-down-starlink-for-ukraine-came-from-musk-af367811",
-       "fonte": "wsj.com"
-      },
-      {
-       "url": "https://timesbrasil.com.br/empresas-e-negocios/elon-musk-ordenou-reducao-da-velocidade-do-starlink-na-ucrania/",
-       "fonte": "timesbrasil.com.br"
-      },
-      {
-       "url": "https://convergenciadigital.com.br/telecom/amazon-ganha-musculatura-para-disputar-mercado-d2d-com-a-starlink/",
-       "fonte": "convergenciadigital.com.br"
-      }
-     ]
-    },
-    {
-     "titulo": "To replace Starlink, Europe will have to reawaken its animal spirits",
-     "url": "https://www.ft.com/content/dcf3d157-de7d-4b3a-ab6a-115558d6a47b?syn-25a6b1a6=1",
-     "dominio": "ft.com",
-     "fonte": "FT Technology",
-     "tag": "company-specific",
-     "bucket": "BR Oth",
-     "score": 10,
-     "repetido": false,
-     "origem": "TMT-Global",
-     "data": "2026-10-21T01:00:23-03:00",
-     "tem_hora": true
-    }
-   ]
-  },
-  {
    "empresa": "Vivo",
    "itens": [
     {
@@ -2394,24 +2619,6 @@
    ]
   },
   {
-   "empresa": "TIM",
-   "itens": [
-    {
-     "titulo": "TIM reforça aposta no corporativo em parceria com a Oracle",
-     "url": "https://valor.globo.com/empresas/noticia/2026/10/21/tim-reforca-aposta-no-corporativo-em-parceria-com-a-oracle.ghtml",
-     "dominio": "valor.globo.com",
-     "fonte": "valor.globo.com",
-     "tag": "must-read",
-     "bucket": "BR Oth",
-     "score": 18,
-     "repetido": false,
-     "origem": "Valor Tecnologia (Chrome)",
-     "data": "2026-10-21",
-     "tem_hora": false
-    }
-   ]
-  },
-  {
    "empresa": "Claro",
    "itens": [
     {
@@ -2427,6 +2634,10 @@
      "data": "2026-10-20",
      "tem_hora": false,
      "variantes": [
+      {
+       "url": "https://telesintese.com.br/america-movil-tem-alta-de-7-no-lucro-no-terceiro-trimestre/",
+       "fonte": "telesintese.com.br"
+      },
       {
        "url": "https://timesbrasil.com.br/empresas-e-negocios/controladora-da-claro-america-movil-tem-lucro-de-us-132-bilhao-no-trimestre/",
        "fonte": "timesbrasil.com.br"
