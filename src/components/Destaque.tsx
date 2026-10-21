@@ -1,4 +1,5 @@
 import type { Item } from "@/lib/tipos";
+import { quandoDoItem } from "@/lib/quando";
 
 /**
  * O que o analista precisa ver mesmo que leia mais nada.
@@ -34,8 +35,11 @@ export function Destaque({ itens }: { itens: Item[] }) {
               >
                 {it.titulo}
               </a>
-              <div className="mt-0.5 font-mono text-[12px] text-tinta-3">
-                {it.fonte || it.dominio}
+              <div className="mt-0.5 flex items-center gap-2 font-mono text-[12px] text-tinta-3">
+                <span>{it.fonte || it.dominio}</span>
+                {quandoDoItem(it) ? (
+                  <span className="text-[10px] leading-none">{quandoDoItem(it)}</span>
+                ) : null}
               </div>
             </div>
           </li>

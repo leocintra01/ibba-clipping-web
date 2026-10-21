@@ -2,6 +2,7 @@
 
 import type { Item } from "@/lib/tipos";
 import { useSelecao } from "@/lib/selecao";
+import { quandoDoItem } from "@/lib/quando";
 
 /**
  * Uma noticia na lista.
@@ -18,6 +19,7 @@ import { useSelecao } from "@/lib/selecao";
 export function ItemNoticia({ item }: { item: Item }) {
   const { marcado, alternar } = useSelecao();
   const escolhido = marcado(item.url);
+  const quando = quandoDoItem(item);
 
   return (
     <li
@@ -45,10 +47,10 @@ export function ItemNoticia({ item }: { item: Item }) {
         </a>
         <div className="mt-1 flex flex-wrap items-center gap-x-2 gap-y-1 font-mono text-[12px] text-tinta-3">
           <span>{item.fonte || item.dominio}</span>
-          {item.quando ? (
+          {quando ? (
             // Data e hora sao o detalhe menos decisivo da linha: ficam em corpo
             // menor que a fonte, so' pra consultar quando interessa.
-            <span className="text-[10px] leading-none">{item.quando}</span>
+            <span className="text-[10px] leading-none">{quando}</span>
           ) : null}
         </div>
       </div>
