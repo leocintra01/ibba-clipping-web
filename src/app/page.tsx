@@ -1,31 +1,21 @@
 import Link from "next/link";
 import { edicaoAtual } from "@/lib/edicoes";
 import { Alertas } from "@/components/Alertas";
+import { Cabecalho } from "@/components/Cabecalho";
 import { Destaque } from "@/components/Destaque";
 import { Edicao } from "@/components/Edicao";
 import { ProvedorSelecao } from "@/lib/selecao";
-
-function dataPorExtenso(iso: string): string {
-  const [a, m, d] = iso.split("-").map(Number);
-  return new Date(a, m - 1, d).toLocaleDateString("pt-BR", {
-    weekday: "long",
-    day: "2-digit",
-    month: "long",
-  });
-}
-
-function hora(iso: string): string {
-  return iso.slice(11, 16);
-}
 
 export default async function Home() {
   const edicao = await edicaoAtual();
 
   if (!edicao) {
     return (
-      <main className="mx-auto max-w-3xl px-5 py-16">
-        <h1 className="text-xl font-semibold">IBBA · TMT Daily News</h1>
-        <p className="mt-2 text-tinta-3">
+      <main className="mx-auto max-w-3xl px-6 py-20">
+        <h1 className="font-[family-name:var(--font-leitura)] text-2xl font-semibold">
+          TMT Daily News
+        </h1>
+        <p className="mt-2 text-[15px] text-tinta-3">
           Nenhuma edição disponível ainda.
         </p>
       </main>
@@ -44,32 +34,16 @@ export default async function Home() {
         .slice(0, 3);
 
   return (
-    <main className="mx-auto max-w-3xl bg-papel-2">
+    <main className="mx-auto max-w-3xl bg-papel shadow-[0_0_0_1px_var(--color-borda)] sm:my-6">
       <Alertas alertas={edicao.alertas} />
-
-      <header className="bg-tinta px-4 py-4 text-white sm:px-5">
-        <h1 className="text-[17px] font-semibold tracking-tight">
-          IBBA <span className="text-laranja">·</span> TMT Daily News
-        </h1>
-        <p className="mt-0.5 font-mono text-[12px] text-[#a9a39c]">
-          <span className="first-letter:uppercase">
-            {dataPorExtenso(edicao.data)}
-          </span>
-          {" · "}
-          {hora(edicao.gerado_em)}
-          {" · "}
-          <span className="tabular-nums">{edicao.totais.na_edicao}</span> notícias
-          de <span className="tabular-nums">{edicao.totais.coletados}</span>{" "}
-          lidas
-        </p>
+      <Cabecalho edicao={edicao}>
         <Link
           href="/historico"
-          className="mt-2 inline-block font-mono text-[12px] text-[#a9a39c] underline-offset-2 hover:text-white hover:underline"
+          className="text-[13px] text-tinta-3 underline-offset-4 hover:text-laranja-700 hover:underline"
         >
-          ver edições anteriores →
+          Edições anteriores
         </Link>
-      </header>
-
+      </Cabecalho>
       <Destaque itens={destaques} />
       <ProvedorSelecao edicaoId={edicao.gerado_em}>
         <Edicao edicao={edicao} />

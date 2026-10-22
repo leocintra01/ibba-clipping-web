@@ -148,7 +148,7 @@ export function Envio({ edicao }: { edicao: Edicao }) {
 
   if (!total) {
     return (
-      <div className="mt-6 rounded border border-dashed border-borda px-4 py-8 text-center">
+      <div className="mt-8 rounded-sm border border-dashed border-borda-forte px-4 py-10 text-center">
         <p className="text-[15px] text-tinta-2">Nenhuma notícia selecionada.</p>
         <p className="mt-1 text-[13px] text-tinta-3">
           Marque as caixas nas abas Brasil e Global para montar o envio.
@@ -160,7 +160,7 @@ export function Envio({ edicao }: { edicao: Edicao }) {
   return (
     <div className="mt-5">
       <div className="flex flex-wrap items-center gap-2 border-b border-borda pb-3">
-        <span className="font-mono text-[12px] text-tinta-3">
+        <span className="num text-[13px] text-tinta-3">
           Brasil <b className="text-tinta">{brasil.length}</b> · Global{" "}
           <b className="text-tinta">{global.length}</b> · Total{" "}
           <b className="text-tinta">{brasil.length + global.length}</b>
@@ -169,21 +169,21 @@ export function Envio({ edicao }: { edicao: Edicao }) {
           <button
             type="button"
             onClick={limpar}
-            className="min-h-11 rounded border border-borda px-3 font-mono text-[12px] text-tinta-2 hover:bg-papel"
+            className="min-h-11 rounded-sm border border-borda-forte px-4 text-[13px] text-tinta-2 transition-colors hover:border-tinta hover:text-tinta"
           >
             limpar
           </button>
           <button
             type="button"
             onClick={copiar}
-            className="min-h-11 rounded bg-laranja px-4 font-mono text-[12px] font-medium text-white hover:bg-laranja-700"
+            className="min-h-11 rounded-sm bg-laranja px-5 text-[13px] font-semibold text-white transition-colors hover:bg-laranja-700"
           >
             {copiou ? "copiado!" : "copiar para o WhatsApp"}
           </button>
         </div>
       </div>
 
-      <p className="mt-3 font-mono text-[11px] text-tinta-3">
+      <p className="mt-4 text-[13px] text-tinta-3">
         Arraste os blocos pelo apoio à esquerda — ou use as setas — para mudar a
         ordem do envio.
       </p>
@@ -196,7 +196,7 @@ export function Envio({ edicao }: { edicao: Edicao }) {
       ).map(({ secao, rotulo, lista }) =>
         lista.length ? (
           <section key={secao} className="mt-5">
-            <h3 className="mb-2 font-mono text-[11px] uppercase tracking-[0.12em] text-tinta-3">
+            <h3 className="rotulo mb-2.5">
               {rotulo}
             </h3>
             <ol
@@ -209,9 +209,9 @@ export function Envio({ edicao }: { edicao: Edicao }) {
                 <li
                   key={marca.url}
                   data-url={marca.url}
-                  className={`flex gap-2 rounded border bg-papel p-3 ${
+                  className={`flex gap-2 rounded-sm border bg-papel-2 p-3.5 ${
                     arrastando === marca.url
-                      ? "border-laranja shadow-md"
+                      ? "border-laranja shadow-sm"
                       : "border-borda"
                   }`}
                 >
@@ -234,8 +234,8 @@ export function Envio({ edicao }: { edicao: Edicao }) {
                   </button>
 
                   <div className="min-w-0 flex-1">
-                    <div className="mb-1.5 flex items-center gap-2 font-mono text-[12px] text-tinta-3">
-                      <span className="tabular-nums">#{i + 1}</span>
+                    <div className="mb-2 flex items-center gap-2 text-[12px] text-tinta-3">
+                      <span className="num font-semibold text-tinta-2">{i + 1}</span>
                       <span className="truncate">{item.fonte || item.dominio}</span>
                       <div className="ml-auto flex shrink-0 items-center">
                         <button
@@ -271,9 +271,9 @@ export function Envio({ edicao }: { edicao: Edicao }) {
                       onChange={(e) => editarTitulo(marca.url, e.target.value)}
                       rows={2}
                       aria-label="Título que vai no envio"
-                      className="w-full resize-y bg-transparent text-[15px] font-medium leading-snug text-tinta outline-none"
+                      className="w-full resize-y bg-transparent font-[family-name:var(--font-leitura)] text-[16px] font-medium leading-[1.35] text-tinta outline-none"
                     />
-                    <div className="mt-1 break-all font-mono text-[11px] text-tinta-3">
+                    <div className="mt-1.5 break-all text-[11px] text-tinta-4">
                       {marca.url}
                     </div>
                   </div>

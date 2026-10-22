@@ -1,5 +1,5 @@
 /**
- * Faixa de aviso acima de qualquer noticia.
+ * Faixa de aviso acima de qualquer notícia.
  *
  * Existe porque em outubro o aviso "FONTE MORTA HA 3+ DIAS" ficou dezenove
  * dias no RODAPE do clipping sem ninguem ver. Alerta que nao e' lido nao e'
@@ -8,13 +8,22 @@
  * Dois estados, de proposito: edicao enxuta e' dia de pouca noticia, nao
  * defeito, e chamar isso de "pipeline com problema" seria mentir sobre o
  * estado do pipeline — o oposto do que esta faixa existe pra fazer.
+ *
+ * Duas coisas FICARAM DE FORA depois de medir, e e' o que mantem a faixa
+ * funcionando como faixa:
+ *   "ZERADAS" — 19 de 19 edicoes tem ao menos uma fonte prioritaria zerada.
+ *   "Fontes com erro" generico — portal individual falha em 61% das edicoes,
+ *   e o proprio workflow trata isso como degradacao aceitavel.
+ * As duas seguem no rodape do HTML e no campo "alertas" do JSON. O que elas
+ * nao fazem mais e' gritar.
  */
-// "ZERADAS" ficou de fora: medido nos 19 health-*.json do pipeline, 19 de 19
-// edicoes tem ao menos uma fonte prioritaria zerada (Bloomberg Linea em 17).
-// Na faixa, isso acenderia "pipeline com problema" todo dia sem haver
-// problema — e alerta que acende sempre deixa de ser alerta. Ele continua
-// no rodape do HTML e no campo "alertas" do JSON.
-const QUEBRA = ["FONTE MORTA", "DECODER", "GOOGLE NEWS:", "FONTES COM ERRO"];
+const QUEBRA = [
+  "FONTE MORTA",
+  "DECODER",
+  "GOOGLE NEWS:",
+  // Sentinela: um BLOCO inteiro de coleta caiu. Foi o apagao de agosto.
+  "BLOCO DE FONTES CAIU",
+];
 const ENXUTA = "EDICAO ENXUTA";
 
 export function Alertas({ alertas }: { alertas: string[] }) {
@@ -29,12 +38,14 @@ export function Alertas({ alertas }: { alertas: string[] }) {
   return (
     <div
       role="alert"
-      className={`px-4 py-2.5 font-mono text-[12px] leading-relaxed text-white sm:px-5 ${
-        grave ? "bg-[#b03030]" : "bg-[#aa6622]"
+      className={`border-l-[3px] px-6 py-3 text-[13px] leading-relaxed sm:px-8 ${
+        grave
+          ? "border-[#9b2c2c] bg-[#fdf2f2] text-[#7a2222]"
+          : "border-laranja bg-laranja-suave text-laranja-700"
       }`}
     >
-      <strong className="font-medium">
-        {grave ? "Pipeline com problema:" : "Dia de pouca notícia:"}
+      <strong className="font-semibold">
+        {grave ? "Pipeline com problema." : "Dia de pouca notícia."}
       </strong>{" "}
       {mostrar.join(" · ")}
     </div>

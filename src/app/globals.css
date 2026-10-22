@@ -1,25 +1,50 @@
 @import "tailwindcss";
 
-/* ===== Paleta Itau BBA =====
-   Laranja #FF5000 e' a cor principal, sobre fundo claro, com preto e cinzas.
-   Nao inventar cor nova: a identidade e' a do banco. */
-@theme {
-  --color-laranja: #ff5000;
-  /* O #FF5000 e' a marca e fica nos elementos GRAFICOS (fio, borda, numero
-     grande). Em TEXTO pequeno ele da 3,3:1 no branco — reprova no WCAG AA.
-     Este tom escurecido mantem o mesmo matiz e passa 5:1 nos tres fundos que
-     o app usa. Medido, nao escolhido no olho. */
-  --color-laranja-700: #c23d00;
-  --color-laranja-suave: #fff1ea;
-  --color-tinta: #1a1916;
-  --color-tinta-2: #4a4641;
-  --color-tinta-3: #736e69;   /* menor cinza que passa 4.5:1 no fundo claro */
-  --color-papel: #ffffff;
-  --color-papel-2: #faf8f5;
-  --color-borda: #e4e0d9;
+/* =========================================================================
+   Identidade — Itau BBA, TMT Daily News
+   =========================================================================
+   O que mudou em 22/10/2026 e por que:
 
-  --font-titulo: "IBM Plex Sans", system-ui, -apple-system, sans-serif;
-  --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+   A versao anterior era um app. Barra preta cheia no topo, abas em mono
+   maiusculo, tudo em caixa alta de ferramenta — a cara de um painel interno,
+   nao de uma publicacao de research que vai para cliente.
+
+   Esta versao e' impressa, nao interface. Fundo de papel, titulo em serifa,
+   fio laranja fino no lugar da barra preta, e o laranja da marca usado como
+   REGRA GRAFICA — fio, numeral, marcador — quase nunca como fundo.
+
+   Paleta e' a do banco: laranja #FF5000 sobre claro, com preto e cinzas.
+   Nada de cor nova.
+   ========================================================================= */
+
+@theme {
+  /* --- marca --- */
+  --color-laranja: #ff5000;
+  /* O #FF5000 e' a marca e vive nos elementos GRAFICOS (fio, numeral, borda).
+     Em TEXTO pequeno ele da 3,3:1 no branco — reprova no WCAG AA. Este tom
+     escurecido mantem o matiz e passa 5:1 nos tres fundos do app. Medido. */
+  --color-laranja-700: #c23d00;
+  --color-laranja-suave: #fff3ec;
+
+  /* --- tinta --- */
+  --color-tinta: #14130f;     /* titulo e texto de leitura */
+  --color-tinta-2: #45413a;   /* texto secundario */
+  --color-tinta-3: #6e6960;   /* menor cinza que passa 4.5:1 no papel */
+  --color-tinta-4: #948f86;   /* so' para elemento grafico, nunca texto */
+
+  /* --- papel --- */
+  --color-papel: #ffffff;
+  --color-papel-2: #fbfaf7;   /* fundo da pagina, levemente quente */
+  --color-papel-3: #f4f1ec;   /* faixa de secao */
+  --color-borda: #e6e1d8;
+  --color-borda-forte: #d2ccc1;
+
+  /* --- tipografia ---
+     Serifa no que se LE (titulo de noticia, manchete). Sans no que se OPERA
+     (aba, rotulo, numero). E' a divisao de uma publicacao, e e' o que tira a
+     cara de ferramenta. */
+  --font-leitura: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-ui: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
 }
 
 html {
@@ -29,17 +54,34 @@ html {
 body {
   background: var(--color-papel-2);
   color: var(--color-tinta);
-  font-family: var(--font-titulo);
-  /* 16px de base: o analista le isso no celular as 6h30. */
+  font-family: var(--font-ui);
+  /* 16px de base: isto e' lido no celular as 6h30. */
   font-size: 16px;
   line-height: 1.5;
+  font-feature-settings: "tnum" 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Numero alinhado em coluna onde ele e' dado, nao enfeite. */
+.num {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Rotulo de secao: a unica caixa alta que sobrou, e bem espacada. */
+.rotulo {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-tinta-3);
 }
 
 /* Foco de teclado visivel em tudo que e' interativo. */
-:where(a, button, [role="tab"]):focus-visible {
+:where(a, button, input, select, textarea, [role="tab"]):focus-visible {
   outline: 2px solid var(--color-laranja);
   outline-offset: 2px;
-  border-radius: 3px;
+  border-radius: 2px;
 }
 
 /* Area de toque de 44px sem inflar o espacamento da lista. */
@@ -48,4 +90,12 @@ body {
     padding-block: 7px;
     margin-block: -7px;
   }
+}
+
+/* A barra de abas rola no celular; a barra de rolagem em si so' atrapalha. */
+.sem-barra {
+  scrollbar-width: none;
+}
+.sem-barra::-webkit-scrollbar {
+  display: none;
 }
