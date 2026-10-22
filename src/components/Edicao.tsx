@@ -32,7 +32,11 @@ export function Edicao({ edicao }: { edicao: TEdicao }) {
   const [visao, setVisao] = useState<Visao>("tudo");
   const barra = useRef<HTMLElement>(null);
   const { total } = useSelecao();
-  const [soNovas, setSoNovas] = useState(false);
+  // Decisao do analista em 22/10/2026: a tela abre so' com o que e' novo.
+  // A janela da edicao das 06:30 cobre desde a tarde de ontem, entao tudo que
+  // saiu nas edicoes das 14:00 e 20:00 cai dentro dela por construcao — hoje,
+  // 18 de 69. Elas continuam NA EDICAO, so' nao ocupam a primeira tela.
+  const [soNovas, setSoNovas] = useState(true);
 
   const { brasil, global } = useMemo(() => {
     const c = edicao.clipping;
@@ -89,11 +93,13 @@ export function Edicao({ edicao }: { edicao: TEdicao }) {
           <label className="flex cursor-pointer items-center gap-2 text-[12px] text-tinta-3">
             <input
               type="checkbox"
-              checked={soNovas}
-              onChange={(e) => setSoNovas(e.target.checked)}
+              checked={!soNovas}
+              onChange={(e) => setSoNovas(!e.target.checked)}
               className="size-4 accent-laranja"
             />
-            esconder as {repetidas} que você já viu
+            {soNovas
+              ? `mostrar as ${repetidas} que você já viu`
+              : `esconder as ${repetidas} que você já viu`}
           </label>
         </div>
       ) : null}
