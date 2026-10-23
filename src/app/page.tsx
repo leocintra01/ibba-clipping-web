@@ -45,7 +45,12 @@ export default async function Home() {
         </Link>
       </Cabecalho>
       <Destaque itens={destaques} />
-      <ProvedorSelecao edicaoId={edicao.gerado_em}>
+      <ProvedorSelecao
+        edicaoId={edicao.gerado_em}
+        oficiais={[...edicao.clipping.br_off, ...edicao.clipping.gl_off].filter(
+          (i) => !i.repetido,
+        )}
+      >
         <Edicao edicao={edicao} />
       </ProvedorSelecao>
     </main>

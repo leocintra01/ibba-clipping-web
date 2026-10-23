@@ -19,10 +19,11 @@ import { dataConfirmada, quandoDoItem } from "@/lib/quando";
  * grande, porque marcar dezenas de itens e' o que o analista mais faz aqui.
  */
 export function ItemNoticia({ item }: { item: Item }) {
-  const { marcado, alternar } = useSelecao();
+  const { marcado, alternar, marcados, definirPrioridade } = useSelecao();
   const escolhido = marcado(item.url);
   const quando = quandoDoItem(item);
   const firme = dataConfirmada(item);
+  const prioridade = marcados[item.url]?.prioridade ?? "";
 
   return (
     <li
@@ -68,6 +69,33 @@ export function ItemNoticia({ item }: { item: Item }) {
               {quando}
               {firme ? null : " ?"}
             </span>
+          ) : null}
+          {escolhido ? (
+            // So' no item marcado: ranquear o que nao vai no envio nao diz
+            // nada, e dezenas de selects numa lista de 70 linhas virariam
+            // formulario no lugar de leitura.
+            <select
+              value={prioridade}
+              onChange={(e) =>
+                definirPrioridade(
+                  item.url,
+                  e.target.value ? Number(e.target.value) : null,
+                )
+              }
+              aria-label={`Prioridade no envio: ${item.titulo}`}
+              className={`ml-auto h-7 shrink-0 rounded-sm border px-1 text-[12px] ${
+                prioridade
+                  ? "border-laranja bg-laranja-suave font-semibold text-laranja-700"
+                  : "border-borda-forte bg-papel text-tinta-3"
+              }`}
+            >
+              <option value="">ordem —</option>
+              {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((n) => (
+                <option key={n} value={n}>
+                  {n}º
+                </option>
+              ))}
+            </select>
           ) : null}
         </div>
       </div>

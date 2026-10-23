@@ -46,9 +46,15 @@ const CHAVE = "ibba-clipping:selecao";
 
 export function ProvedorSelecao({
   edicaoId,
+  oficiais,
   children,
 }: {
   edicaoId: string;
+  /** Itens dos veiculos oficiais: abrem MARCADOS, como no HTML antigo.
+   *  Quem monta a lista filtra os repetidos antes de passar: a tela abre
+   *  escondendo o que ja saiu, e pre-marcar um item escondido faria o
+   *  analista enviar o que nao viu. */
+  oficiais?: Item[];
   children: React.ReactNode;
 }) {
   const [marcados, setMarcados] = useState<Record<string, Marcado>>({});
@@ -66,12 +72,32 @@ export function ProvedorSelecao({
         };
         if (salvo.edicaoId === edicaoId && salvo.marcados) {
           setMarcados(salvo.marcados);
+          setCarregou(true);
+          return;
         }
       }
     } catch {
       /* storage bloqueado ou corrompido: comeca limpo, sem quebrar a pagina */
     }
+    // Sem selecao salva desta edicao: comeca com as oficiais marcadas.
+    // So' aqui — se havia selecao salva, a funcao ja retornou acima. Senao,
+    // desmarcar uma oficial e recarregar a traria de volta.
+    if (oficiais && oficiais.length) {
+      const inicial: Record<string, Marcado> = {};
+      oficiais.forEach((it, i) => {
+        inicial[it.url] = {
+          url: it.url,
+          tituloEditado: it.titulo,
+          prioridade: null,
+          ordem: i,
+        };
+      });
+      setMarcados(inicial);
+    }
     setCarregou(true);
+    // `oficiais` muda de identidade a cada render do servidor; o que determina
+    // o efeito e' a edicao.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [edicaoId]);
 
   useEffect(() => {
@@ -117,8 +143,10 @@ export function ProvedorSelecao({
     setMarcados((a) => (a[url] ? { ...a, [url]: { ...a[url], prioridade: p } } : a));
   }, []);
 
-  // Arrastar e' a ordem definitiva: zera a prioridade de todo mundo pra que a
-  // posicao que o analista ve' na tela seja exatamente a que vai no envio.
+  // Arrastar reescreve a ORDEM, e so' ela. A prioridade numerada continua
+  // mandando: e' a decisao do analista em 23/10/2026 — "o numero manda; o
+  // arrasto reordena quem nao tem numero". Ate aqui o arrasto zerava as
+  // prioridades, e era essa a briga entre os dois controles.
   const reordenar = useCallback((urlsEmOrdem: string[]) => {
     setMarcados((atual) => {
       const naLista = new Set(urlsEmOrdem);
@@ -129,7 +157,7 @@ export function ProvedorSelecao({
       ];
       const copia: Record<string, Marcado> = {};
       sequencia.forEach((url, i) => {
-        copia[url] = { ...atual[url], ordem: i, prioridade: null };
+        copia[url] = { ...atual[url], ordem: i };
       });
       return copia;
     });

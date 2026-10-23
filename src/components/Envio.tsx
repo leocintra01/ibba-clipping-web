@@ -2,41 +2,19 @@
 
 import { useCallback, useMemo, useRef, useState } from "react";
 import type { Edicao, Item } from "@/lib/tipos";
-import { ordenarParaEnvio, useSelecao, type Marcado } from "@/lib/selecao";
+import { useSelecao, type Marcado } from "@/lib/selecao";
+import { copiar, indexarEdicao, montarTexto, separarParaEnvio } from "@/lib/envio";
 
 /**
- * Compositor de envio.
+ * Compositor de envio — a aba onde se revisa e reordena.
  *
- * Reproduz o fluxo que o analista ja usava no HTML antigo — marcar, ordenar,
- * ajustar o titulo, copiar pro WhatsApp — e o formato do texto e' o MESMO, pra
- * nao mudar o que os clientes recebem:
+ * A montagem do texto agora acontece tambem na BarraEnvio, fixa no rodape da
+ * lista: o analista ve o envio crescer sem trocar de aba, como no HTML antigo.
+ * Esta aba continua sendo onde se EDITA — titulo, ordem fina, remocao.
  *
- *   *IBBA TMT Daily News*
- *   > Brazil
- *   - *titulo*
- *   url
- *
- * A ordem e' manual: arrastar o bloco pelo apoio, ou as setas. O arrasto usa
- * Pointer Events (e nao o drag-and-drop nativo do HTML) porque o nativo nao
- * funciona em toque — e o celular e' onde esse clipping costuma ser montado.
+ * A ordem: quem tem numero de prioridade vai primeiro; o arrasto reordena
+ * quem nao tem. Decisao do analista em 23/10/2026.
  */
-function montarTexto(
-  brasil: { titulo: string; url: string }[],
-  global: { titulo: string; url: string }[],
-): string {
-  const l: string[] = ["*IBBA TMT Daily News*"];
-  const secao = (rotulo: string, itens: { titulo: string; url: string }[]) => {
-    if (!itens.length) return;
-    l.push("", `> ${rotulo}`, "");
-    for (const i of itens) {
-      l.push(`- *${i.titulo}*`, i.url, "");
-    }
-  };
-  secao("Brazil", brasil);
-  secao("Global", global);
-  return l.join("\n").trim();
-}
-
 type Secao = "BR" | "GL";
 type Linha = { marca: Marcado; item: Item };
 
@@ -48,32 +26,12 @@ export function Envio({ edicao }: { edicao: Edicao }) {
   const arraste = useRef<{ secao: Secao; indice: number } | null>(null);
   const listas = useRef<Record<string, HTMLOListElement | null>>({});
 
-  const porUrl = useMemo(() => {
-    const m = new Map<string, Item>();
-    for (const grupo of [
-      edicao.clipping.br_off,
-      edicao.clipping.br_oth,
-      edicao.clipping.gl_off,
-      edicao.clipping.gl_oth,
-      edicao.last_news.brazil,
-      edicao.last_news.global,
-    ]) {
-      for (const i of grupo) if (!m.has(i.url)) m.set(i.url, i);
-    }
-    return m;
-  }, [edicao]);
+  const porUrl = useMemo(() => indexarEdicao(edicao), [edicao]);
 
-  const { brasil, global } = useMemo(() => {
-    const ordenados = ordenarParaEnvio(Object.values(marcados));
-    const br: Linha[] = [];
-    const gl: Linha[] = [];
-    for (const m of ordenados) {
-      const item = porUrl.get(m.url);
-      if (!item) continue;
-      (item.bucket.startsWith("BR") ? br : gl).push({ marca: m, item });
-    }
-    return { brasil: br, global: gl };
-  }, [marcados, porUrl]);
+  const { brasil, global } = useMemo(
+    () => separarParaEnvio(marcados, porUrl),
+    [marcados, porUrl],
+  );
 
   /**
    * Move um bloco dentro da sua secao. As duas secoes dividem a mesma escala de
@@ -125,23 +83,12 @@ export function Envio({ edicao }: { edicao: Edicao }) {
     setArrastando(null);
   }
 
-  async function copiar() {
+  async function aoCopiar() {
     const texto = montarTexto(
       brasil.map((x) => ({ titulo: x.marca.tituloEditado, url: x.marca.url })),
       global.map((x) => ({ titulo: x.marca.tituloEditado, url: x.marca.url })),
     );
-    try {
-      await navigator.clipboard.writeText(texto);
-    } catch {
-      // Contexto sem permissao de area de transferencia: cai pro seletor, que
-      // deixa o usuario copiar com Ctrl+C sem perder o trabalho.
-      const ta = document.createElement("textarea");
-      ta.value = texto;
-      document.body.appendChild(ta);
-      ta.select();
-      try { document.execCommand("copy"); } catch { /* ignora */ }
-      ta.remove();
-    }
+    await copiar(texto);
     setCopiou(true);
     setTimeout(() => setCopiou(false), 2000);
   }
@@ -175,7 +122,7 @@ export function Envio({ edicao }: { edicao: Edicao }) {
           </button>
           <button
             type="button"
-            onClick={copiar}
+            onClick={aoCopiar}
             className="min-h-11 rounded-sm bg-laranja px-5 text-[13px] font-semibold text-white transition-colors hover:bg-laranja-700"
           >
             {copiou ? "copiado!" : "copiar para o WhatsApp"}

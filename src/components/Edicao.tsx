@@ -4,6 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import type { Edicao as TEdicao, Item } from "@/lib/tipos";
 import { ItemNoticia } from "./ItemNoticia";
 import { Envio } from "./Envio";
+import { BarraEnvio } from "./BarraEnvio";
 import { useSelecao } from "@/lib/selecao";
 
 type Visao = "tudo" | "brasil" | "global" | "ultimas" | "empresas" | "envio";
@@ -122,6 +123,9 @@ export function Edicao({ edicao }: { edicao: TEdicao }) {
           </>
         )}
       </div>
+
+      {/* Na aba Envio o editor ja mostra tudo; a barra viraria repeticao. */}
+      {visao !== "envio" ? <BarraEnvio edicao={edicao} /> : null}
     </>
   );
 }
