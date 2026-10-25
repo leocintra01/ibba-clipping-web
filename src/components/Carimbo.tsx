@@ -17,12 +17,16 @@ import { COMMIT_DO_SITE } from "@/lib/versao";
  * aparece quando ele esta olhando a tela.
  */
 
-export function Carimbo({ edicao }: { edicao: Edicao }) {
-  const pipeline = edicao.pipeline_commit || "?";
+/** `edicao` opcional: o /historico nao tem uma edicao na tela, e mesmo assim
+ *  precisa dizer qual site esta no ar — ele era a unica das tres paginas sem
+ *  rodape nenhum (editor, E22). */
+export function Carimbo({ edicao }: { edicao?: Edicao }) {
+  const pipeline = edicao?.pipeline_commit;
   return (
     <footer className="border-t border-borda px-6 py-4 text-[11px] text-tinta-4 sm:px-8">
       <span className="num">
-        site:{COMMIT_DO_SITE} · edição gerada por pipeline:{pipeline}
+        site:{COMMIT_DO_SITE}
+        {edicao ? ` · edição gerada por pipeline:${pipeline || "?"}` : null}
       </span>
     </footer>
   );

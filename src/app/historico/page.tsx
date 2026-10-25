@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { listarEdicoes } from "@/lib/edicoes";
+import { Carimbo } from "@/components/Carimbo";
 
 function rotuloData(iso: string): string {
   const [a, m, d] = iso.split("-").map(Number);
@@ -76,6 +77,7 @@ export default async function Historico() {
           ))
         )}
       </div>
+      <Carimbo />
     </main>
   );
 }
