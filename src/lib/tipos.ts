@@ -25,6 +25,13 @@ export interface Item {
   bucket: Bucket;
   score: number;
   repetido: boolean;
+  /** Veio de veiculo oficial, INDEPENDENTE do bloco em que o item acabou.
+   *  O pipeline manda item de fonte oficial para o bloco "outras" quando o
+   *  bloco oficial enche (overflow) ou quando o piso desvia por teto de
+   *  entidade. Pre-marcar o envio por BLOCO tirava esses itens do rascunho
+   *  sem aviso — 5 numa edicao medida. Opcional porque edicao publicada
+   *  antes de 25/10/2026 nao traz o campo. */
+  oficial?: boolean;
   origem: string;
   data?: string;
   tem_hora?: boolean;

@@ -46,9 +46,17 @@ export default async function PaginaEdicao({
       <Destaque itens={destaques} />
       <ProvedorSelecao
         edicaoId={edicao.gerado_em}
-        oficiais={[...edicao.clipping.br_off, ...edicao.clipping.gl_off].filter(
-          (i) => !i.repetido,
-        )}
+        oficiais={[
+          // Procedencia, nao bloco: o pipeline desvia item de fonte oficial
+          // para o bloco "outras" (overflow, ou o piso por teto de entidade),
+          // e ler so' br_off+gl_off tirava esses itens do rascunho sem aviso
+          // — 5 numa edicao medida (editor, E2). `oficial` e' propriedade do
+          // item; o `??` cobre edicao publicada antes do campo existir.
+          ...edicao.clipping.br_off,
+          ...edicao.clipping.gl_off,
+          ...edicao.clipping.br_oth.filter((i) => i.oficial),
+          ...edicao.clipping.gl_oth.filter((i) => i.oficial),
+        ].filter((i) => !i.repetido)}
       >
         <Edicao edicao={edicao} />
       </ProvedorSelecao>

@@ -1,5 +1,5 @@
 import type { Item } from "@/lib/tipos";
-import { quandoDoItem } from "@/lib/quando";
+import { dataConfirmada, quandoDoItem } from "@/lib/quando";
 
 /**
  * O que o analista precisa ver mesmo que leia mais nada.
@@ -23,6 +23,7 @@ export function Destaque({ itens }: { itens: Item[] }) {
       <ol className="mt-4 flex flex-col gap-5">
         {itens.map((it, i) => {
           const quando = quandoDoItem(it);
+          const firme = dataConfirmada(it);
           return (
             <li key={it.url} className="flex gap-4">
               <span
@@ -42,7 +43,26 @@ export function Destaque({ itens }: { itens: Item[] }) {
                 </a>
                 <div className="mt-1.5 flex flex-wrap items-baseline gap-x-2 text-[12px] text-tinta-3">
                   <span>{it.fonte || it.dominio}</span>
-                  {quando ? <span className="num text-tinta-4">{quando}</span> : null}
+                  {quando ? (
+                    // A ressalva faltava EXATAMENTE aqui, e os Destaques sao o
+                    // unico bloco que aparece inteiro acima da dobra no
+                    // celular: 1 dos 3 da edicao no ar tinha data de confianca
+                    // media e saia sem aviso, enquanto a lista e o Pages
+                    // diziam "data nao confirmada" para o mesmo item (editor,
+                    // E5). O conserto de 54ad2a5 cobriu a lista e esqueceu o
+                    // topo.
+                    <span
+                      className={`num ${firme ? "text-tinta-4" : "text-tinta-3"}`}
+                      title={
+                        firme
+                          ? undefined
+                          : "Data deduzida da URL ou de uma listagem, não confirmada na matéria"
+                      }
+                    >
+                      {quando}
+                      {firme ? null : " · data não confirmada"}
+                    </span>
+                  ) : null}
                 </div>
               </div>
             </li>
