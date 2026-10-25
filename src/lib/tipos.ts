@@ -53,6 +53,10 @@ export interface Edicao {
   schema: number;
   data: string;
   gerado_em: string;
+  /** Commit do pipeline que gerou esta edicao, 7 chars. Opcional: edicao
+   *  publicada antes de 25/10/2026 nao traz o campo. */
+  pipeline_commit?: string;
+  pipeline_version?: string;
   arquivo_html: string;
   janela: { inicio: string | null; fim: string | null };
   totais: { coletados: number; na_edicao: number };

@@ -4,6 +4,7 @@ import { Alertas } from "@/components/Alertas";
 import { Cabecalho } from "@/components/Cabecalho";
 import { Destaque } from "@/components/Destaque";
 import { Edicao } from "@/components/Edicao";
+import { Carimbo } from "@/components/Carimbo";
 import { ProvedorSelecao } from "@/lib/selecao";
 
 export default async function Home() {
@@ -61,6 +62,7 @@ export default async function Home() {
       >
         <Edicao edicao={edicao} />
       </ProvedorSelecao>
+      <Carimbo edicao={edicao} />
     </main>
   );
 }

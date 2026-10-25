@@ -5,6 +5,7 @@ import { Alertas } from "@/components/Alertas";
 import { Cabecalho } from "@/components/Cabecalho";
 import { Destaque } from "@/components/Destaque";
 import { Edicao } from "@/components/Edicao";
+import { Carimbo } from "@/components/Carimbo";
 import { ProvedorSelecao } from "@/lib/selecao";
 
 export async function generateStaticParams() {
@@ -60,6 +61,7 @@ export default async function PaginaEdicao({
       >
         <Edicao edicao={edicao} />
       </ProvedorSelecao>
+      <Carimbo edicao={edicao} />
     </main>
   );
 }
