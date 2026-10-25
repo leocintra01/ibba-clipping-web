@@ -50,7 +50,19 @@ export function Edicao({ edicao }: { edicao: TEdicao }) {
   const filtra = (itens: Item[]) =>
     soNovas ? itens.filter((i) => !i.repetido) : itens;
 
-  const repetidas = [...brasil, ...global].filter((i) => i.repetido).length;
+  // Contagem do que a aba ATUAL mostra, nao da edicao inteira: a linha abaixo
+  // fala sobre esta tela, e o cabecalho ja da o total da edicao.
+  const daVisao =
+    visao === "brasil"
+      ? brasil
+      : visao === "global"
+        ? global
+        : visao === "ultimas"
+          ? [...edicao.last_news.brazil, ...edicao.last_news.global]
+          : [...brasil, ...global];
+  const totalVisao = daVisao.length;
+  const repetidas = daVisao.filter((i) => i.repetido).length;
+  const mostrados = totalVisao - repetidas;
 
   // A faixa de abas rola no celular, e "Envio" fica fora da tela. Sem isto,
   // trocar de aba deixava o indicador invisivel: a pagina mudava e nada na
@@ -90,18 +102,33 @@ export function Edicao({ edicao }: { edicao: TEdicao }) {
       </nav>
 
       {repetidas > 0 && visao !== "empresas" && visao !== "envio" ? (
-        <div className="flex items-center justify-end border-b border-borda px-6 py-2.5 sm:px-8">
-          <label className="flex cursor-pointer items-center gap-2 text-[12px] text-tinta-3">
-            <input
-              type="checkbox"
-              checked={!soNovas}
-              onChange={(e) => setSoNovas(!e.target.checked)}
-              className="size-4 accent-laranja"
-            />
-            {soNovas
-              ? `mostrar as ${repetidas} que você já viu`
-              : `esconder as ${repetidas} que você já viu`}
-          </label>
+        // O numero fica VISIVEL. A terceira edicao do dia repete quase tudo
+        // (medido em 23/10: 28 dos 37 itens do Global ja tinham saido), e uma
+        // tela com 9 itens sem explicacao parece defeito, nao pouca novidade.
+        <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1 border-b border-borda bg-papel-2 px-6 py-3 text-[13px] sm:px-8">
+          <span className="text-tinta-2">
+            {soNovas ? (
+              <>
+                Mostrando <b className="tabular-nums font-semibold">{mostrados}</b> de{" "}
+                <b className="tabular-nums font-semibold">{totalVisao}</b> — as outras{" "}
+                <span className="tabular-nums">{repetidas}</span> já saíram em
+                edições anteriores de hoje
+              </>
+            ) : (
+              <>
+                Mostrando todas as{" "}
+                <b className="tabular-nums font-semibold">{totalVisao}</b>, incluindo{" "}
+                <span className="tabular-nums">{repetidas}</span> que você já viu
+              </>
+            )}
+          </span>
+          <button
+            type="button"
+            onClick={() => setSoNovas((v) => !v)}
+            className="ml-auto shrink-0 text-tinta-3 underline underline-offset-4 hover:text-laranja-700"
+          >
+            {soNovas ? "mostrar todas" : "esconder as já vistas"}
+          </button>
         </div>
       ) : null}
 
@@ -115,10 +142,10 @@ export function Edicao({ edicao }: { edicao: TEdicao }) {
         ) : (
           <>
             {visao !== "global" ? (
-              <Secao titulo="Brasil" itens={filtra(brasil)} />
+              <Secao titulo="Brasil" itens={filtra(brasil)} total={brasil.length} />
             ) : null}
             {visao !== "brasil" ? (
-              <Secao titulo="Global" itens={filtra(global)} />
+              <Secao titulo="Global" itens={filtra(global)} total={global.length} />
             ) : null}
           </>
         )}
@@ -130,13 +157,25 @@ export function Edicao({ edicao }: { edicao: TEdicao }) {
   );
 }
 
-function Secao({ titulo, itens }: { titulo: string; itens: Item[] }) {
+function Secao({
+  titulo,
+  itens,
+  total,
+}: {
+  titulo: string;
+  itens: Item[];
+  /** Quantos a secao teria sem o filtro. Mostrar "9 de 37" em vez de "9"
+   *  evita que uma edicao que repete muito pareca uma edicao vazia. */
+  total?: number;
+}) {
   return (
     <section className="mt-7 first:mt-6">
       <h2 className="flex items-baseline gap-2 border-b-2 border-tinta pb-1.5">
         <span className="rotulo !text-tinta">{titulo}</span>
         <span className="num ml-auto text-[12px] text-tinta-3">
-          {itens.length}
+          {total !== undefined && total !== itens.length
+            ? `${itens.length} de ${total}`
+            : itens.length}
         </span>
       </h2>
       {itens.length ? (
@@ -201,8 +240,16 @@ function Ultimas({
   }
   return (
     <>
-      <Secao titulo="Brasil · 24h" itens={filtra(edicao.last_news.brazil)} />
-      <Secao titulo="Global · 24h" itens={filtra(edicao.last_news.global)} />
+      <Secao
+        titulo="Brasil · 24h"
+        itens={filtra(edicao.last_news.brazil)}
+        total={edicao.last_news.brazil.length}
+      />
+      <Secao
+        titulo="Global · 24h"
+        itens={filtra(edicao.last_news.global)}
+        total={edicao.last_news.global.length}
+      />
     </>
   );
 }
