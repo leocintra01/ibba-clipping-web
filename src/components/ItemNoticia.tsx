@@ -67,7 +67,10 @@ export function ItemNoticia({ item }: { item: Item }) {
               }
             >
               {quando}
-              {firme ? null : " ?"}
+              {/* O "?" sozinho nao se explica em 375px, onde nao ha hover, e o
+                  HTML antigo diz "data nao confirmada" para o MESMO item: as
+                  duas telas tem que usar a mesma palavra (editor, E11). */}
+              {firme ? null : " · data não confirmada"}
             </span>
           ) : null}
           {escolhido ? (
