@@ -39,6 +39,18 @@ export function Edicao({ edicao }: { edicao: TEdicao }) {
   // 18 de 69. Elas continuam NA EDICAO, so' nao ocupam a primeira tela.
   const [soNovas, setSoNovas] = useState(true);
 
+  // A linha de filtro dizia, sem olhar a hora, "já saíram em edições
+  // anteriores de hoje". Na edição das 06:30 não existe edição anterior de
+  // hoje: aquelas notícias são do dia útil anterior. Medido nas 9 edições
+  // publicadas (editor, T6): 25 de 66, 18 de 69 e 26 de 70 itens marcados
+  // como repetidos nas três manhãs, 69 somados apresentados como repetição
+  // "de hoje". O Pages já dizia a verdade ("de hoje ou do dia útil
+  // anterior"); quem mentia era esta tela, que é a que ele lê.
+  //
+  // Com a hora na mão dá para ser mais exato que o Pages: antes do meio-dia
+  // a edição é a primeira do dia, e toda repetição vem da véspera.
+  const ehPrimeiraDoDia = Number(edicao.gerado_em.slice(11, 13)) < 12;
+
   const { brasil, global } = useMemo(() => {
     const c = edicao.clipping;
     return {
@@ -111,8 +123,8 @@ export function Edicao({ edicao }: { edicao: TEdicao }) {
               <>
                 Mostrando <b className="tabular-nums font-semibold">{mostrados}</b> de{" "}
                 <b className="tabular-nums font-semibold">{totalVisao}</b> — as outras{" "}
-                <span className="tabular-nums">{repetidas}</span> já saíram em
-                edições anteriores de hoje
+                <span className="tabular-nums">{repetidas}</span> já saíram{" "}
+                {ehPrimeiraDoDia ? "na véspera" : "em edições anteriores, de hoje ou da véspera"}
               </>
             ) : (
               <>
