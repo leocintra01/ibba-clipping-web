@@ -37,7 +37,38 @@ export function Edicao({ edicao }: { edicao: TEdicao }) {
   // A janela da edicao das 06:30 cobre desde a tarde de ontem, entao tudo que
   // saiu nas edicoes das 14:00 e 20:00 cai dentro dela por construcao — hoje,
   // 18 de 69. Elas continuam NA EDICAO, so' nao ocupam a primeira tela.
-  const [soNovas, setSoNovas] = useState(true);
+  //
+  // MENOS na primeira edicao depois de uma parada. Em 26/10, uma segunda, ele
+  // abriu e viu SEIS linhas no bloco Brasil. A edicao tinha DEZESSEIS, e as
+  // dez escondidas eram as melhores: a Brisanet fechando banda larga via
+  // satelite (s=23), a assembleia da OPA da Unifique (19), a homologacao da
+  // recuperacao judicial da Tahto (15), a Brasil TecPar subindo o valor da
+  // Ligga (14), a possivel fusao Giga+/Sky (13).
+  //
+  // Sao dois mecanismos brigando. O pipeline ALARGA a janela na segunda — de
+  // 21 para 69 horas — justamente para compensar o fim de semana em que nao
+  // houve edicao. E a tela entao ESCONDE exatamente o que o alargamento
+  // trouxe, porque aquilo saiu nas edicoes de sexta.
+  //
+  // Esconder so' faz sentido quando a edicao anterior foi ha' poucas horas.
+  // Depois de uma parada nao existe "novo" por construcao: o que ha' e' o
+  // acumulo do periodo sem edicao, e ele precisa ver.
+  //
+  // O corte e' 40h, e esse numero vem das janelas reais, nao de chute:
+  //    06:30  09:30 de ontem -> 06:30        = 21h
+  //    14:00  09:30 de ontem -> 14:00        = 28,5h
+  //    20:00  09:30 de ontem -> 20:00        = 34,5h
+  //    segunda 06:30  09:30 de SEXTA -> 06:30 = 69h
+  // A primeira versao usava 30h e escondia errado na edicao das 20:02, que
+  // tem 34,5h e e' uma edicao normal. Medido na de 23/10 antes de publicar.
+  const janelaLongaHoras = (() => {
+    const ini = edicao.janela?.inicio;
+    if (!ini) return 0;
+    const ms = new Date(edicao.gerado_em).getTime() - new Date(ini).getTime();
+    return Number.isFinite(ms) ? ms / 36e5 : 0;
+  })();
+  const primeiraDepoisDaParada = janelaLongaHoras > 40;
+  const [soNovas, setSoNovas] = useState(!primeiraDepoisDaParada);
 
   // A linha de filtro dizia, sem olhar a hora, "já saíram em edições
   // anteriores de hoje". Na edição das 06:30 não existe edição anterior de
