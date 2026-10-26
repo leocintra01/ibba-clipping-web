@@ -8,9 +8,10 @@ import { copiar, indexarEdicao, montarTexto, separarParaEnvio } from "@/lib/envi
 /**
  * Compositor de envio — a aba onde se revisa e reordena.
  *
- * A montagem do texto agora acontece tambem na BarraEnvio, fixa no rodape da
- * lista: o analista ve o envio crescer sem trocar de aba, como no HTML antigo.
- * Esta aba continua sendo onde se EDITA — titulo, ordem fina, remocao.
+ * A montagem do texto ficou SO' aqui. A barra fixa no rodape, que mostrava o
+ * contador e o botao copiar em toda tela, saiu em 26/10 a pedido do analista:
+ * tapava a leitura. O caminho do envio nao mudou — esta aba e' onde se revisa,
+ * reordena, EDITA titulo e copia.
  *
  * A ordem: quem tem numero de prioridade vai primeiro; o arrasto reordena
  * quem nao tem. Decisao do analista em 23/10/2026.

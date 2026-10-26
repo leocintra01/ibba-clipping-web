@@ -4,7 +4,6 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import type { Edicao as TEdicao, Item } from "@/lib/tipos";
 import { ItemNoticia } from "./ItemNoticia";
 import { Envio } from "./Envio";
-import { BarraEnvio } from "./BarraEnvio";
 import { useSelecao } from "@/lib/selecao";
 
 type Visao = "tudo" | "brasil" | "global" | "ultimas" | "empresas" | "envio";
@@ -195,7 +194,11 @@ export function Edicao({ edicao }: { edicao: TEdicao }) {
       </div>
 
       {/* Na aba Envio o editor ja mostra tudo; a barra viraria repeticao. */}
-      {visao !== "envio" ? <BarraEnvio edicao={edicao} /> : null}
+      {/* A barra fixa de envio saiu em 26/10, a pedido dele: ficava
+          colada no rodape em toda tela e tapava a leitura. O caminho do
+          envio continua inteiro na aba "Envio", que mostra o numero de
+          selecionadas no proprio rotulo — entao nada se perdeu, so' a
+          faixa permanente. */}
     </>
   );
 }
