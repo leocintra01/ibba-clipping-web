@@ -4,7 +4,6 @@ import { Alertas } from "@/components/Alertas";
 import { Cabecalho } from "@/components/Cabecalho";
 import { Destaque } from "@/components/Destaque";
 import { Edicao } from "@/components/Edicao";
-import { Carimbo } from "@/components/Carimbo";
 import { ProvedorSelecao } from "@/lib/selecao";
 
 export default async function Home() {
@@ -36,6 +35,10 @@ export default async function Home() {
 
   return (
     <main className="mx-auto max-w-3xl bg-papel shadow-[0_0_0_1px_var(--color-borda)] sm:my-6">
+      {/* Qual codigo gerou ESTA edicao. Invisivel, pelo mesmo motivo
+          do carimbo do site no layout: responde "o conserto chegou ou
+          a edicao e' antiga?" sem aparecer para quem le. */}
+      <meta name="x-pipeline-commit" content={edicao.pipeline_commit || "?"} />
       <Alertas alertas={edicao.alertas} />
       <Cabecalho edicao={edicao}>
         <Link
@@ -62,7 +65,6 @@ export default async function Home() {
       >
         <Edicao edicao={edicao} />
       </ProvedorSelecao>
-      <Carimbo edicao={edicao} />
     </main>
   );
 }

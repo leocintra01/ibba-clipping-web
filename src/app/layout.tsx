@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { COMMIT_DO_SITE } from "@/lib/versao";
 
 export const metadata: Metadata = {
   title: "TMT Daily News · Itaú BBA",
@@ -23,6 +24,15 @@ export default function RootLayout({
           rel="stylesheet"
         />
         <meta name="theme-color" content="#fbfaf7" />
+        {/* Carimbo de versao, INVISIVEL. Ele existe porque o push no
+            GitHub nao publica este site e os dados chegam sozinhos, entao
+            a tela pode estar velha com a edicao de hoje sem nada parecer
+            quebrado. Mas e' informacao de manutencao, nao de leitura: em
+            26/10 ele estava no rodape e o analista pediu para tirar da
+            pagina que ele manda para cliente. Fica aqui e no
+            /versao.json, que respondem a um curl ou a uma leitura do DOM
+            sem ocupar um pixel da tela. */}
+        <meta name="x-site-commit" content={COMMIT_DO_SITE} />
       </head>
       <body>{children}</body>
     </html>
