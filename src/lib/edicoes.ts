@@ -99,11 +99,28 @@ async function lerUma(id: string): Promise<Edicao | null> {
 }
 
 /** Edicoes disponiveis, da mais recente para a mais antiga. */
+/**
+ * Perfil de cache das listagens e da edicao corrente.
+ *
+ * `cacheLife("minutes")` parecia conservador e nao era: ele deixa a entrada
+ * EXPIRAR so' depois de uma hora, e dentro dessa hora o primeiro visitante
+ * recebe a copia velha enquanto a nova e' buscada atras dele. Em 26/10 foi
+ * exatamente isso — o analista abriu o link as 15h e viu a edicao das 06:30,
+ * publicada ha' nove horas, porque ninguem tinha visitado no intervalo.
+ *
+ * O que importa aqui e' o `expire`: passado ele, a requisicao BLOQUEIA e vai
+ * buscar. Dois minutos e' tempo de sobra para nao bater no GitHub a cada
+ * recarga e curto o bastante para que a edicao que acabou de sair apareca.
+ */
+const CACHE_EDICAO_CORRENTE = {
+  stale: 60,
+  revalidate: 60,
+  expire: 300,
+} as const;
+
 export async function listarEdicoes(): Promise<ResumoEdicao[]> {
   "use cache";
-  // Cinco minutos: o robo publica tres vezes ao dia, entao nao ha ganho em
-  // bater no GitHub a cada visita — e ha perda em deixar a pagina velha.
-  cacheLife("minutes");
+  cacheLife(CACHE_EDICAO_CORRENTE);
   const ids = await listarIds();
   const resumos = await Promise.all(
     ids.map(async (id) => {
@@ -125,6 +142,9 @@ export async function listarEdicoes(): Promise<ResumoEdicao[]> {
 /** Uma edicao pelo id. `null` quando nao existe. */
 export async function lerEdicao(id: string): Promise<Edicao | null> {
   "use cache";
+  // Uma edicao PASSADA nao muda: desde o conserto do nome com -HHMM, cada run
+  // escreve um arquivo proprio. Entao aqui o cache longo esta certo, e e' so'
+  // a listagem e a edicao CORRENTE que precisam expirar rapido.
   cacheLife("minutes");
   return lerUma(id);
 }
@@ -132,7 +152,7 @@ export async function lerEdicao(id: string): Promise<Edicao | null> {
 /** A edicao mais recente. */
 export async function edicaoAtual(): Promise<Edicao | null> {
   "use cache";
-  cacheLife("minutes");
+  cacheLife(CACHE_EDICAO_CORRENTE);
   const [maisNova] = await listarEdicoes();
   return maisNova ? lerUma(maisNova.id) : null;
 }
