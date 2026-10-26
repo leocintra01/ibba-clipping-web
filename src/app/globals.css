@@ -22,22 +22,22 @@
   --color-laranja: #ff5000;
   /* O #FF5000 e' a marca e vive nos elementos GRAFICOS (fio, numeral, borda).
      Em TEXTO pequeno ele da 3,3:1 no branco — reprova no WCAG AA. Este tom
-     escurecido mantem o matiz e passa 5:1 nos tres fundos do app. Medido. */
-  --color-laranja-700: #c23d00;
+     escurecido mantem o matiz e passa 5,3:1 nos tres fundos do app. Medido. */
+  --color-laranja-700: #b33800;
   --color-laranja-suave: #fff3ec;
 
   /* --- tinta --- */
   --color-tinta: #14130f;     /* titulo e texto de leitura */
-  --color-tinta-2: #45413a;   /* texto secundario */
-  --color-tinta-3: #6e6960;   /* menor cinza que passa 4.5:1 no papel */
-  --color-tinta-4: #948f86;   /* so' para elemento grafico, nunca texto */
+  --color-tinta-2: #3a3630;   /* texto secundario */
+  --color-tinta-3: #5f5a52;   /* secundario e rotulo: 6,5:1 no papel */
+  --color-tinta-4: #857f75;   /* grafico e UI (3,5:1+); nunca texto corrido */
 
   /* --- papel --- */
   --color-papel: #ffffff;
   --color-papel-2: #fbfaf7;   /* fundo da pagina, levemente quente */
-  --color-papel-3: #f4f1ec;   /* faixa de secao */
-  --color-borda: #e6e1d8;
-  --color-borda-forte: #d2ccc1;
+  --color-papel-3: #efebe4;   /* faixa de secao */
+  --color-borda: #ddd7cc;
+  --color-borda-forte: #c7c0b3;
 
   /* --- tipografia ---
      Serifa no que se LE (titulo de noticia, manchete). Sans no que se OPERA

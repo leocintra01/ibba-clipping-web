@@ -52,7 +52,14 @@ export function Destaque({ itens }: { itens: Item[] }) {
                     // E5). O conserto de 54ad2a5 cobriu a lista e esqueceu o
                     // topo.
                     <span
-                      className={`num ${firme ? "text-tinta-4" : "text-tinta-3"}`}
+                      // Os dois casos em tinta-3. O confirmado estava em
+                      // tinta-4, o cinza de elemento grafico, e a 12px dava
+                      // 3,08:1 no papel — o dado mais fraco da tela sendo
+                      // justo a data, que e' o que ele cobra em toda
+                      // auditoria. A ressalva continua se distinguindo pelo
+                      // texto "data nao confirmada", que e' mais claro que
+                      // meio tom de cinza.
+                      className="num text-tinta-3"
                       title={
                         firme
                           ? undefined

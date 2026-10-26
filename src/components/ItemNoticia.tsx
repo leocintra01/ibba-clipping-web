@@ -13,7 +13,8 @@ import { dataConfirmada, quandoDoItem } from "@/lib/quando";
  *
  * Item repetido entra esmaecido: o analista pediu pra ve-lo, mas pra poder
  * pular. O esmaecido e' a unica marca — etiqueta escrita em cada linha sujava
- * a lista.
+ * a lista. A 0,55 o apoio da linha saia a 2,44:1 do papel e nao se lia; a 0,68
+ * da 3,2:1 e a linha continua lendo como esmaecida.
  *
  * A caixa de selecao alimenta o compositor de envio. Fica a esquerda, com alvo
  * grande, porque marcar dezenas de itens e' o que o analista mais faz aqui.
@@ -28,7 +29,7 @@ export function ItemNoticia({ item }: { item: Item }) {
   return (
     <li
       className={`flex gap-3.5 border-b border-borda py-4 last:border-0 ${
-        item.repetido ? "opacity-55" : ""
+        item.repetido ? "opacity-[0.68]" : ""
       }`}
     >
       <label className="flex min-h-11 shrink-0 cursor-pointer items-start pt-[3px]">
@@ -57,7 +58,7 @@ export function ItemNoticia({ item }: { item: Item }) {
             // na materia, vem com ressalva — o HTML antigo diz "data nao
             // confirmada" e as duas telas tem que concordar sobre o item.
             <span
-              className={`num text-[11px] text-tinta-4 ${
+              className={`num text-[11px] text-tinta-3 ${
                 firme ? "" : "border-b border-dotted border-tinta-4"
               }`}
               title={
