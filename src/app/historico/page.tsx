@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { listarEdicoes } from "@/lib/edicoes";
+import { listarEdicoesComOrigem } from "@/lib/edicoes";
+import { AvisoListagem } from "@/components/AvisoListagem";
 
 function rotuloData(iso: string): string {
   const [a, m, d] = iso.split("-").map(Number);
@@ -12,7 +13,7 @@ function rotuloData(iso: string): string {
 }
 
 export default async function Historico() {
-  const edicoes = await listarEdicoes();
+  const { edicoes, origem } = await listarEdicoesComOrigem();
 
   // Agrupa por dia: o pipeline roda 3x e cada run vira uma edicao.
   const porDia = new Map<string, typeof edicoes>();
@@ -24,6 +25,7 @@ export default async function Historico() {
 
   return (
     <main className="mx-auto max-w-3xl bg-papel shadow-[0_0_0_1px_var(--color-borda)] sm:my-6">
+      <AvisoListagem origem={origem} />
       <header className="border-b-[3px] border-laranja px-6 pb-5 pt-7 sm:px-8 sm:pb-6 sm:pt-9">
         <p className="rotulo">Itaú BBA · Research</p>
         <h1 className="mt-2 font-[family-name:var(--font-leitura)] text-[30px] font-bold leading-[1.1] tracking-[-0.015em] sm:text-[36px]">

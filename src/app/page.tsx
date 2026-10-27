@@ -1,13 +1,14 @@
 import Link from "next/link";
-import { edicaoAtual } from "@/lib/edicoes";
+import { edicaoAtualComOrigem } from "@/lib/edicoes";
 import { Alertas } from "@/components/Alertas";
+import { AvisoListagem } from "@/components/AvisoListagem";
 import { Cabecalho } from "@/components/Cabecalho";
 import { Destaque } from "@/components/Destaque";
 import { Edicao } from "@/components/Edicao";
 import { ProvedorSelecao } from "@/lib/selecao";
 
 export default async function Home() {
-  const edicao = await edicaoAtual();
+  const { edicao, origem } = await edicaoAtualComOrigem();
 
   if (!edicao) {
     return (
@@ -39,6 +40,7 @@ export default async function Home() {
           do carimbo do site no layout: responde "o conserto chegou ou
           a edicao e' antiga?" sem aparecer para quem le. */}
       <meta name="x-pipeline-commit" content={edicao.pipeline_commit || "?"} />
+      <AvisoListagem origem={origem} />
       <Alertas alertas={edicao.alertas} />
       <Cabecalho edicao={edicao}>
         <Link
