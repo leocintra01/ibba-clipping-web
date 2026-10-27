@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { lerEdicao, listarEdicoes } from "@/lib/edicoes";
 import { Alertas } from "@/components/Alertas";
+import { AvisoJanela } from "@/components/AvisoJanela";
 import { Cabecalho } from "@/components/Cabecalho";
 import { Destaque } from "@/components/Destaque";
 import { Edicao } from "@/components/Edicao";
@@ -39,6 +40,7 @@ export default async function PaginaEdicao({
           a edicao e' antiga?" sem aparecer para quem le. */}
       <meta name="x-pipeline-commit" content={edicao.pipeline_commit || "?"} />
       <Alertas alertas={edicao.alertas} />
+      <AvisoJanela edicao={edicao} />
       <Cabecalho edicao={edicao}>
         <Link
           href="/historico"

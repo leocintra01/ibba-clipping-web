@@ -5,6 +5,7 @@ import type { Edicao as TEdicao, Item } from "@/lib/tipos";
 import { ItemNoticia } from "./ItemNoticia";
 import { Envio } from "./Envio";
 import { useSelecao } from "@/lib/selecao";
+import { primeiraDepoisDaParada } from "@/lib/janela";
 
 type Visao = "tudo" | "brasil" | "global" | "ultimas" | "empresas" | "envio";
 
@@ -60,13 +61,7 @@ export function Edicao({ edicao }: { edicao: TEdicao }) {
   //    segunda 06:30  09:30 de SEXTA -> 06:30 = 69h
   // A primeira versao usava 30h e escondia errado na edicao das 20:02, que
   // tem 34,5h e e' uma edicao normal. Medido na de 23/10 antes de publicar.
-  const janelaLongaHoras = (() => {
-    const ini = edicao.janela?.inicio;
-    if (!ini) return 0;
-    const ms = new Date(edicao.gerado_em).getTime() - new Date(ini).getTime();
-    return Number.isFinite(ms) ? ms / 36e5 : 0;
-  })();
-  const primeiraDepoisDaParada = janelaLongaHoras > 40;
+  const janelaLonga = primeiraDepoisDaParada(edicao);
   // Em 27/10/2026 ele mandou tirar as "ja vistas" da tela: nao lhe
   // interessam. Entao nao ha mais filtro, nem contagem, nem linha esmaecida —
   // em dia normal a noticia repetida simplesmente nao aparece.
@@ -95,7 +90,7 @@ export function Edicao({ edicao }: { edicao: TEdicao }) {
   }, [edicao]);
 
   const filtra = (itens: Item[]) =>
-    primeiraDepoisDaParada ? itens : itens.filter((i) => !i.repetido);
+    janelaLonga ? itens : itens.filter((i) => !i.repetido);
 
   // A faixa de abas rola no celular, e "Envio" fica fora da tela. Sem isto,
   // trocar de aba deixava o indicador invisivel: a pagina mudava e nada na

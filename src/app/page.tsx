@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { edicaoAtualComOrigem } from "@/lib/edicoes";
 import { Alertas } from "@/components/Alertas";
+import { AvisoJanela } from "@/components/AvisoJanela";
 import { AvisoListagem } from "@/components/AvisoListagem";
 import { Cabecalho } from "@/components/Cabecalho";
 import { Destaque } from "@/components/Destaque";
@@ -47,6 +48,7 @@ export default async function Home() {
       <meta name="x-origem-listagem" content={origem} />
       <AvisoListagem origem={origem} />
       <Alertas alertas={edicao.alertas} />
+      <AvisoJanela edicao={edicao} />
       <Cabecalho edicao={edicao}>
         <Link
           href="/historico"
