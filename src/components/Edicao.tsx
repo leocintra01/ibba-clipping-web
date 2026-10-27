@@ -67,7 +67,14 @@ export function Edicao({ edicao }: { edicao: TEdicao }) {
     return Number.isFinite(ms) ? ms / 36e5 : 0;
   })();
   const primeiraDepoisDaParada = janelaLongaHoras > 40;
-  const [soNovas, setSoNovas] = useState(!primeiraDepoisDaParada);
+  // Em 27/10/2026 ele mandou tirar as "ja vistas" da tela: nao lhe
+  // interessam. Entao nao ha mais filtro, nem contagem, nem linha esmaecida —
+  // em dia normal a noticia repetida simplesmente nao aparece.
+  //
+  // A excecao abaixo FICA, e nao e' preferencia de tela: e' o unico caso em
+  // que a repetida e' a noticia do periodo. Depois de uma parada ela entra
+  // como item normal, sem marca nenhuma, porque chamar aquilo de "ja visto"
+  // era o que escondia as dez melhores da segunda de 26/10.
 
   // A linha de filtro dizia, sem olhar a hora, "já saíram em edições
   // anteriores de hoje". Na edição das 06:30 não existe edição anterior de
@@ -79,8 +86,6 @@ export function Edicao({ edicao }: { edicao: TEdicao }) {
   //
   // Com a hora na mão dá para ser mais exato que o Pages: antes do meio-dia
   // a edição é a primeira do dia, e toda repetição vem da véspera.
-  const ehPrimeiraDoDia = Number(edicao.gerado_em.slice(11, 13)) < 12;
-
   const { brasil, global } = useMemo(() => {
     const c = edicao.clipping;
     return {
@@ -90,21 +95,7 @@ export function Edicao({ edicao }: { edicao: TEdicao }) {
   }, [edicao]);
 
   const filtra = (itens: Item[]) =>
-    soNovas ? itens.filter((i) => !i.repetido) : itens;
-
-  // Contagem do que a aba ATUAL mostra, nao da edicao inteira: a linha abaixo
-  // fala sobre esta tela, e o cabecalho ja da o total da edicao.
-  const daVisao =
-    visao === "brasil"
-      ? brasil
-      : visao === "global"
-        ? global
-        : visao === "ultimas"
-          ? [...edicao.last_news.brazil, ...edicao.last_news.global]
-          : [...brasil, ...global];
-  const totalVisao = daVisao.length;
-  const repetidas = daVisao.filter((i) => i.repetido).length;
-  const mostrados = totalVisao - repetidas;
+    primeiraDepoisDaParada ? itens : itens.filter((i) => !i.repetido);
 
   // A faixa de abas rola no celular, e "Envio" fica fora da tela. Sem isto,
   // trocar de aba deixava o indicador invisivel: a pagina mudava e nada na
@@ -143,37 +134,6 @@ export function Edicao({ edicao }: { edicao: TEdicao }) {
         ))}
       </nav>
 
-      {repetidas > 0 && visao !== "empresas" && visao !== "envio" ? (
-        // O numero fica VISIVEL. A terceira edicao do dia repete quase tudo
-        // (medido em 23/10: 28 dos 37 itens do Global ja tinham saido), e uma
-        // tela com 9 itens sem explicacao parece defeito, nao pouca novidade.
-        <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1 border-b border-borda bg-papel-2 px-6 py-3 text-[13px] sm:px-8">
-          <span className="text-tinta-2">
-            {soNovas ? (
-              <>
-                Mostrando <b className="tabular-nums font-semibold">{mostrados}</b> de{" "}
-                <b className="tabular-nums font-semibold">{totalVisao}</b> — as outras{" "}
-                <span className="tabular-nums">{repetidas}</span> já saíram{" "}
-                {ehPrimeiraDoDia ? "na véspera" : "em edições anteriores, de hoje ou da véspera"}
-              </>
-            ) : (
-              <>
-                Mostrando todas as{" "}
-                <b className="tabular-nums font-semibold">{totalVisao}</b>, incluindo{" "}
-                <span className="tabular-nums">{repetidas}</span> que você já viu
-              </>
-            )}
-          </span>
-          <button
-            type="button"
-            onClick={() => setSoNovas((v) => !v)}
-            className="ml-auto shrink-0 text-tinta-3 underline underline-offset-4 hover:text-laranja-700"
-          >
-            {soNovas ? "mostrar todas" : "esconder as já vistas"}
-          </button>
-        </div>
-      ) : null}
-
       <div className="px-6 pb-16 sm:px-8">
         {visao === "envio" ? (
           <Envio edicao={edicao} />
@@ -184,10 +144,10 @@ export function Edicao({ edicao }: { edicao: TEdicao }) {
         ) : (
           <>
             {visao !== "global" ? (
-              <Secao titulo="Brasil" itens={filtra(brasil)} total={brasil.length} />
+              <Secao titulo="Brasil" itens={filtra(brasil)} />
             ) : null}
             {visao !== "brasil" ? (
-              <Secao titulo="Global" itens={filtra(global)} total={global.length} />
+              <Secao titulo="Global" itens={filtra(global)} />
             ) : null}
           </>
         )}
@@ -203,25 +163,13 @@ export function Edicao({ edicao }: { edicao: TEdicao }) {
   );
 }
 
-function Secao({
-  titulo,
-  itens,
-  total,
-}: {
-  titulo: string;
-  itens: Item[];
-  /** Quantos a secao teria sem o filtro. Mostrar "9 de 37" em vez de "9"
-   *  evita que uma edicao que repete muito pareca uma edicao vazia. */
-  total?: number;
-}) {
+function Secao({ titulo, itens }: { titulo: string; itens: Item[] }) {
   return (
     <section className="mt-7 first:mt-6">
       <h2 className="flex items-baseline gap-2 border-b-2 border-tinta pb-1.5">
         <span className="rotulo !text-tinta">{titulo}</span>
         <span className="num ml-auto text-[12px] text-tinta-3">
-          {total !== undefined && total !== itens.length
-            ? `${itens.length} de ${total}`
-            : itens.length}
+          {itens.length}
         </span>
       </h2>
       {itens.length ? (
@@ -286,16 +234,8 @@ function Ultimas({
   }
   return (
     <>
-      <Secao
-        titulo="Brasil · 24h"
-        itens={filtra(edicao.last_news.brazil)}
-        total={edicao.last_news.brazil.length}
-      />
-      <Secao
-        titulo="Global · 24h"
-        itens={filtra(edicao.last_news.global)}
-        total={edicao.last_news.global.length}
-      />
+      <Secao titulo="Brasil · 24h" itens={filtra(edicao.last_news.brazil)} />
+      <Secao titulo="Global · 24h" itens={filtra(edicao.last_news.global)} />
     </>
   );
 }

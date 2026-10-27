@@ -11,10 +11,10 @@ import { dataConfirmada, quandoDoItem } from "@/lib/quando";
  * dado de apoio. E' a divisao de uma publicacao, e e' o que separa esta lista
  * de um painel de ferramenta.
  *
- * Item repetido entra esmaecido: o analista pediu pra ve-lo, mas pra poder
- * pular. O esmaecido e' a unica marca — etiqueta escrita em cada linha sujava
- * a lista. A 0,55 o apoio da linha saia a 2,44:1 do papel e nao se lia; a 0,68
- * da 3,2:1 e a linha continua lendo como esmaecida.
+ * Nao ha mais linha esmaecida. O item repetido era mostrado assim para ele
+ * poder pular; em 27/10/2026 ele mandou tirar as "ja vistas" da tela, e quem
+ * decide o que entra passou a ser `filtra` em Edicao.tsx. Nao ha estado
+ * intermediario aqui: ou a noticia esta na lista, ou nao esta.
  *
  * A caixa de selecao alimenta o compositor de envio. Fica a esquerda, com alvo
  * grande, porque marcar dezenas de itens e' o que o analista mais faz aqui.
@@ -27,11 +27,7 @@ export function ItemNoticia({ item }: { item: Item }) {
   const prioridade = marcados[item.url]?.prioridade ?? "";
 
   return (
-    <li
-      className={`flex gap-3.5 border-b border-borda py-4 last:border-0 ${
-        item.repetido ? "opacity-[0.68]" : ""
-      }`}
-    >
+    <li className="flex gap-3.5 border-b border-borda py-4 last:border-0">
       <label className="flex min-h-11 shrink-0 cursor-pointer items-start pt-[3px]">
         <input
           type="checkbox"
