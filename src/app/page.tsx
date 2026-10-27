@@ -40,6 +40,11 @@ export default async function Home() {
           do carimbo do site no layout: responde "o conserto chegou ou
           a edicao e' antiga?" sem aparecer para quem le. */}
       <meta name="x-pipeline-commit" content={edicao.pipeline_commit || "?"} />
+      {/* De onde veio a listagem: "manifesto", "api" ou "disco".
+          Invisivel, pelo mesmo motivo do x-pipeline-commit: responde
+          "a pagina esta congelada?" sem aparecer para quem le. Em
+          27/10 essa pergunta custou uma manha para ser respondida. */}
+      <meta name="x-origem-listagem" content={origem} />
       <AvisoListagem origem={origem} />
       <Alertas alertas={edicao.alertas} />
       <Cabecalho edicao={edicao}>

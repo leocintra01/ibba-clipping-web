@@ -25,6 +25,11 @@ export default async function Historico() {
 
   return (
     <main className="mx-auto max-w-3xl bg-papel shadow-[0_0_0_1px_var(--color-borda)] sm:my-6">
+      {/* De onde veio a listagem: "manifesto", "api" ou "disco".
+          Invisivel, pelo mesmo motivo do x-pipeline-commit: responde
+          "a pagina esta congelada?" sem aparecer para quem le. Em
+          27/10 essa pergunta custou uma manha para ser respondida. */}
+      <meta name="x-origem-listagem" content={origem} />
       <AvisoListagem origem={origem} />
       <header className="border-b-[3px] border-laranja px-6 pb-5 pt-7 sm:px-8 sm:pb-6 sm:pt-9">
         <p className="rotulo">Itaú BBA · Research</p>

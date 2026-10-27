@@ -110,6 +110,13 @@ interface LinhaManifesto {
  */
 async function lerManifesto(): Promise<ResumoEdicao[] | null> {
   try {
+    // Sem truque de cache na URL, e isso foi MEDIDO em 27/10/2026. O
+    // raw.githubusercontent responde `Cache-Control: max-age=300`, o que
+    // parecia atrasar a edicao das 06:32 ate as 06:37; mas o CDN ignora a
+    // query string (tres URLs ineditas seguidas, todas `X-Cache: HIT`), entao
+    // `?m=<minuto>` seria enfeite. O que vale e' que o GitHub expurga o raw
+    // no push: o manifesto novo veio correto na primeira leitura depois de
+    // enviado. O max-age fica para o navegador, nao para nos.
     const r = await fetch(MANIFESTO, { signal: AbortSignal.timeout(8000) });
     if (!r.ok) throw new Error(String(r.status));
     const bruto = (await r.json()) as { edicoes?: LinhaManifesto[] };
