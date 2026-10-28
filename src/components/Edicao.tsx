@@ -5,7 +5,6 @@ import type { Edicao as TEdicao, Item } from "@/lib/tipos";
 import { ItemNoticia } from "./ItemNoticia";
 import { Envio } from "./Envio";
 import { useSelecao } from "@/lib/selecao";
-import { primeiraDepoisDaParada } from "@/lib/janela";
 
 type Visao = "tudo" | "brasil" | "global" | "ultimas" | "empresas" | "envio";
 
@@ -61,7 +60,6 @@ export function Edicao({ edicao }: { edicao: TEdicao }) {
   //    segunda 06:30  09:30 de SEXTA -> 06:30 = 69h
   // A primeira versao usava 30h e escondia errado na edicao das 20:02, que
   // tem 34,5h e e' uma edicao normal. Medido na de 23/10 antes de publicar.
-  const janelaLonga = primeiraDepoisDaParada(edicao);
   // Em 27/10/2026 ele mandou tirar as "ja vistas" da tela: nao lhe
   // interessam. Entao nao ha mais filtro, nem contagem, nem linha esmaecida —
   // em dia normal a noticia repetida simplesmente nao aparece.
@@ -89,8 +87,18 @@ export function Edicao({ edicao }: { edicao: TEdicao }) {
     };
   }, [edicao]);
 
-  const filtra = (itens: Item[]) =>
-    janelaLonga ? itens : itens.filter((i) => !i.repetido);
+  // NADA e' escondido. Em 27/10 ele mandou tirar as "ja vistas" da tela e eu
+  // entendi errado: apaguei a MARCA e mantive o esconderijo, deixando a
+  // edicao das 06:30 de 28/10 com 31 das 70 linhas, e o Brasil com 9 das 32.
+  // Ele abriu e disse "muito poucas noticias, ja falei mil vezes que essa
+  // regra e' fundamental" — e estava certo duas vezes, porque antes havia ao
+  // menos a linha "mostrando 31 de 70" e o botao para ver o resto; eu tinha
+  // tirado ate' isso.
+  //
+  // A leitura certa do pedido dele: a distincao nao lhe interessa. Entao ela
+  // nao existe — nem como filtro, nem como contagem, nem como esconderijo. A
+  // edicao tem 70 linhas e a tela mostra 70 linhas.
+  const filtra = (itens: Item[]) => itens;
 
   // A faixa de abas rola no celular, e "Envio" fica fora da tela. Sem isto,
   // trocar de aba deixava o indicador invisivel: a pagina mudava e nada na
