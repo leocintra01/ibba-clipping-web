@@ -47,6 +47,10 @@ export default async function Home() {
           27/10 essa pergunta custou uma manha para ser respondida. */}
       <meta name="x-origem-listagem" content={origem} />
       <AvisoListagem origem={origem} />
+      <meta
+        name="x-itens-edicao"
+        content={String(edicao.totais?.na_edicao ?? 0)}
+      />
       <Alertas alertas={edicao.alertas} />
       <AvisoJanela edicao={edicao} />
       <Cabecalho edicao={edicao}>

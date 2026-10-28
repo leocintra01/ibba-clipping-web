@@ -110,6 +110,21 @@ export function Edicao({ edicao }: { edicao: TEdicao }) {
 
   return (
     <>
+      {/* TRAVA. Em 28/10/2026 a edicao tinha 70 itens e a tela mostrava 31,
+          porque o componente filtrava os repetidos — e ninguem percebeu ate'
+          o analista abrir. Estes dois numeros sao conferidos pelo robo a cada
+          run, no passo "Aquecer o site": se discordarem, o log grita. Nao e'
+          decoracao, e' o unico lugar onde "a tela escondeu noticia" vira um
+          numero que da' para comparar. */}
+      {/* Conta DEPOIS de `filtra`, e isso e' o conserto. A primeira versao
+          somava brasil.length + global.length, que e' o tamanho da EDICAO e
+          nao o da tela: com o filtro reposto de proposito ela marcou 70 de
+          70 e a trava nao disparou. Medicao que nao enxerga o defeito que
+          ela foi feita para enxergar nao e' trava nenhuma. */}
+      <meta
+        name="x-itens-tela"
+        content={String(filtra(brasil).length + filtra(global).length)}
+      />
       <nav
         aria-label="Seções"
         ref={barra}

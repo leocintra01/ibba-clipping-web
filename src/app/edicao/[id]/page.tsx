@@ -39,6 +39,10 @@ export default async function PaginaEdicao({
           do carimbo do site no layout: responde "o conserto chegou ou
           a edicao e' antiga?" sem aparecer para quem le. */}
       <meta name="x-pipeline-commit" content={edicao.pipeline_commit || "?"} />
+      <meta
+        name="x-itens-edicao"
+        content={String(edicao.totais?.na_edicao ?? 0)}
+      />
       <Alertas alertas={edicao.alertas} />
       <AvisoJanela edicao={edicao} />
       <Cabecalho edicao={edicao}>
