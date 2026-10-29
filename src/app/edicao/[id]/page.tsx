@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { lerEdicao, listarEdicoes } from "@/lib/edicoes";
 import { Alertas } from "@/components/Alertas";
+import { AvisoEdicaoAntiga } from "@/components/AvisoEdicaoAntiga";
 import { AvisoJanela } from "@/components/AvisoJanela";
 import { Cabecalho } from "@/components/Cabecalho";
 import { Destaque } from "@/components/Destaque";
@@ -43,6 +44,7 @@ export default async function PaginaEdicao({
         name="x-itens-edicao"
         content={String(edicao.totais?.na_edicao ?? 0)}
       />
+      <AvisoEdicaoAntiga id={id} geradoEm={edicao.gerado_em} />
       <Alertas alertas={edicao.alertas} />
       <AvisoJanela edicao={edicao} />
       <Cabecalho edicao={edicao}>
