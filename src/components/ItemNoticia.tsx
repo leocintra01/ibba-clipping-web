@@ -25,6 +25,14 @@ export function ItemNoticia({ item }: { item: Item }) {
   const quando = quandoDoItem(item);
   const firme = dataConfirmada(item);
   const prioridade = marcados[item.url]?.prioridade ?? "";
+  // O robo prefixa o titulo de conteudo pago com "Conteúdo de marca (X) — ",
+  // e faz isso no TITULO porque e' assim que o aviso alcanca as outras duas
+  // telas de uma vez: o HTML de backup e o rascunho que ele cola no WhatsApp.
+  // Aqui ha' selo proprio ao lado da fonte, entao o prefixo so' empurraria a
+  // manchete para a segunda linha dizendo duas vezes a mesma coisa.
+  const titulo = item.conteudo_de_marca
+    ? item.titulo.replace(/^Conte[úu]do de marca \([^)]*\)\s*[—–-]\s*/, "")
+    : item.titulo;
 
   return (
     <li className="flex gap-3.5 border-b border-borda py-4 last:border-0">
@@ -33,7 +41,7 @@ export function ItemNoticia({ item }: { item: Item }) {
           type="checkbox"
           checked={escolhido}
           onChange={() => alternar(item)}
-          aria-label={`Selecionar: ${item.titulo}`}
+          aria-label={`Selecionar: ${titulo}`}
           className="size-[17px] accent-laranja"
         />
       </label>
@@ -44,10 +52,22 @@ export function ItemNoticia({ item }: { item: Item }) {
           rel="noopener noreferrer"
           className="toque block font-[family-name:var(--font-leitura)] text-[17px] font-medium leading-[1.35] text-tinta decoration-laranja/40 underline-offset-[3px] hover:underline"
         >
-          {item.titulo}
+          {titulo}
         </a>
         <div className="mt-1.5 flex flex-wrap items-baseline gap-x-2.5 gap-y-1 text-[12px] text-tinta-3">
           <span>{item.fonte || item.dominio}</span>
+          {item.conteudo_de_marca ? (
+            // Publieditorial. Entra no clipping desde 30/10 quando quem pagou
+            // e' empresa da cobertura, e tem que se anunciar: a linha fica
+            // lado a lado com reportagem, e so' o dominio nao conta a
+            // diferenca — valor.globo.com e' o mesmo nos dois casos.
+            <span
+              className="shrink-0 rounded-sm border border-borda-forte px-1.5 py-px text-[10px] font-semibold uppercase tracking-wide text-tinta-3"
+              title={`Conteúdo pago por ${item.conteudo_de_marca}, não é reportagem`}
+            >
+              conteúdo de marca
+            </span>
+          ) : null}
           {quando ? (
             // Data e hora sao o detalhe menos decisivo da linha: corpo menor
             // que a fonte, so' pra consultar quando interessa. Sem confirmacao
@@ -82,7 +102,7 @@ export function ItemNoticia({ item }: { item: Item }) {
                   e.target.value ? Number(e.target.value) : null,
                 )
               }
-              aria-label={`Prioridade no envio: ${item.titulo}`}
+              aria-label={`Prioridade no envio: ${titulo}`}
               className={`ml-auto h-7 shrink-0 rounded-sm border px-1 text-[12px] ${
                 prioridade
                   ? "border-laranja bg-laranja-suave font-semibold text-laranja-700"

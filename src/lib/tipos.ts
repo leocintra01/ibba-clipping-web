@@ -42,6 +42,12 @@ export interface Item {
   variantes?: Variante[];
   /** So' no Last News: "HH:MM", "ontem HH:MM" ou "DD/MM HH:MM". */
   quando?: string;
+  /** Publieditorial de empresa da cobertura: o nome de quem pagou. Conteudo
+   *  pago passou a entrar em 30/10/2026, com selo. O aviso ja viaja no
+   *  `titulo` (e' assim que ele alcanca o HTML de backup e o rascunho de
+   *  WhatsApp); este campo existe para a tela marcar isso visualmente em vez
+   *  de deixar o leitor achar o prefixo no meio da frase. */
+  conteudo_de_marca?: string;
 }
 
 export interface BlocoEmpresa {
