@@ -19,9 +19,15 @@ gerar_clipping.py ──┬─► clipping-*.html ──► leocintra01/clipping
 
 ## Camada de dados
 
-Toda leitura passa por `src/lib/edicoes.ts`. Hoje ela lê arquivos de `/data`;
-quando migrar para Supabase, **só esse arquivo muda** — por isso as funções já
-são assíncronas mesmo lendo disco.
+Toda leitura passa por `src/lib/edicoes.ts`. A listagem vem de
+`data/index.json`, o manifesto que o robô grava a cada run, lido **pela rede**
+(raw.githubusercontent, sem limite de chamada); cada edição vem do seu
+`edicao-*.json`, também pela rede. Edição nova aparece sozinha em até 5
+minutos, sem deploy.
+
+O disco (`/data` do build) é só plano B. Quando a listagem cai nele, a página
+mostra ao leitor que pode estar atrasada, e o meta `x-origem-listagem` diz
+`manifesto`, `api` ou `disco`.
 
 ## Rodar local
 
@@ -32,41 +38,18 @@ npm run dev
 
 Precisa de pelo menos um `data/edicao-*.json` para a home ter o que mostrar.
 
-## Pendências de configuração (precisam de você)
+## Publicação
 
-Duas coisas que eu não consigo fazer sozinho. Enquanto elas não acontecem, o
-site fica no ar com a edição que já está publicada, mas **não se atualiza
-sozinho** a cada run do robô.
+- **Dado** (edição nova): chega sozinho, pelo passo "Push JSON pro site" do
+  workflow do `IBBA-Clipping`, que grava a edição e o manifesto aqui. O passo
+  "Aquecer o site" confere, no mesmo run, que a home e o histórico já servem
+  a edição nova.
+- **Código** (o que está em `src/`): o push no GitHub **não** publica — o
+  Vercel não está ligado a este repositório. O deploy é feito por CLI:
 
-### 1. Ligar o Vercel ao GitHub (recomendado, uma vez só)
+  ```bash
+  npx --yes vercel@65.4.0 deploy --prod --yes
+  ```
 
-`vercel git connect` falhou com:
-
-> You need to add a Login Connection to your GitHub account first.
-
-A conta do Vercel não tem conexão com o GitHub. Em
-**vercel.com → Settings → Login Connections**, conecte o GitHub. Depois disso:
-
-```bash
-cd C:\ibba-clipping-web
-npx vercel git connect
-```
-
-A partir daí todo push no repositório publica sozinho — mesmo padrão do
-Dashboard.
-
-**Alternativa**, se preferir não conectar: criar um token em
-vercel.com → Settings → Tokens, guardá-lo como secret `VERCEL_TOKEN` no
-repositório `IBBA-Clipping`, e me avisar — eu adiciono o passo de deploy no
-workflow.
-
-### 2. Conferir o alcance do `CLIPPING_PUSH_TOKEN`
-
-O workflow usa o mesmo token que já publica o HTML para mandar o JSON a este
-repositório. Se ele for um token *fine-grained* restrito a
-`leocintra01/clipping`, não vai alcançar aqui — o passo avisa no log e segue,
-sem derrubar a edição.
-
-Como saber: no run seguinte, procure no log o passo
-**"Push JSON pro site"**. Se disser `Site atualizado com edicao-*.json`, está
-tudo certo.
+  Para confirmar que chegou, `https://ibba-clipping-web.vercel.app/versao.json`
+  tem que mostrar o commit novo (o meta `x-site-commit` diz o mesmo).
