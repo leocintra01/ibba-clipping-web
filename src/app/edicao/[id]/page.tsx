@@ -1,6 +1,8 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { lerEdicao, listarEdicoes } from "@/lib/edicoes";
+import { metadadosDaEdicao } from "@/lib/metadados";
 import { Alertas } from "@/components/Alertas";
 import { AvisoEdicaoAntiga } from "@/components/AvisoEdicaoAntiga";
 import { AvisoJanela } from "@/components/AvisoJanela";
@@ -12,6 +14,17 @@ import { ProvedorSelecao } from "@/lib/selecao";
 export async function generateStaticParams() {
   const edicoes = await listarEdicoes();
   return edicoes.map((e) => ({ id: e.id }));
+}
+
+/** Previa do link colado: o dia DESTA edicao, nao o de hoje. */
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}): Promise<Metadata> {
+  const { id } = await params;
+  const edicao = await lerEdicao(id);
+  return edicao ? metadadosDaEdicao(edicao) : {};
 }
 
 export default async function PaginaEdicao({

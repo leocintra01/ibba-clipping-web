@@ -1,5 +1,7 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { edicaoAtualComOrigem } from "@/lib/edicoes";
+import { metadadosDaEdicao } from "@/lib/metadados";
 import { Alertas } from "@/components/Alertas";
 import { AvisoJanela } from "@/components/AvisoJanela";
 import { AvisoListagem } from "@/components/AvisoListagem";
@@ -7,6 +9,12 @@ import { Cabecalho } from "@/components/Cabecalho";
 import { Destaque } from "@/components/Destaque";
 import { Edicao } from "@/components/Edicao";
 import { ProvedorSelecao } from "@/lib/selecao";
+
+/** Previa do link colado: dia e contagem da edicao que a home esta servindo. */
+export async function generateMetadata(): Promise<Metadata> {
+  const { edicao } = await edicaoAtualComOrigem();
+  return edicao ? metadadosDaEdicao(edicao) : {};
+}
 
 export default async function Home() {
   const { edicao, origem } = await edicaoAtualComOrigem();
