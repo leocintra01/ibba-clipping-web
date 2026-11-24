@@ -82,6 +82,25 @@ export default async function Historico() {
             </section>
           ))
         )}
+
+        {/* O que este site nao tem. Ele comecou em 15/10/2026, e ate 23/10 o
+            JSON de cada dia era sobrescrito pelo run seguinte: ficava so' o
+            das 20h. O 16/10 nao chegou a vir. O Pages tem todas, desde abril,
+            e os dados completos daquelas semanas ja' expiraram no GitHub —
+            refazer daqui sairia sem data e hora de cada noticia. Entao o
+            caminho honesto e' apontar para la', no fim da lista, onde quem
+            procura algo antigo chega. Decisao dele em 24/11/2026. */}
+        <p className="mt-10 border-t border-borda pt-5 text-[13px] leading-relaxed text-tinta-3">
+          Este histórico começa em 15/10/2026 e está incompleto até 23/10.
+          Todas as edições desde abril de 2026 estão no{" "}
+          <a
+            href="https://leocintra01.github.io/clipping/archive.html"
+            className="underline underline-offset-4 hover:text-laranja-700"
+          >
+            arquivo completo
+          </a>
+          .
+        </p>
       </div>
     </main>
   );
