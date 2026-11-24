@@ -153,7 +153,16 @@ export function Envio({ edicao }: { edicao: Edicao }) {
               }}
               className="flex flex-col gap-3"
             >
-              {lista.map(({ marca, item }, i) => (
+              {lista.map(({ marca, item }, i) => {
+                // A prioridade numerica manda na ordem (ordenarParaEnvio): item
+                // com "1º" fica em cima por mais que se arraste. Ate' 24/11 as
+                // setas dele ficavam ativas e nao faziam nada — medido na
+                // edicao de 24/11 14:02, "descer" no 1º do Global nao mudou a
+                // lista. Seta que nao age fica desligada; a ordem final do
+                // texto nao muda.
+                const fixo = marca.prioridade !== null;
+                const anteriorFixo = i > 0 && lista[i - 1].marca.prioridade !== null;
+                return (
                 <li
                   key={marca.url}
                   data-url={marca.url}
@@ -166,11 +175,12 @@ export function Envio({ edicao }: { edicao: Edicao }) {
                   <button
                     type="button"
                     aria-label={`Arrastar para mudar a posição de ${marca.tituloEditado}`}
+                    disabled={fixo}
                     onPointerDown={(e) => iniciarArraste(e, secao, i, marca.url)}
                     onPointerMove={arrastar}
                     onPointerUp={soltar}
                     onPointerCancel={soltar}
-                    className="-m-1 flex w-7 shrink-0 cursor-grab touch-none items-start justify-center p-1 text-tinta-3 hover:text-tinta-2 active:cursor-grabbing"
+                    className="-m-1 flex w-7 shrink-0 cursor-grab touch-none items-start justify-center p-1 text-tinta-3 hover:text-tinta-2 active:cursor-grabbing disabled:cursor-default disabled:opacity-30"
                   >
                     <svg width="12" height="20" viewBox="0 0 12 20" aria-hidden="true">
                       {[5, 10, 15].map((y) =>
@@ -184,12 +194,17 @@ export function Envio({ edicao }: { edicao: Edicao }) {
                   <div className="min-w-0 flex-1">
                     <div className="mb-2 flex items-center gap-2 text-[12px] text-tinta-3">
                       <span className="num font-semibold text-tinta-2">{i + 1}</span>
+                      {fixo ? (
+                        <span className="num shrink-0 font-semibold text-laranja-700">
+                          prioridade {marca.prioridade}º
+                        </span>
+                      ) : null}
                       <span className="truncate">{item.fonte || item.dominio}</span>
                       <div className="ml-auto flex shrink-0 items-center">
                         <button
                           type="button"
                           onClick={() => mover(secao, i, i - 1)}
-                          disabled={i === 0}
+                          disabled={i === 0 || fixo || anteriorFixo}
                           aria-label="Subir uma posição"
                           className="min-h-11 px-2 text-[14px] leading-none text-tinta-3 hover:text-tinta disabled:opacity-30"
                         >
@@ -198,7 +213,7 @@ export function Envio({ edicao }: { edicao: Edicao }) {
                         <button
                           type="button"
                           onClick={() => mover(secao, i, i + 1)}
-                          disabled={i === lista.length - 1}
+                          disabled={i === lista.length - 1 || fixo}
                           aria-label="Descer uma posição"
                           className="min-h-11 px-2 text-[14px] leading-none text-tinta-3 hover:text-tinta disabled:opacity-30"
                         >
@@ -226,7 +241,8 @@ export function Envio({ edicao }: { edicao: Edicao }) {
                     </div>
                   </div>
                 </li>
-              ))}
+                );
+              })}
             </ol>
           </section>
         ) : null,
