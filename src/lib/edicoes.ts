@@ -207,11 +207,22 @@ async function lerUma(id: string): Promise<Edicao | null> {
  * O que importa aqui e' o `expire`: passado ele, a requisicao BLOQUEIA e vai
  * buscar. Dois minutos e' tempo de sobra para nao bater no GitHub a cada
  * recarga e curto o bastante para que a edicao que acabou de sair apareca.
+ *
+ * E O EXPIRE FICA ABAIXO DE 5 MINUTOS DE PROPOSITO. Com 300 o Next punha a
+ * listagem dentro do RETRATO DO BUILD (o prerender da home e do historico),
+ * e no Vercel, depois de alguns minutos sem visita, o primeiro acesso recebia
+ * esse retrato, nao a edicao do repo. Medido em 26/11/2026 as 09:22: a home
+ * serviu a edicao de 24/11 14:02, a do ultimo deploy, com cinco edicoes mais
+ * novas publicadas (`x-vercel-cache: PRERENDER`); so' o acesso seguinte, dois
+ * minutos depois, veio com a de 26/11 06:32. Abaixo de 5 minutos o Next trata
+ * o cache como de vida curta e o tira do prerender: a pagina monta a edicao
+ * no pedido, sempre, e o cache de 60s continua poupando o GitHub. Quem le
+ * isso precisa estar dentro de um <Suspense>; o build acusa se nao estiver.
  */
 const CACHE_EDICAO_CORRENTE = {
   stale: 60,
   revalidate: 60,
-  expire: 300,
+  expire: 240,
 } as const;
 
 export async function listarEdicoesComOrigem(): Promise<Listagem> {
@@ -234,6 +245,19 @@ export async function listarEdicoesComOrigem(): Promise<Listagem> {
   // 3. O disco: o retrato do ultimo deploy. Serve a pagina e AVISA.
   const edicoes = await resumosDeIds(await listarDoDisco(), lerDoDisco);
   return { edicoes: ordenar(edicoes), origem: "disco" };
+}
+
+/**
+ * Ids que o build pre-monta em /edicao/[id]. SEM cache de proposito: a
+ * listagem com cache e' de vida curta (CACHE_EDICAO_CORRENTE) e o Next nao
+ * aceita que ela alimente o prerender — o build de 26/11 acusou 47 vezes
+ * "Unexpected cache miss after cache warming phase". Aqui e' uma leitura
+ * so', no build; edicao que sair depois e' montada no primeiro pedido.
+ */
+export async function idsParaPrerender(): Promise<string[]> {
+  const manifesto = await lerManifesto();
+  if (manifesto) return manifesto.map((e) => e.id);
+  return listarDoDisco();
 }
 
 /** Edicoes disponiveis, da mais recente para a mais antiga. */

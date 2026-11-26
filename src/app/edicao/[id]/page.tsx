@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { lerEdicao, listarEdicoes } from "@/lib/edicoes";
+import { Suspense } from "react";
+import { idsParaPrerender, lerEdicao } from "@/lib/edicoes";
 import { metadadosDaEdicao } from "@/lib/metadados";
 import { Alertas } from "@/components/Alertas";
 import { AvisoEdicaoAntiga } from "@/components/AvisoEdicaoAntiga";
@@ -12,8 +13,8 @@ import { Edicao } from "@/components/Edicao";
 import { ProvedorSelecao } from "@/lib/selecao";
 
 export async function generateStaticParams() {
-  const edicoes = await listarEdicoes();
-  return edicoes.map((e) => ({ id: e.id }));
+  const ids = await idsParaPrerender();
+  return ids.map((id) => ({ id }));
 }
 
 /** Previa do link colado: o dia DESTA edicao, nao o de hoje. */
@@ -57,7 +58,12 @@ export default async function PaginaEdicao({
         name="x-itens-edicao"
         content={String(edicao.totais?.na_edicao ?? 0)}
       />
-      <AvisoEdicaoAntiga id={id} geradoEm={edicao.gerado_em} />
+      {/* A listagem e' lida no pedido (CACHE_EDICAO_CORRENTE): sem isso,
+          uma edicao que era a mais nova no deploy nunca se acusaria de
+          velha. Enquanto ela chega, nao ha' aviso nenhum. */}
+      <Suspense fallback={null}>
+        <AvisoEdicaoAntiga id={id} geradoEm={edicao.gerado_em} />
+      </Suspense>
       <Alertas alertas={edicao.alertas} />
       <AvisoJanela edicao={edicao} />
       <Cabecalho edicao={edicao}>

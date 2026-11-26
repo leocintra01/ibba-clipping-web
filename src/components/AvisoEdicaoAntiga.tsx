@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { connection } from "next/server";
 import { listarEdicoes } from "@/lib/edicoes";
 
 /**
@@ -21,6 +22,11 @@ export async function AvisoEdicaoAntiga({
   id: string;
   geradoEm: string;
 }) {
+  // So' no pedido. A listagem tem cache de vida curta e, numa pagina com
+  // `params`, o prerender tentava le-la mesmo assim: o build de 26/11 acusou
+  // 47 vezes "Unexpected cache miss after cache warming phase". `connection`
+  // diz ao Next, sem ambiguidade, que este aviso nao entra no retrato.
+  await connection();
   const edicoes = await listarEdicoes();
   const atual = edicoes[0];
   // Compara o INSTANTE, nao o id. Se a listagem estiver atrasada — e ela tem

@@ -1,4 +1,7 @@
 import Link from "next/link";
+import { Suspense } from "react";
+import { connection } from "next/server";
+import { Carregando } from "@/components/Carregando";
 import { listarEdicoesComOrigem } from "@/lib/edicoes";
 import { AvisoListagem } from "@/components/AvisoListagem";
 
@@ -12,7 +15,19 @@ function rotuloData(iso: string): string {
   });
 }
 
-export default async function Historico() {
+/** A lista entra no pedido, nunca no retrato do build: ver Carregando. */
+export default function Historico() {
+  return (
+    <Suspense fallback={<Carregando />}>
+      <ListaDeEdicoes />
+    </Suspense>
+  );
+}
+
+async function ListaDeEdicoes() {
+  // Pedido, nao build: mesmo que alguem suba o expire do cache para 5 min
+  // ou mais, esta parte continua fora do retrato (ver CACHE_EDICAO_CORRENTE).
+  await connection();
   const { edicoes, origem } = await listarEdicoesComOrigem();
 
   // Agrupa por dia: o pipeline roda 3x e cada run vira uma edicao.

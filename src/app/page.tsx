@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Suspense } from "react";
+import { connection } from "next/server";
+import { Carregando } from "@/components/Carregando";
 import { edicaoAtualComOrigem } from "@/lib/edicoes";
 import { metadadosDaEdicao } from "@/lib/metadados";
 import { Alertas } from "@/components/Alertas";
@@ -16,7 +19,19 @@ export async function generateMetadata(): Promise<Metadata> {
   return edicao ? metadadosDaEdicao(edicao) : {};
 }
 
-export default async function Home() {
+/** A edicao entra no pedido, nunca no retrato do build: ver Carregando. */
+export default function Home() {
+  return (
+    <Suspense fallback={<Carregando />}>
+      <EdicaoDeAgora />
+    </Suspense>
+  );
+}
+
+async function EdicaoDeAgora() {
+  // Pedido, nao build: mesmo que alguem suba o expire do cache para 5 min
+  // ou mais, esta parte continua fora do retrato (ver CACHE_EDICAO_CORRENTE).
+  await connection();
   const { edicao, origem } = await edicaoAtualComOrigem();
 
   if (!edicao) {
